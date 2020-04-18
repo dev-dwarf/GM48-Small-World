@@ -1,7 +1,7 @@
 /// @description
 target = noone;
 
-voltage = 4000;
+voltage = 10000;
 max_voltage = 10000;
 voltage_base_decrease_per_step = 11;
 capacitors = 2;

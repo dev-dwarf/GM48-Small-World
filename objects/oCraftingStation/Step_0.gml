@@ -8,7 +8,7 @@ if (active) {
 	
 	image_speed = 1;
 	
-	if (place_meeting(x,y,oPlayerHitbox) and scale == 1.0) {
+	if (place_meeting(x,y,oPlayerHitbox) and oPowerGenerator.voltage > 2000 and alarm[0] <= 0) {
 		oPowerGenerator.target = id;	
 		oPowerGenerator.scale = 0.8;	
 		oPowerGenerator.voltage -= 2000;	
@@ -16,6 +16,7 @@ if (active) {
 		scale = 0.8;
 		
 		image_speed = 0;
+		alarm[0] = 60;
 		// play lottery sound effect
 		
 		var rand = random(1); var total = 0;

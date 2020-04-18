@@ -32,9 +32,19 @@ if (update_pathing <= 0) {
 	update_pathing--;	
 }
 
-if (x < 0) target_direction = 0;
-if (x > room_width) target_direction = 180;
+if (x < 0) {
+	target_direction = 0;
+	update_pathing = 120;	
+}
+if (x > room_width) {
+	target_direction = 180;
+	update_pathing = 120;
+}
 
+if (y < 0) {
+	target_direction = 270;
+	update_pathing = 500;
+}
 
 if (distance_to_object(target_inst) > attack_range) {
 	move_speed = approach(move_speed, move_speed_max, 0.4);

@@ -74,12 +74,26 @@ if (input_action[0] and oWrench.alarm[2] <= 0) {
 	oWrench.alarm[2] = 7;
 	oWrench.alarm[1] = 10; //give some time before returning to neutral state
 	
-	with instance_create_layer(x,y,"instances",oPlayerHitbox)
-	{
-		damage = 1.0;
-		image_yscale = other.image_xscale;
-		image_angle = target_direction;
+	if (oWrench.turret_obj == noone) {
+		with instance_create_layer(x,y,"instances",oPlayerHitbox)
+		{
+			damage = 1.0;
+			image_yscale = other.image_xscale;
+			image_angle = target_direction;
 		
+		}
+	} else {
+		instance_create_layer(x + lengthdir_x(oWrench.sprite_width, target_direction), y + lengthdir_y(oWrench.sprite_width, target_direction), layer, oWrench.turret_obj);
+		
+		with instance_create_layer(x,y,"instances",oPlayerHitbox)
+		{
+			damage = 10.0;
+			image_yscale = other.image_xscale;
+			image_angle = target_direction;
+		
+		}
+		
+		oWrench.turret_obj = noone;
 	}
 	
 //	move(move_speed * 2, target_direction);

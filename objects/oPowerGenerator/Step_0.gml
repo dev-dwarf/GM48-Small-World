@@ -1,9 +1,9 @@
 /// @description
 if (target != noone) {
-	voltage = approach(voltage, 0, voltage_base_decrease_per_step/capacitors);
-
-	voltage = clamp(voltage, 0, hp * 1000);
+	voltage = approach(voltage, 0, voltage_base_decrease_per_step/capacitors);	
 }
+
+voltage = clamp(voltage, 0, hp * 1000);
 
 if (voltage > (hp-1.8) * 1000) {
 	too_easy += 0.001;	

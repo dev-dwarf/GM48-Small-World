@@ -1,11 +1,11 @@
 /// @description
 if (place_meeting(x,y,oPlayerHitbox)) {
-	oPowerGenerator.target = id;	
+	oPowerGenerator.target = object_index;	
 	oPowerGenerator.scale = 0.8;	
 	//scale = 0.8;
 }
 
-if (oPowerGenerator.target == id) {
+if (oPowerGenerator.target == object_index) {
 	active = true;
 } else {
 	active = false;	

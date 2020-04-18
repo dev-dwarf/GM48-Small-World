@@ -239,6 +239,14 @@
             }
         },
         {
+            "Key": "64f4fd79-18e8-48c0-9de7-46d30f0bb91b",
+            "Value": {
+                "id": "4c19e030-8f6c-4d3b-8c90-52a97cf6e749",
+                "resourcePath": "objects\\pTurret\\pTurret.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "66ecc42d-1b05-4a31-9b4a-460990a5651d",
             "Value": {
                 "id": "feafcd85-e4dc-42f6-849b-70a0206d604e",

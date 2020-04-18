@@ -2,12 +2,12 @@
 
 // Inherit the parent event
 if (place_meeting(x,y,oPlayerHitbox)) {
-	oPowerGenerator.target = id;	
+	oPowerGenerator.target = pTurret;	
 	oPowerGenerator.scale = 0.8;	
 	//scale = 0.8;
 }
 
-if (oPowerGenerator.target == id) {
+if (oPowerGenerator.target == pTurret) {
 	active = true;
 } else {
 	active = false;	
