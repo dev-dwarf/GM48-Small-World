@@ -367,6 +367,14 @@
             }
         },
         {
+            "Key": "a69d1477-7a4e-4162-ba45-d9157a01e40c",
+            "Value": {
+                "id": "3163a62f-450c-46a7-9a3e-dc36edb4d4ed",
+                "resourcePath": "objects\\oTurretBullet\\oTurretBullet.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "a78e9f4c-b602-4ea1-993f-b15dca1e34e6",
             "Value": {
                 "id": "ec384e9e-0289-49b5-bde6-3254c59159de",
