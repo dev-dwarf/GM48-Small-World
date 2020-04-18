@@ -127,6 +127,14 @@
             }
         },
         {
+            "Key": "3f360edf-2581-4b2c-a7ff-11f475468aba",
+            "Value": {
+                "id": "d337b8ba-17d4-4085-a9aa-f8eb7d087991",
+                "resourcePath": "sprites\\sEnemyD\\sEnemyD.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "410233df-afde-4d82-814e-202fdd217541",
             "Value": {
                 "id": "fe80e958-4558-40b5-a052-8dcab7b55aaf",
@@ -444,6 +452,14 @@
                 "id": "ec384e9e-0289-49b5-bde6-3254c59159de",
                 "resourcePath": "objects\\oParticleGround\\oParticleGround.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "a89ab10b-eff7-40bc-b5ec-d1bdeec99670",
+            "Value": {
+                "id": "b322d881-2a38-4366-9eff-c098319a4080",
+                "resourcePath": "sprites\\sGenerator\\sGenerator.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
