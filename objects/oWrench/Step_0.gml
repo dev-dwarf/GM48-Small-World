@@ -1,7 +1,11 @@
 key_swing = mouse_check_button(mb_left)
 
+x = oPlayer.x
+y = oPlayer.y
+
 if key_swing and offset = goal and delay <= 0
 {
+	
 	swung = true
 	delay = 15
 
@@ -29,5 +33,5 @@ if key_swing and offset = goal and delay <= 0
 }
 offset = approach(offset,goal,60)
 
-image_angle = offset
+image_angle = offset + point_direction(x,y,mouse_x,mouse_y)
 delay --;
