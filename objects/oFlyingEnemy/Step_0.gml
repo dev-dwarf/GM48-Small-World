@@ -23,7 +23,8 @@ switch state {
 	
 	if (stun_timer <= 0) state = enemyStates.target;
 	break;
-	case enemyStates.dead		:		
+	case enemyStates.dead		:
+	play_sound(choose(sndBoom,sndBoom2), 10, false, 1.0, .3)
 	oCamera.screenshake += 0.14;
 	instance_destroy();
 	break;
