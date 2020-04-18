@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "oGibs",
     "eventList": [
-        
+        {
+            "id": "3b109165-1ca7-4130-a9dd-01cbfd2c2c0d",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "ba0d15b6-3ae0-4405-9e1d-07f11bd760d1"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
