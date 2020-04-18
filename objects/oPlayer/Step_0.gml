@@ -78,3 +78,14 @@ if (movement_vector[0] != 0) {
 }
 
 #endregion
+
+if move_speed != 0
+{
+	
+	sprite_index = sPlayerR
+}
+else
+sprite_index = sPlayer
+
+if input_vector[0] != 0
+image_xscale = input_vector[0]
