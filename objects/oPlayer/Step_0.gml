@@ -83,7 +83,7 @@ if (input_action[0] and oWrench.alarm[2] <= 0) {
 	}
 	
 //	move(move_speed * 2, target_direction);
-	move_speed = lerp(move_speed, 0, .8);
+	move_speed = lerp(move_speed, 0, .9);
 }
 
 if (movement_vector[0] != 0) {
