@@ -503,6 +503,14 @@
             }
         },
         {
+            "Key": "ba0d15b6-3ae0-4405-9e1d-07f11bd760d1",
+            "Value": {
+                "id": "e1897edc-13cd-451d-a484-99dc22f49778",
+                "resourcePath": "objects\\oGibs\\oGibs.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "bf321d27-464f-4f0f-818c-fdfe2a959aeb",
             "Value": {
                 "id": "63de9d54-d953-47a3-8e93-9c17d5f42169",
