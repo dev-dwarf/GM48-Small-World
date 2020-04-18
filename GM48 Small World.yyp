@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "12a3ff48-3580-4de9-90ce-aa16d2828661",
+            "Value": {
+                "id": "34f16375-bdb7-444a-b930-bae3f08f4ae6",
+                "resourcePath": "sprites\\sTurret\\sTurret.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "12da1337-633a-4c13-ae17-9e67c6b7f97a",
             "Value": {
                 "id": "8650d049-2781-41f0-ac77-05a66702f2b9",
