@@ -16,3 +16,6 @@ if (!moved_camera) {
 	sleep(40);
 	moved_camera = true;
 }
+
+audio_sound_gain(hit_sound, 1, 0);
+audio_sound_gain(miss_sound, 0, 0);
