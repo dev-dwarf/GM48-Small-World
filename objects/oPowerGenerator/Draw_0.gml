@@ -1,4 +1,5 @@
 /// @description
+draw_set_font(fTextS)
 if (target != noone and instance_exists(target)) {
 	draw_line_color(x,y,target.x,target.y, c_white, c_blue);
 	

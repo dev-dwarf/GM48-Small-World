@@ -79,11 +79,27 @@
             }
         },
         {
+            "Key": "41dca659-d5ae-443c-aa8c-49bae5007885",
+            "Value": {
+                "id": "33fd45f5-5765-4eab-9352-ed7b70d5d079",
+                "resourcePath": "objects\\oFullsc\\oFullsc.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "4d541749-81b6-49d2-9d6f-dcf8fc8dc817",
             "Value": {
                 "id": "887486ad-10d0-4f35-b03e-21830df57e04",
                 "resourcePath": "scripts\\sleep\\sleep.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "4d68759d-7076-4f14-9f20-ad208fb2163a",
+            "Value": {
+                "id": "9af8e7e5-3016-4c11-966a-9dde384daeab",
+                "resourcePath": "sprites\\sTextS\\sTextS.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -188,6 +204,14 @@
                 "id": "927ff9c3-6c0a-4fe3-80a9-69b3a44bb955",
                 "resourcePath": "options\\ios\\options_ios.yy",
                 "resourceType": "GMiOSOptions"
+            }
+        },
+        {
+            "Key": "8a43ba2d-b1b6-405c-bb08-d76ee62b0a96",
+            "Value": {
+                "id": "a51d9c76-ad98-43dc-a9cd-f0f6e0415339",
+                "resourcePath": "objects\\oPause\\oPause.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -359,6 +383,14 @@
             }
         },
         {
+            "Key": "c74186e0-03ec-4670-9759-9219ebc04dda",
+            "Value": {
+                "id": "b01f6ae0-d0ec-4169-afd3-f1ad5e52a79a",
+                "resourcePath": "sprites\\sTextB\\sTextB.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "cc98d028-7bdd-4680-85f3-c87a7baa481e",
             "Value": {
                 "id": "19136451-a75e-4518-808e-479052eac46e",
@@ -501,6 +533,14 @@
                 "resourcePath": "sprites\\sWrench\\sWrench.yy",
                 "resourceType": "GMSprite"
             }
+        },
+        {
+            "Key": "fe779560-a856-4cba-94a2-66b5af8f4d04",
+            "Value": {
+                "id": "846ba723-edb5-475d-8814-74420cf7ec27",
+                "resourcePath": "rooms\\rFullsc\\rFullsc.yy",
+                "resourceType": "GMRoom"
+            }
         }
     ],
     "script_order": [
@@ -513,8 +553,7 @@
         "977d4afc-a853-4921-a021-07554c3a4f6e",
         "d2454090-a896-4454-a31d-4cb98c621f56",
         "f467d119-9065-4d66-9fcb-5dfd3e68c4ba",
-        "d35f80b0-f135-4880-bf42-ae9a70069f5d",
-        "e3c67351-aef2-4d1b-93c3-0256003e3be5"
+        "d35f80b0-f135-4880-bf42-ae9a70069f5d"
     ],
     "tutorial": ""
 }
