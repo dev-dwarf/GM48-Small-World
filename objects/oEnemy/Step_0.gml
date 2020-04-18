@@ -28,6 +28,12 @@ switch state {
 	death_speed = approach(death_speed, 0, 0.35);
 	move(death_speed, move_direction);
 	
+	if (floor(death_speed) != round(death_speed)) {
+		for (var i = death_speed; i > 0 and death_speed > 2.5; i-=4.0) {
+			part_particles_create(global.part_system_below, x + choose(-1, 1) * i, y, global.dust_up_particle, 1);	
+		}
+	}
+	
 	if (xprevious == x and yprevious == y) {
 		//move_direction = move_direction + 180;
 		
