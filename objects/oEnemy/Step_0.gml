@@ -42,14 +42,15 @@ switch state {
 	if (xprevious == x and yprevious == y) {
 		//move_direction = move_direction + 180;
 		
-		switch floor(move_direction/90) {
-			case 0:	case 1: move_direction = 180 - move_direction; break;
-			case 2: move_direction = move_direction + 90;
-			case 3: move_direction = move_direction - 90;
+		//switch floor(move_direction/90) {
+		//	case 0:	case 1: move_direction = 180 - move_direction; break;
+		//	case 2: move_direction = 180 + 180 - move_direction;
+		//	case 3: move_direction = 180 + 90 - move_direction;
 			
-		}
-		
-		death_speed = death_speed * 0.92;
+		//}
+		move_direction = -1 * move_direction;
+	
+		death_speed = death_speed;
 	}
 	
 	if (dead_timer == 0) instance_destroy(id, false);
