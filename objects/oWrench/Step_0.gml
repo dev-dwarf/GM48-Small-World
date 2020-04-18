@@ -9,7 +9,7 @@ if (gamepad_is_connected(0)) {
 }
 
 if (alarm[1] <= 0) {
-	image_angle = angle_lerp(image_angle, target_direction, 0.1);
+	image_angle = angle_lerp(image_angle, target_direction + 30 * oWrench.lever_state, 0.1);
 	if ( oPlayer.movement_vector[0] != 0)
 		image_yscale = -1 * sign(oPlayer.movement_vector[0]);
 } else {

@@ -56,7 +56,7 @@ if (input_action[0] and oWrench.alarm[2] <= 0) {
 	}	
 	
 	oWrench.alarm[2] = 4;
-	oWrench.alarm[1] = 6; //give some time before returning to neutral state
+	oWrench.alarm[1] = 10; //give some time before returning to neutral state
 	
 	with instance_create_layer(x,y,"instances",oPlayerHitbox)
 	{
