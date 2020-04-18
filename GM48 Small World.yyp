@@ -95,14 +95,6 @@
             }
         },
         {
-            "Key": "4d68759d-7076-4f14-9f20-ad208fb2163a",
-            "Value": {
-                "id": "9af8e7e5-3016-4c11-966a-9dde384daeab",
-                "resourcePath": "sprites\\sTextS\\sTextS.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "4fd8fe2e-8603-41f9-aca3-c6907c1692cc",
             "Value": {
                 "id": "95bbfa1f-8ea7-47f6-ba94-e2e57247a178",
@@ -476,6 +468,14 @@
                 "id": "7762dca2-6cbf-453d-9250-5ff5ceea71be",
                 "resourcePath": "options\\android\\options_android.yy",
                 "resourceType": "GMAndroidOptions"
+            }
+        },
+        {
+            "Key": "ec5925db-aee8-49d1-b422-cf3d0590880a",
+            "Value": {
+                "id": "bcee6a63-4f5a-400a-84f9-165c2e953429",
+                "resourcePath": "sprites\\sTextS\\sTextS.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
