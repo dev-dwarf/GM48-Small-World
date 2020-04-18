@@ -29,7 +29,7 @@ resize_window();
 global.dust_up_particle = part_type_create();
 
 part_type_sprite(global.dust_up_particle, sCircleParticle, true, true, true);
-part_type_size(global.dust_up_particle, 0.3, 0.35, -0.04, 0.03);
-part_type_direction(global.dust_up_particle , 85, 95, 0, 1);
+part_type_size(global.dust_up_particle, 0.2, 0.225, -0.01, 0.06);
+part_type_direction(global.dust_up_particle , 45, 125, 0, 3);
 part_type_speed(global.dust_up_particle, 1.5, 1.8, -0.1, 0.05);
 part_type_life(global.dust_up_particle, 8, 12);
