@@ -1,4 +1,4 @@
 /// @description
-if (other.object_index == oTurret) exit;
+if (object_is_ancestor(other.object_index, pTurret)) exit;
 
 instance_destroy(id, false);

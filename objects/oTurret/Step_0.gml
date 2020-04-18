@@ -1,5 +1,9 @@
 /// @description
 
+if (instance_number(pTurret) > 4) {
+	instance_destroy();
+}
+
 // Inherit the parent event
 if (place_meeting(x,y,oPlayerHitbox)) {
 	oPowerGenerator.target = pTurret;	
@@ -79,9 +83,9 @@ if active {
 	
 		
 	
-	image_blend = c_white;
+	//image_blend = c_white;
 
 } else {
 	scale = lerp(scale, 0.7, 0.2);
-	image_blend = c_gray;
+	//image_blend = c_gray;
 }

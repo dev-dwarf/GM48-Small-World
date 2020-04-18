@@ -3,7 +3,7 @@
 // Inherit the parent event
 event_inherited();
 
-possible_drops[0, 0] = oTurret;
+possible_drops[0, 0] = oLaserTurret;
 	possible_drops[0, 1] = 0.4;
 	
 possible_drops[1, 0] = oLaserTurret;
@@ -13,7 +13,4 @@ possible_drops[2, 0] = oDoubleTurret;
 	possible_drops[2, 1] = 0.2;
 	
 possible_drops[3, 0] = oDoubleLaserTurret;
-	possible_drops[3, 1] = 0.1;
-	
-possible_drops[4, 0] = noone;
-	possible_drops[4, 1] = 0.21;
+	possible_drops[3, 1] = 0.2;

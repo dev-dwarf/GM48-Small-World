@@ -10,7 +10,8 @@ if (target != noone and instance_exists(target)) {
 			
 		}
 	} else {
-		draw_line_color(x,y,target.x,target.y, c_white, c_blue);
+		with target
+			draw_line_color(x,y,other.x,other.y, c_blue, c_white);
 	}	
 }
 

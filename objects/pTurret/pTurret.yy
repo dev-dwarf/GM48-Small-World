@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "pTurret",
     "eventList": [
-        
+        {
+            "id": "00f71383-5be1-49f9-bc2a-418cdbccc0ee",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "64f4fd79-18e8-48c0-9de7-46d30f0bb91b"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

@@ -83,7 +83,6 @@ if (input_action[0] and oWrench.alarm[2] <= 0) {
 		
 		}
 	} else {
-		instance_create_layer(x + lengthdir_x(oWrench.sprite_width, target_direction), y + lengthdir_y(oWrench.sprite_width, target_direction), layer, oWrench.turret_obj);
 		
 		with instance_create_layer(x,y,"instances",oPlayerHitbox)
 		{
@@ -92,8 +91,12 @@ if (input_action[0] and oWrench.alarm[2] <= 0) {
 			image_angle = target_direction;
 		
 		}
-		
+		mask_index = sTurret;
+		instance_create_layer(x + lengthdir_x(oWrench.sprite_width, target_direction), y + lengthdir_y(oWrench.sprite_width, target_direction), layer, oWrench.turret_obj);
+
 		oWrench.turret_obj = noone;
+
+		mask_index = sprite_index;
 	}
 	
 //	move(move_speed * 2, target_direction);

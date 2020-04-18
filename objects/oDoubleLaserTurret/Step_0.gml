@@ -79,7 +79,7 @@ if active {
 	
 		
 	
-	image_blend = c_white;
+	image_blend = c_purple;
 
 } else {
 	scale = lerp(scale, 0.7, 0.2);

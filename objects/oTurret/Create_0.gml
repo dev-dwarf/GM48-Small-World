@@ -1,9 +1,11 @@
 /// @description
 
+
+
 // Inherit the parent event
 event_inherited();
 
-shoot_speed = 4;
+shoot_speed = 8;
 shoot_timer = 0;
 shoot_target = noone;
 swivel_speed = 20;
