@@ -463,14 +463,6 @@
             }
         },
         {
-            "Key": "e3c67351-aef2-4d1b-93c3-0256003e3be5",
-            "Value": {
-                "id": "5be21aff-53d8-4a88-ba53-2eaf6d4d9441",
-                "resourcePath": "scripts\\angle_approach\\angle_approach.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "e42bf5cc-3f46-4d67-a6d0-a4885a11ac3f",
             "Value": {
                 "id": "7762dca2-6cbf-453d-9250-5ff5ceea71be",
