@@ -23,7 +23,7 @@ if active {
 		image_angle -= sign(target_angle_difference) * min(swivel_speed, abs(target_angle_difference));
 	
 		if (shoot_timer <= 0) {
-			shoot_timer = shoot_speed * oPowerGenerator.max_voltage/max(oPowerGenerator.voltage, 3000);
+			shoot_timer = shoot_speed// * oPowerGenerator.max_voltage/max(oPowerGenerator.voltage, 3000);
 			scale = 1.2;
 		
 			oCamera.screenshake += 0.02

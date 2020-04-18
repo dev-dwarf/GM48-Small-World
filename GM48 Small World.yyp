@@ -159,14 +159,6 @@
             }
         },
         {
-            "Key": "4227dba9-4aef-41bf-b722-764f001698fa",
-            "Value": {
-                "id": "8b05d3f6-3040-4205-a559-bc1f2c35b0e3",
-                "resourcePath": "sprites\\sprite16\\sprite16.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "48a6d3b3-82d9-4614-b4d7-5e0bed9d2cb4",
             "Value": {
                 "id": "c723c747-8ca2-4292-94e4-5180f170893f",
@@ -378,7 +370,7 @@
             "Key": "9380f16e-9881-4bee-9420-548cadeb91ed",
             "Value": {
                 "id": "946ac730-16d6-420e-aad4-288ee24bb0cd",
-                "resourcePath": "objects\\oDoubleLaserTurret\\oDoubleLaserTurret.yy",
+                "resourcePath": "objects\\oBombTurret\\oBombTurret.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -471,6 +463,14 @@
             }
         },
         {
+            "Key": "a75c91aa-60e3-4d66-8974-9f1c5619f9ec",
+            "Value": {
+                "id": "47ffea4c-3718-4ace-b484-af2958f0d552",
+                "resourcePath": "objects\\oTurretBullet2\\oTurretBullet2.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "a78e9f4c-b602-4ea1-993f-b15dca1e34e6",
             "Value": {
                 "id": "ec384e9e-0289-49b5-bde6-3254c59159de",
@@ -530,7 +530,7 @@
             "Key": "b9aa65e8-3b26-483d-94f7-848894759fc6",
             "Value": {
                 "id": "e013d1f5-d3ce-4a93-80f7-adbbc670b3ba",
-                "resourcePath": "objects\\oDoubleTurret\\oDoubleTurret.yy",
+                "resourcePath": "objects\\oGattalingTurret\\oGattalingTurret.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -700,6 +700,14 @@
                 "id": "f6d4a171-7a94-4dfc-90be-189725e09241",
                 "resourcePath": "sounds\\sndWrenchHit\\sndWrenchHit.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "e3834aa8-3e0e-4378-b5e3-41f4d619c6fb",
+            "Value": {
+                "id": "8d8212be-c6e5-4fdb-9708-5985b91caf89",
+                "resourcePath": "sprites\\sBullet2\\sBullet2.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
