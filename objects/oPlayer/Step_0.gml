@@ -40,26 +40,38 @@ move(move_speed, move_direction);
 
 #region attack
 
-if (input_action[0] and oWrench.alarm[2] <= 0) {
-	if (movement_vector[0] != 0) {
-		oWrench.image_angle = move_direction - 60 * sign(movement_vector[0]);
+if (input_action[0] and oWrench.alarm[2] <= 0) {	
+	oWrench.lever_state *= -1;
+	var target_direction;
+	if (gamepad) {
+		target_direction = move_direction;	
 	} else {
-		oWrench.image_angle = move_direction + 60 * sign(movement_vector[1]);
+		target_direction = point_direction(x,y,mouse_x, mouse_y);	
+	}
+	
+	if (movement_vector[0] != 0) {
+		oWrench.target_angle = target_direction - 60 * sign(movement_vector[0]) * oWrench.lever_state;
+	} else {
+		oWrench.target_angle = target_direction + 60 * sign(movement_vector[1]) * oWrench.lever_state;
 	}	
 	
-	oWrench.alarm[2] = 2;
+	oWrench.alarm[2] = 4;
+	oWrench.alarm[1] = 6; //give some time before returning to neutral state
 	
 	with instance_create_layer(x,y,"instances",oPlayerHitbox)
 	{
 		damage = .25
 		image_yscale = other.image_xscale;
-		image_angle = other.move_direction;
+		image_angle = target_direction;
 		
 	}
+	
+//	move(move_speed * 2, target_direction);
+	move_speed = lerp(move_speed, 0, .8);
 }
 
 if (movement_vector[0] != 0) {
-	oWrench.image_yscale = -1 * sign(movement_vector[0]);
+	oWrench.image_yscale = sign(movement_vector[0]) * oWrench.lever_state;
 }
 
 #endregion

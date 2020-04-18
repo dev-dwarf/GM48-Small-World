@@ -2,7 +2,7 @@
 if (place_meeting(x,y,oPlayerHitbox)) {
 	oPowerGenerator.target = id;	
 	oPowerGenerator.scale = 0.8;	
-	scale = 0.8;
+	//scale = 0.8;
 }
 
 if (oPowerGenerator.target == id) {

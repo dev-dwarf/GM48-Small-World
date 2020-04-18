@@ -1,4 +1,5 @@
 /// @description
+event_inherited();
 hp = 4;
 max_hp = hp;
 flash = 0

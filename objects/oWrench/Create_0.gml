@@ -1,6 +1,9 @@
 x = oPlayer.x
 y = oPlayer.y
 image_angle = 90;
+
+lever_state = 1;
+target_angle = 0;
 //delay = 0
 
 //offset = 20
