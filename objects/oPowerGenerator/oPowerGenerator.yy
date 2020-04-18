@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "oPowerGenerator",
     "eventList": [
-        
+        {
+            "id": "9a8e2263-6036-4055-80be-84d333a8080b",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "9fe2f2fe-4a79-4a56-8eab-6f30d7bd817d"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

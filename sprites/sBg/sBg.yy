@@ -4,16 +4,16 @@
     "mvc": "1.12",
     "name": "sBg",
     "For3D": false,
-    "HTile": false,
-    "VTile": false,
+    "HTile": true,
+    "VTile": true,
     "bbox_bottom": 215,
     "bbox_left": 0,
-    "bbox_right": 384,
+    "bbox_right": 383,
     "bbox_top": 0,
     "bboxmode": 0,
     "colkind": 1,
     "coltolerance": 0,
-    "edgeFiltering": false,
+    "edgeFiltering": true,
     "frames": [
         {
             "id": "9ab12575-e425-4322-b4b7-850aa33d0794",
@@ -64,7 +64,7 @@
     "swfPrecision": 2.525,
     "textureGroupId": "1225f6b0-ac20-43bd-a82e-be73fa0b6f4f",
     "type": 0,
-    "width": 385,
+    "width": 384,
     "xorig": 0,
     "yorig": 0
 }

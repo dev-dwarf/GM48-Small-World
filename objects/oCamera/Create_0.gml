@@ -1,5 +1,5 @@
 /// @description
 
-global.fullscreen = false;
+global.fullscreen = true;
 
 resize_window();
