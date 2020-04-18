@@ -1,7 +1,7 @@
 /// @description
 
-difficulty = 0;
-last_difficulty = 0;
+difficulty = 0.0;
+last_difficulty = difficulty;
 
 timer[oEnemy] = irandom(20);
 cooldown[oEnemy] = 40;

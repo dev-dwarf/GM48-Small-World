@@ -9,7 +9,7 @@ other.scale = 0.6;
 other.hp -= damage;
 other.state = enemyStates.stun;
 other.stun_timer = 2;
-oCamera.screenshake += 0.16;
+oCamera.screenshake += 0.06;
 
 ds_list_add(hitobj, other);
 
@@ -24,7 +24,7 @@ if (other.hp <= 0) {
 	other.move_direction = image_angle;
 }
 
-with other { move(8, dir) }
+with other { move(knockback, dir) }
 
 if (!moved_camera) {
 	oCamera.x += lengthdir_x(3, image_angle);

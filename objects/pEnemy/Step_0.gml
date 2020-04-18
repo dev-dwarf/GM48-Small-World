@@ -2,7 +2,7 @@
 scale = lerp(scale, 1.0, 0.2);
 
 if (hp <= 0) {
-	oPowerGenerator.voltage = clamp(oPowerGenerator.voltage + abs(max_hp * move_speed_max * damage * 200) + 100 * ignores_turrets, 0, oPowerGenerator.max_voltage);
+	oPowerGenerator.voltage = clamp(oPowerGenerator.voltage + abs(max_hp * move_speed_max * damage * 250) + 50 * ignores_turrets, 0, oPowerGenerator.max_voltage);
 	hp--;
 	
 	if (state != enemyStates.dead and dead_timer == 0) {

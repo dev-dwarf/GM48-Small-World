@@ -15,6 +15,7 @@ if (oPowerGenerator.target == id) {
 
 // targeting code
 if active {
+	oPowerGenerator.voltage_base_decrease_per_step = 15;
 	if (shoot_target != noone and instance_exists(shoot_target) and shoot_target.state != enemyStates.dead) {
 		var target_angle = point_direction(x,y,shoot_target.x, shoot_target.y);
 	
@@ -22,13 +23,13 @@ if active {
 		image_angle -= sign(target_angle_difference) * min(swivel_speed, abs(target_angle_difference));
 	
 		if (shoot_timer <= 0) {
-			shoot_timer = shoot_speed;
+			shoot_timer = shoot_speed * oPowerGenerator.max_voltage/max(oPowerGenerator.voltage, 3000);
 			scale = 1.15;
 		
 			oCamera.screenshake += 0.02
 			// create bullet
 			with instance_create_layer(x + lengthdir_x(sprite_width/3, image_angle), y + lengthdir_y(sprite_width/3, image_angle), layer, oTurretBullet) {
-        oCamera.screenshake += 0.05;
+				  oCamera.screenshake += 0.01;
 				speed = 9;
 				direction = other.image_angle+irandom_range(-5,5);
 				image_angle = direction;
