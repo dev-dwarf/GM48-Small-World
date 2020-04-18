@@ -1,8 +1,8 @@
 {
-    "id": "60d376f1-c988-43aa-b8da-39c0fceb3c77",
+    "id": "21d41ca4-a8ef-4406-a50b-9b838ccaabff",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "pSolid",
+    "name": "oWall",
     "eventList": [
         
     ],
@@ -24,6 +24,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "c6714811-63ce-42e5-85a7-1745f55a83b5",
-    "visible": false
+    "spriteId": "dafde860-08d9-4faa-8f45-8d3907aa40e0",
+    "visible": true
 }
