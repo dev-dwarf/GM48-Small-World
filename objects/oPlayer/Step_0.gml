@@ -35,10 +35,3 @@ if input_magnitude != 0 { // if there is input, set move speed and direction
 
 move(move_speed, move_direction);
 #endregion
-
-move(knockback, knockback_direction);
-//knockback = lerp(knockback, 0, 0.1);
-
-if (knockback == 0) {
-	knockback_direction = 0;	
-}
