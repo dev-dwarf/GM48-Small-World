@@ -20,3 +20,5 @@ enum player_states {
 	stun,
 	dead
 }
+
+footstep_played = false;

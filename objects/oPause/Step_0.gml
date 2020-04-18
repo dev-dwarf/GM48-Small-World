@@ -1,5 +1,7 @@
-keypause = keyboard_check_pressed(vk_escape)
-keyresume = keyboard_check_pressed(vk_space) or mouse_check_button_pressed(mb_left) or mouse_check_button_pressed(mb_right) or keyboard_check(ord("A")) 
+keypause = keyboard_check_pressed(vk_escape) or gamepad_button_check_pressed(0, gp_start)
+keyresume = keyboard_check_pressed(vk_escape) or keyboard_check_pressed(vk_space) or mouse_check_button_pressed(mb_left) or mouse_check_button_pressed(mb_right) or keyboard_check(ord("A")) or gamepad_button_check_pressed(0, gp_start)
+
+keyresume = keyresume and !keypause; // added so that same key can be pause and unpause
 
 if !window_has_focus()
 {

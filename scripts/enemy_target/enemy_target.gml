@@ -37,4 +37,7 @@ if (distance_to_object(target_inst) > attack_range) {
 	move_direction = angle_lerp(move_direction, target_direction, 0.2);
 	
 	move(move_speed, move_direction);
+	return false
 }
+
+return true;

@@ -10,7 +10,7 @@ if (gamepad) {
 	input_vector[1] = gamepad_axis_value(0, gp_axislv);
 	
 	input_action[0] = gamepad_button_check_pressed(0, gp_face3);
-	input_restart   = gamepad_button_check_pressed(0, gp_start);
+	input_restart   = gamepad_button_check_pressed(0, gp_select);
 
 } else {
 	input_vector[0] = check(vk_d) - check(vk_a);
@@ -83,6 +83,17 @@ if move_speed != 0
 {
 	
 	sprite_index = sPlayerR
+	
+	if (floor(image_index) == 3 or floor(image_index) = 7) { //play footstep sounds on frames where foot hits ground
+		if (!footstep_played) {
+			play_sound(sndPlayerFootstep, 00, false, 1.3, .15);	
+			audio_sound_gain(sndPlayerFootstep, 0.01, 0);
+			sleep(10);
+			footstep_played = true;	
+		}
+	} else {
+		footstep_played = false;	
+	}
 }
 else
 sprite_index = sPlayer

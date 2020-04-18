@@ -1,2 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description
+hitobj = ds_list_create();
+
+sleep(60);

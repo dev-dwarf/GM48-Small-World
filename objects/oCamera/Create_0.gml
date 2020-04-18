@@ -6,9 +6,9 @@ cam = camera_create_view(0, 0, DEFAULT_WIDTH, DEFAULT_HEIGHT, 0, -1, -1, -1, DEF
 view_camera[0] = cam;
 
 #region screenshake
-screenshake = 1.0;
-screenshake_intensity = 3.00;
-screenshake_decrease_per_step = 0.18;
+screenshake = 0.0;
+screenshake_intensity = 7.50;
+screenshake_decrease_per_step = 0.07;
 #endregion
 
 global.fx_layer = layer_create(-3000);
