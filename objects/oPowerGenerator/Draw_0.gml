@@ -16,7 +16,7 @@ if (too_easy < 0.7 and voltage > 0) {
 			
 }
 
-draw_sprite_ext(sprite_index, image_index, x, y, image_xscale * scale, image_yscale * scale, 0, c_white), 1);
+draw_sprite_ext(sprite_index, image_index, x, y, image_xscale * scale, image_yscale * scale, 0, c_white, 1);
 
 draw_text(x,y,string(round(voltage)));
 
