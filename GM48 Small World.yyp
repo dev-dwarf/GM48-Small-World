@@ -103,6 +103,14 @@
             }
         },
         {
+            "Key": "78e78994-99f5-472d-948f-a96e49065ce4",
+            "Value": {
+                "id": "96005bb9-70aa-4b70-8992-769cadfced35",
+                "resourcePath": "objects\\oPlayerHitbox\\oPlayerHitbox.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "7b3874ef-d574-4739-add6-fd4660278f09",
             "Value": {
                 "id": "7d376b24-c703-4221-b843-27bffd95f24b",
@@ -364,6 +372,14 @@
                 "id": "707bf6f8-f92e-4a52-9ba7-5eab82304291",
                 "resourcePath": "options\\mac\\options_mac.yy",
                 "resourceType": "GMMacOptions"
+            }
+        },
+        {
+            "Key": "f4c70336-f8a8-44d4-a220-23a3ad0a81ca",
+            "Value": {
+                "id": "64d8e9fc-9135-4846-aa1c-f8e04cc77b83",
+                "resourcePath": "sprites\\sPlayerHitbox\\sPlayerHitbox.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

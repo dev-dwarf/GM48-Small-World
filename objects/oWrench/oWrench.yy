@@ -4,7 +4,26 @@
     "mvc": "1.0",
     "name": "oWrench",
     "eventList": [
-        
+        {
+            "id": "8a761bd3-6b94-478e-85f9-2a83bdd6e2b0",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "ee646a9b-8a49-43ba-b281-797794638118"
+        },
+        {
+            "id": "ebf295e2-4102-44bf-8335-539e34e59e0c",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "ee646a9b-8a49-43ba-b281-797794638118"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
