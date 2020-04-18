@@ -1,7 +1,7 @@
 /// @description
 
 #region input
-var input_vector, input_action, input_direction, input_magnitude;
+var input_vector, input_action, input_direction, input_magnitude, input_restart;
 
 var gamepad = gamepad_is_connected(0);
 if (gamepad) {
@@ -10,17 +10,20 @@ if (gamepad) {
 	input_vector[1] = gamepad_axis_value(0, gp_axislv);
 	
 	input_action[0] = gamepad_button_check_pressed(0, gp_face3);
+	input_restart   = gamepad_button_check_pressed(0, gp_start);
 
 } else {
 	input_vector[0] = check(vk_d) - check(vk_a);
 	input_vector[1] = check(vk_s) - check(vk_w);
 	
 	input_action[0] = mouse_check_button_pressed(mb_left);
+	input_restart   = check_p(vk_r);
 }
 
 input_direction = point_direction( 0, 0, input_vector[0], input_vector[1]);
 input_magnitude = min(1.0, point_distance( 0, 0, input_vector[0], input_vector[1])); //cap this at 1 so that diagonals are not faster
 
+if (input_restart) room_restart();
 
 #endregion
 
@@ -55,12 +58,12 @@ if (input_action[0] and oWrench.alarm[2] <= 0) {
 		oWrench.target_angle = target_direction + 60 * sign(movement_vector[1]) * oWrench.lever_state;
 	}	
 	
-	oWrench.alarm[2] = 4;
+	oWrench.alarm[2] = 7;
 	oWrench.alarm[1] = 10; //give some time before returning to neutral state
 	
 	with instance_create_layer(x,y,"instances",oPlayerHitbox)
 	{
-		damage = .25
+		damage = 1.0;
 		image_yscale = other.image_xscale;
 		image_angle = target_direction;
 		
