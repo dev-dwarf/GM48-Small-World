@@ -30,6 +30,30 @@
         "projectPath": "${base_project}"
     },
     "resources": [
+ 	{
+            "Key": "f467d119-9065-4d66-9fcb-5dfd3e68c4ba",
+            "Value": {
+                "id": "5473558b-6fa4-437d-99cc-093d893306cf",
+                "resourcePath": "scripts\\enemy_target_ignore_turret\\enemy_target_ignore_turret.yy",
+                "resourceType": "GMScript"
+            }
+        },
+	{
+            "Key": "d35f80b0-f135-4880-bf42-ae9a70069f5d",
+            "Value": {
+                "id": "e30d372f-f80b-4a78-b1be-665c636274ad",
+                "resourcePath": "scripts\\enemy_target\\enemy_target.yy",
+                "resourceType": "GMScript"
+            }
+        },
+	 {
+            "Key": "6be93d1a-1395-4cd7-8ab7-1cc0b05828f6",
+            "Value": {
+                "id": "fac0a2d6-0d68-4ee8-9d0f-888167d2b949",
+                "resourcePath": "objects\\oTurret\\oTurret.yy",
+                "resourceType": "GMObject"
+            }
+        },
         {
             "Key": "0294c1ac-88f5-4215-947e-d70677d68a4a",
             "Value": {
@@ -68,6 +92,14 @@
                 "id": "86932b0a-e98f-4dcf-a056-c00b09ada77b",
                 "resourcePath": "views\\33b5ba02-d430-4495-878b-8cad3aeff66e.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "410233df-afde-4d82-814e-202fdd217541",
+            "Value": {
+                "id": "fe80e958-4558-40b5-a052-8dcab7b55aaf",
+                "resourcePath": "sprites\\sFloaty\\sFloaty.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -127,19 +159,19 @@
             }
         },
         {
-            "Key": "6be93d1a-1395-4cd7-8ab7-1cc0b05828f6",
-            "Value": {
-                "id": "fac0a2d6-0d68-4ee8-9d0f-888167d2b949",
-                "resourcePath": "objects\\oTurret\\oTurret.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "72e54662-3cfa-4cc7-9038-90a947d9d592",
             "Value": {
                 "id": "ebac90ad-5229-4ed8-99f1-e305596ab107",
                 "resourcePath": "views\\72e54662-3cfa-4cc7-9038-90a947d9d592.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "78669a41-daec-4165-8992-d17e8b41b364",
+            "Value": {
+                "id": "3613d709-485f-4269-be8b-235e5bf1a6b9",
+                "resourcePath": "objects\\oBoom\\oBoom.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -359,6 +391,14 @@
             }
         },
         {
+            "Key": "d194bc5f-bae0-4b8d-b74c-b38c85c2aa7b",
+            "Value": {
+                "id": "b99b9833-9f88-49c5-93aa-f05cb63d060e",
+                "resourcePath": "sprites\\sEnemyR\\sEnemyR.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d2454090-a896-4454-a31d-4cb98c621f56",
             "Value": {
                 "id": "a3f8733a-d788-42bb-abff-630d42393631",
@@ -375,19 +415,19 @@
             }
         },
         {
-            "Key": "d35f80b0-f135-4880-bf42-ae9a70069f5d",
-            "Value": {
-                "id": "e30d372f-f80b-4a78-b1be-665c636274ad",
-                "resourcePath": "scripts\\enemy_target\\enemy_target.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "d6bb5cd5-6d30-4102-9144-110da76f4b45",
             "Value": {
                 "id": "16b154ca-e0e9-49ba-a8d7-32309260766b",
                 "resourcePath": "rooms\\rGameRoom\\rGameRoom.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "d99b8a01-45b8-4d2d-9657-a9267e3a86ab",
+            "Value": {
+                "id": "ac921eef-d60b-442a-8f61-03c3526096d1",
+                "resourcePath": "sprites\\sBoom\\sBoom.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -420,14 +460,6 @@
                 "id": "707bf6f8-f92e-4a52-9ba7-5eab82304291",
                 "resourcePath": "options\\mac\\options_mac.yy",
                 "resourceType": "GMMacOptions"
-            }
-        },
-        {
-            "Key": "f467d119-9065-4d66-9fcb-5dfd3e68c4ba",
-            "Value": {
-                "id": "5473558b-6fa4-437d-99cc-093d893306cf",
-                "resourcePath": "scripts\\enemy_target_ignore_turret\\enemy_target_ignore_turret.yy",
-                "resourceType": "GMScript"
             }
         },
         {
