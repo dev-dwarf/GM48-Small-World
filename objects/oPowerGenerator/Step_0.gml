@@ -26,3 +26,5 @@ if (place_meeting(x,y,oPlayerHitbox) and voltage > 0) {
 		audio_sound_gain(miss_sound, 0, 0);	
 	}
 }
+
+if (hp < 0) game_restart();

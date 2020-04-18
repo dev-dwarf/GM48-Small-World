@@ -14,6 +14,7 @@ switch state {
 	
 	if (ready_to_attack) {
 		oPowerGenerator.hp--;
+		oPowerGenerator.too_easy = 0.0;
 		//if (x 
 		move(move_speed, move_direction);
 		oCamera.screenshake += 0.8;

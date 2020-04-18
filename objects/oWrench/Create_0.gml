@@ -7,6 +7,8 @@ target_angle = 0;
 scale = 1;
 last_angle = 90;
 
+turret_obj = noone;
+
 //delay = 0
 
 //offset = 20

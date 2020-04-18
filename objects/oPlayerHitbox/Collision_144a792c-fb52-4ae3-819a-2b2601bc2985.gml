@@ -9,7 +9,7 @@ other.scale = 0.6;
 other.hp -= damage;
 other.state = enemyStates.stun;
 other.stun_timer = 2;
-oCamera.screenshake += 0.03;
+oCamera.screenshake = 0.1;
 
 ds_list_add(hitobj, other);
 
@@ -23,6 +23,8 @@ if (other.hp <= 0) {
 	other.death_speed = 8;
 	other.move_direction = image_angle;
 }
+
+if (other.object_index == oFlyingEnemy) knockback += 20;
 
 with other { move(knockback, dir) }
 

@@ -7,8 +7,8 @@ view_camera[0] = cam;
 
 #region screenshake
 screenshake = 0.0;
-screenshake_intensity = 9.50;
-screenshake_decrease_per_step = 0.04;
+screenshake_intensity = 6.50;
+screenshake_decrease_per_step = 0.08;
 #endregion
 
 global.fx_layer = layer_create(-3000);
@@ -16,7 +16,7 @@ global.fx_layer = layer_create(-3000);
 global.part_system_above = part_system_create()
 global.part_system_below = part_system_create()
 
-part_system_depth(global.part_system_above, -2000 );
+part_system_depth(global.part_system_above, -2000);
 part_system_depth(global.part_system_below, -900 );
 
 global.fullscreen = true;
