@@ -39,8 +39,7 @@ if (x > room_width) target_direction = 180;
 if (distance_to_object(target_inst) > attack_range) {
 	move_speed = approach(move_speed, move_speed_max, 0.4);
 	move_direction = angle_lerp(move_direction, target_direction, 0.2);
-	
-	move(move_speed, move_direction);
+
 	return false
 }
 

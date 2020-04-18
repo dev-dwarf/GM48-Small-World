@@ -7,6 +7,8 @@ switch state {
 
 	ready_to_attack = enemy_target();	
 	
+	move(move_speed, move_direction);
+	
 	if (ready_to_attack) {
 		image_speed = 0;
 	} else {

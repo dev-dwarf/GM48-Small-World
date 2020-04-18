@@ -7,6 +7,11 @@ switch state {
 
 	ready_to_attack = enemy_target();	
 	
+	//move(move_speed, move_direction);
+	
+	x += lengthdir_x(move_speed, move_direction);
+	y += lengthdir_y(move_speed, move_direction);
+	
 	if (ready_to_attack) {
 		oPowerGenerator.hp--;
 		//if (x 

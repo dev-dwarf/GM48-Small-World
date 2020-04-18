@@ -17,8 +17,8 @@ if (!instance_exists(target) or voltage == 0) {
 	target = noone;	
 }
 
-if (place_meeting(x,y,oPlayerHitbox)) {
-	target = noone;
+if (place_meeting(x,y,oPlayerHitbox) and voltage > 0) {
+	target = oDoor;
 	scale = 0.8;
 	oCamera.screenshake += 0.04;
 	with (oPlayerHitbox) {

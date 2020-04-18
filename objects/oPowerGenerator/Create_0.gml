@@ -13,5 +13,5 @@ max_hp = hp;
 
 scale = 1.0;
 
-global.spawn_enemies = false;	
+global.spawn_enemies = true;	
 fTextS = font_add_sprite_ext(sTextS,"ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890",false,0)

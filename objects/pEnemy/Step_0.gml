@@ -8,7 +8,7 @@ if (hp <= 0) {
 	if (state != enemyStates.dead and dead_timer == 0) {
 		state = enemyStates.dead;
 		hp = 1;
-		dead_timer = 120;
+		dead_timer = 1000;
 	} else {
 		instance_destroy();	
 	}
