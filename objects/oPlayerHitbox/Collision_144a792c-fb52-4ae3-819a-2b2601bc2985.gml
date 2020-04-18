@@ -29,6 +29,6 @@ with other { move(8, dir) }
 if (!moved_camera) {
 	oCamera.x += lengthdir_x(3, image_angle);
 	oCamera.y += lengthdir_y(3, image_angle);
-	sleep(40);
+	sleep(50);
 	moved_camera = true;
 }

@@ -431,14 +431,6 @@
             }
         },
         {
-            "Key": "e3c67351-aef2-4d1b-93c3-0256003e3be5",
-            "Value": {
-                "id": "5be21aff-53d8-4a88-ba53-2eaf6d4d9441",
-                "resourcePath": "scripts\\angle_approach\\angle_approach.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "e42bf5cc-3f46-4d67-a6d0-a4885a11ac3f",
             "Value": {
                 "id": "7762dca2-6cbf-453d-9250-5ff5ceea71be",
@@ -513,8 +505,7 @@
         "977d4afc-a853-4921-a021-07554c3a4f6e",
         "d2454090-a896-4454-a31d-4cb98c621f56",
         "f467d119-9065-4d66-9fcb-5dfd3e68c4ba",
-        "d35f80b0-f135-4880-bf42-ae9a70069f5d",
-        "e3c67351-aef2-4d1b-93c3-0256003e3be5"
+        "d35f80b0-f135-4880-bf42-ae9a70069f5d"
     ],
     "tutorial": ""
 }
