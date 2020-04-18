@@ -95,6 +95,14 @@
             }
         },
         {
+            "Key": "1c7afd09-24d4-4acc-9989-abbff82e258d",
+            "Value": {
+                "id": "011829a1-46d1-4d26-9d8e-5c12a07b36cb",
+                "resourcePath": "objects\\oEnemySpawner\\oEnemySpawner.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "2fbb62d1-0c0b-44b4-8a6f-14903213a10f",
             "Value": {
                 "id": "5d0a88ab-57c7-4049-a06f-0e500832742e",
@@ -164,6 +172,14 @@
                 "id": "b37a1658-7f0a-46f7-b111-b6e9d2a80c67",
                 "resourcePath": "sprites\\sBDeath\\sBDeath.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "5b8c7890-d4d3-4403-820d-36273e06fd77",
+            "Value": {
+                "id": "597534f3-b6af-447f-b460-52199f49a4ef",
+                "resourcePath": "scripts\\chance\\chance.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -713,7 +729,8 @@
         "977d4afc-a853-4921-a021-07554c3a4f6e",
         "d2454090-a896-4454-a31d-4cb98c621f56",
         "f467d119-9065-4d66-9fcb-5dfd3e68c4ba",
-        "d35f80b0-f135-4880-bf42-ae9a70069f5d"
+        "d35f80b0-f135-4880-bf42-ae9a70069f5d",
+        "5b8c7890-d4d3-4403-820d-36273e06fd77"
     ],
     "tutorial": ""
 }
