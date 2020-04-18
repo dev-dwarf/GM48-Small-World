@@ -127,6 +127,14 @@
             }
         },
         {
+            "Key": "37bafd1e-77e2-491c-a8b3-e90caa1834c2",
+            "Value": {
+                "id": "b042b9f7-c3df-47a3-ba58-a78f94e43bd6",
+                "resourcePath": "objects\\oLaserTurret\\oLaserTurret.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "3f360edf-2581-4b2c-a7ff-11f475468aba",
             "Value": {
                 "id": "d337b8ba-17d4-4085-a9aa-f8eb7d087991",
@@ -367,6 +375,14 @@
             }
         },
         {
+            "Key": "9380f16e-9881-4bee-9420-548cadeb91ed",
+            "Value": {
+                "id": "946ac730-16d6-420e-aad4-288ee24bb0cd",
+                "resourcePath": "objects\\oDoubleLaserTurret\\oDoubleLaserTurret.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "977d4afc-a853-4921-a021-07554c3a4f6e",
             "Value": {
                 "id": "07f664ae-6462-4515-8ba5-731352c8d44c",
@@ -507,6 +523,14 @@
             "Value": {
                 "id": "eff0687f-2b3d-41f1-8a13-113f12094995",
                 "resourcePath": "objects\\oDoor\\oDoor.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "b9aa65e8-3b26-483d-94f7-848894759fc6",
+            "Value": {
+                "id": "e013d1f5-d3ce-4a93-80f7-adbbc670b3ba",
+                "resourcePath": "objects\\oDoubleTurret\\oDoubleTurret.yy",
                 "resourceType": "GMObject"
             }
         },

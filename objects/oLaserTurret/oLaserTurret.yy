@@ -1,28 +1,38 @@
 {
-    "id": "48a6d3b3-82d9-4614-b4d7-5e0bed9d2cb4",
+    "id": "37bafd1e-77e2-491c-a8b3-e90caa1834c2",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "oCraftingStation",
+    "name": "oLaserTurret",
     "eventList": [
         {
-            "id": "e98c808b-25d3-4be8-83c3-98f89285aede",
+            "id": "f43c229c-6f5e-4518-8237-6645b68d5275",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "48a6d3b3-82d9-4614-b4d7-5e0bed9d2cb4"
+            "m_owner": "37bafd1e-77e2-491c-a8b3-e90caa1834c2"
         },
         {
-            "id": "be252071-14a8-4940-aedb-d2922c14ac17",
+            "id": "7d822f08-e2e4-4251-b5e2-5a6fced63c41",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 3,
-            "m_owner": "48a6d3b3-82d9-4614-b4d7-5e0bed9d2cb4"
+            "m_owner": "37bafd1e-77e2-491c-a8b3-e90caa1834c2"
+        },
+        {
+            "id": "caf5242a-243b-4e29-8778-16eb73715fb1",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 8,
+            "m_owner": "37bafd1e-77e2-491c-a8b3-e90caa1834c2"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -43,6 +53,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "a89ab10b-eff7-40bc-b5ec-d1bdeec99670",
+    "spriteId": "12a3ff48-3580-4de9-90ce-aa16d2828661",
     "visible": true
 }
