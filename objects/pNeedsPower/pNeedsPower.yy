@@ -1,8 +1,8 @@
 {
-    "id": "60d376f1-c988-43aa-b8da-39c0fceb3c77",
+    "id": "c221edb6-18f0-4b98-90a7-727f8099db07",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "pSolid",
+    "name": "pNeedsPower",
     "eventList": [
         
     ],
@@ -24,6 +24,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "c6714811-63ce-42e5-85a7-1745f55a83b5",
+    "spriteId": "00000000-0000-0000-0000-000000000000",
     "visible": true
 }

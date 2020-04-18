@@ -1,5 +1,5 @@
-#macro DEFAULT_WIDTH 16
-#macro DEFAULT_HEIGHT 9
+#macro DEFAULT_WIDTH 320	
+#macro DEFAULT_HEIGHT 180
 #macro SCALE 3
 
 #macro vk_a ord("A")

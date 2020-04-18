@@ -1,10 +1,19 @@
 {
-    "id": "60d376f1-c988-43aa-b8da-39c0fceb3c77",
+    "id": "6faa0b47-165c-439e-80e7-0ea0eae3b375",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "pSolid",
+    "name": "oCamera",
     "eventList": [
-        
+        {
+            "id": "db612619-00f7-47f7-91d1-4e663ffdf745",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "6faa0b47-165c-439e-80e7-0ea0eae3b375"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
@@ -24,6 +33,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "c6714811-63ce-42e5-85a7-1745f55a83b5",
+    "spriteId": "00000000-0000-0000-0000-000000000000",
     "visible": true
 }
