@@ -1,7 +1,7 @@
 /// @description
 scale = 1;
 flash = 0;
-hp = 3;
+hp = 4;
 damage = 1;
 move_speed_max =1.0;
 

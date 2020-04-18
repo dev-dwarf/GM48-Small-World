@@ -9,7 +9,7 @@ other.scale = 0.6;
 other.hp -= damage;
 other.state = enemyStates.stun;
 other.stun_timer = 2;
-oCamera.screenshake += 0.06;
+oCamera.screenshake += 0.03;
 
 ds_list_add(hitobj, other);
 
@@ -17,7 +17,7 @@ var dir = image_angle;
 var knockback = 8;
 
 if (other.hp <= 0) {
-	knockback += 4;
+	knockback += irandom_range(2,4);
 	other.knockup = 16;	
 	other.max_knockup = 16;
 	other.death_speed = 8;

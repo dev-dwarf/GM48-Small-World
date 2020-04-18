@@ -21,8 +21,10 @@ switch state {
 	
 	if (stun_timer <= 0) state = enemyStates.target;
 	break;
-	case enemyStates.dead		:		
-	image_angle = angle_lerp(image_angle, -90, 0.3);
+	case enemyStates.dead		:	
+	
+	sprite_index = sEnemyD
+	//image_angle = angle_lerp(image_angle, -90, 0.3);
 	image_blend = c_gray;
 	image_alpha = dead_timer/40;
 	dead_timer--;
