@@ -44,19 +44,32 @@ move(move_speed, move_direction);
 #region attack
 
 if (input_action[0] and oWrench.alarm[2] <= 0) {	
-	oWrench.lever_state *= -1;
+	//oWrench.lever_state *= -1;
 	var target_direction;
 	if (gamepad) {
 		target_direction = move_direction;	
 	} else {
 		target_direction = point_direction(x,y,mouse_x, mouse_y);	
 	}
+	//
+	//if (movement_vector[0] != 0) {
+	//	oWrench.target_angle = target_direction - 60 * sign(movement_vector[0]) * oWrench.lever_state;
+	//} else {
+	//	oWrench.target_angle = target_direction + 60 * sign(movement_vector[1]) * oWrench.lever_state;
+	//}	
 	
-	if (movement_vector[0] != 0) {
-		oWrench.target_angle = target_direction - 60 * sign(movement_vector[0]) * oWrench.lever_state;
-	} else {
-		oWrench.target_angle = target_direction + 60 * sign(movement_vector[1]) * oWrench.lever_state;
-	}	
+	if offset = -60
+		{
+			oWrench.image_yscale = 1
+			offset = 60
+			xscale = -1
+		}
+		else
+		{
+			oWrench.image_yscale = -1
+			offset = -60
+			xscale = 1
+		}
 	
 	oWrench.alarm[2] = 7;
 	oWrench.alarm[1] = 10; //give some time before returning to neutral state
@@ -74,7 +87,7 @@ if (input_action[0] and oWrench.alarm[2] <= 0) {
 }
 
 if (movement_vector[0] != 0) {
-	oWrench.image_yscale = sign(movement_vector[0]) * oWrench.lever_state;
+	//oWrench.image_yscale = sign(movement_vector[0]) * oWrench.lever_state;
 }
 
 #endregion

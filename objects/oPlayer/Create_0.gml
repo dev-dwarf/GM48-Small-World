@@ -13,6 +13,8 @@ movement_vector[1] = 1;
 
 player_state = player_states.idle;
 
+offset = 60
+
 enum player_states {
 	idle,
 	walk,
