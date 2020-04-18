@@ -1,8 +1,8 @@
 {
-    "id": "086fe017-f138-49c0-b45b-af4effad214f",
+    "id": "98c15419-67b2-4f31-bee6-809febb0e7d4",
     "modelName": "GMSound",
     "mvc": "1.0",
-    "name": "sfxHit",
+    "name": "sndBoom2",
     "audioGroupGuid": "7b2c4976-1e09-44e5-8256-c527145e03bb",
     "bitDepth": 1,
     "bitRate": 128,
