@@ -20,6 +20,10 @@ if (update_pathing <= 0) {
 		target_direction =  point_direction(x,y,target_inst.x, target_inst.y) + power(-1, i) * i * 90;
 	}
 	
+	if (distance_to_object(target_inst) > 160) {
+		target_direction += irandom_range(-15, 15);	
+	}
+	
 	//if (xprevious == x and yprevious == y) {
 	//	target_direction += choose(120, -120);	
 	//}
