@@ -14,3 +14,5 @@ target_direction = 0;
 target_inst = noone;
 
 ignores_turrets = true;
+
+knockback = 4;

@@ -1,4 +1,4 @@
 ///@desc c hance
 ///@param percent
 
-return irandom(100) > argument0;
+return irandom(100) < argument0;
