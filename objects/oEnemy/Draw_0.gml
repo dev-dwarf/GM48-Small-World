@@ -1,3 +1,9 @@
+	var temp_y = y;
+if (knockup > 0) {
+	y -= (sprite_height/2) * sin(pi * knockup/max_knockup);
+	knockup--;
+}
+
 draw_sprite_ext(sprite_index, image_index, x, y, image_xscale * scale, image_yscale * scale, image_angle, image_blend, image_alpha);
 
 if flash > 0{
@@ -7,3 +13,6 @@ if flash > 0{
 	draw_sprite_ext(sprite_index, image_index, x, y, image_xscale * scale, image_yscale * scale, image_angle, image_blend, image_alpha);
 	shader_reset();
 }
+
+
+y = temp_y;

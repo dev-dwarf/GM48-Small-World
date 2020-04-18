@@ -7,6 +7,7 @@ if (hp <= 0) {
 	if (state != enemyStates.dead) {
 		state = enemyStates.dead;
 		hp = max_hp/2;
+		dead_timer = 120;
 	} else {
 		instance_destroy();	
 	}

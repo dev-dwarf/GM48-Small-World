@@ -88,4 +88,4 @@ else
 sprite_index = sPlayer
 
 if input_vector[0] != 0
-image_xscale = input_vector[0]
+image_xscale = sign(input_vector[0]);

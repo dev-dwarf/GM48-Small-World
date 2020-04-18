@@ -14,5 +14,6 @@ screenshake_decrease_per_step = 0.18;
 global.fx_layer = layer_create(-3000);
 global.fullscreen = true;
 
+randomize();
 
 resize_window();

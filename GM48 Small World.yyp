@@ -127,6 +127,14 @@
             }
         },
         {
+            "Key": "6be93d1a-1395-4cd7-8ab7-1cc0b05828f6",
+            "Value": {
+                "id": "fac0a2d6-0d68-4ee8-9d0f-888167d2b949",
+                "resourcePath": "objects\\oTurret\\oTurret.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "72e54662-3cfa-4cc7-9038-90a947d9d592",
             "Value": {
                 "id": "ebac90ad-5229-4ed8-99f1-e305596ab107",
@@ -367,6 +375,14 @@
             }
         },
         {
+            "Key": "d35f80b0-f135-4880-bf42-ae9a70069f5d",
+            "Value": {
+                "id": "e30d372f-f80b-4a78-b1be-665c636274ad",
+                "resourcePath": "scripts\\enemy_target\\enemy_target.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "d6bb5cd5-6d30-4102-9144-110da76f4b45",
             "Value": {
                 "id": "16b154ca-e0e9-49ba-a8d7-32309260766b",
@@ -404,6 +420,14 @@
                 "id": "707bf6f8-f92e-4a52-9ba7-5eab82304291",
                 "resourcePath": "options\\mac\\options_mac.yy",
                 "resourceType": "GMMacOptions"
+            }
+        },
+        {
+            "Key": "f467d119-9065-4d66-9fcb-5dfd3e68c4ba",
+            "Value": {
+                "id": "5473558b-6fa4-437d-99cc-093d893306cf",
+                "resourcePath": "scripts\\enemy_target_ignore_turret\\enemy_target_ignore_turret.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -447,7 +471,9 @@
         "92a06d03-2bb0-4279-a152-a3e6727c4136",
         "9a6f847e-479c-459b-8724-450669dfd4d5",
         "977d4afc-a853-4921-a021-07554c3a4f6e",
-        "d2454090-a896-4454-a31d-4cb98c621f56"
+        "d2454090-a896-4454-a31d-4cb98c621f56",
+        "f467d119-9065-4d66-9fcb-5dfd3e68c4ba",
+        "d35f80b0-f135-4880-bf42-ae9a70069f5d"
     ],
     "tutorial": ""
 }
