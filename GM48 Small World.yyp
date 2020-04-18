@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "0fc324e1-f82d-4534-a094-88f6ee44fce6",
+            "Value": {
+                "id": "e7008782-073d-4c7d-ab51-5e4a0080aced",
+                "resourcePath": "views\\0fc324e1-f82d-4534-a094-88f6ee44fce6.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "12a3ff48-3580-4de9-90ce-aa16d2828661",
             "Value": {
                 "id": "34f16375-bdb7-444a-b930-bae3f08f4ae6",
@@ -255,6 +263,14 @@
             }
         },
         {
+            "Key": "832db5d8-9523-4a8d-b0c9-4fea870d44c5",
+            "Value": {
+                "id": "8f380fc9-5ad4-4f1e-ae32-ee52b2c6a52b",
+                "resourcePath": "views\\832db5d8-9523-4a8d-b0c9-4fea870d44c5.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "8427047f-9ef8-4c77-89f3-9c20623d07b6",
             "Value": {
                 "id": "927ff9c3-6c0a-4fe3-80a9-69b3a44bb955",
@@ -375,6 +391,14 @@
             }
         },
         {
+            "Key": "9fee4768-5177-4298-90a2-9395e92a32b9",
+            "Value": {
+                "id": "0a983021-2eff-4256-88f8-15e3b4d44738",
+                "resourcePath": "views\\9fee4768-5177-4298-90a2-9395e92a32b9.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "a128950b-5063-4876-b4a6-b99dbd2ea6d1",
             "Value": {
                 "id": "dbce9912-6659-42c3-a040-614a583d94ce",
@@ -404,6 +428,14 @@
                 "id": "2c9194e2-e324-4466-a3d3-802d0b0a5791",
                 "resourcePath": "options\\linux\\options_linux.yy",
                 "resourceType": "GMLinuxOptions"
+            }
+        },
+        {
+            "Key": "ad906e5a-2ae1-4ed3-b63d-c803fbbf45da",
+            "Value": {
+                "id": "a2febfbc-12cd-4bad-a2ff-1e125b6afd4a",
+                "resourcePath": "views\\ad906e5a-2ae1-4ed3-b63d-c803fbbf45da.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -604,6 +636,14 @@
                 "id": "7d570401-9581-4b2c-b820-1b0878e3aa5e",
                 "resourcePath": "objects\\oWrench\\oWrench.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "f404db7e-6379-49d3-b15c-6045491d689d",
+            "Value": {
+                "id": "4c04e275-746c-44b8-ae79-5de78d04c74b",
+                "resourcePath": "views\\f404db7e-6379-49d3-b15c-6045491d689d.yy",
+                "resourceType": "GMFolder"
             }
         },
         {

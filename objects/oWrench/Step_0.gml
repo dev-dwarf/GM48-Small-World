@@ -17,3 +17,5 @@ if (gamepad_is_connected(0)) {
 //}
 
 image_angle = target_direction - oPlayer.offset
+
+scale = lerp(scale, 1, 0.2);

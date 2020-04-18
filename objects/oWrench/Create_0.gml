@@ -4,7 +4,7 @@ image_angle = 90;
 
 lever_state = 1;
 target_angle = 0;
-
+scale = 1;
 last_angle = 90;
 
 //delay = 0
