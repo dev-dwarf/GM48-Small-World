@@ -23,16 +23,17 @@ if active {
 	
 		if (shoot_timer <= 0) {
 			shoot_timer = shoot_speed;
+			scale = 1.15;
 		
 			oCamera.screenshake += 0.02
 			// create bullet
-			with instance_create_layer(x + lengthdir_x(sprite_width/2, image_angle), y + lengthdir_y(sprite_width/2, image_angle), layer, oTurretBullet) {
+			with instance_create_layer(x + lengthdir_x(sprite_width/3, image_angle), y + lengthdir_y(sprite_width/3, image_angle), layer, oTurretBullet) {
         oCamera.screenshake += 0.05;
 				speed = 9;
 				direction = other.image_angle+irandom_range(-5,5);
 				image_angle = direction;
-				image_xscale = 1.4;
-				image_yscale = 1.4;
+				image_xscale = 1.2;
+				image_yscale = 1.2;
 			}
 		} else {
 			shoot_timer--;	
