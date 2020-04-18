@@ -92,9 +92,11 @@ if (input_action[0] and oWrench.alarm[2] <= 0) {
 		
 		}
 		mask_index = sTurret;
-		instance_create_layer(x + lengthdir_x(oWrench.sprite_width, target_direction), y + lengthdir_y(oWrench.sprite_width, target_direction), layer, oWrench.turret_obj);
-
+		var obj_type = oWrench.turret_obj;
 		oWrench.turret_obj = noone;
+		instance_create_layer(x + lengthdir_x(oWrench.sprite_width, target_direction), y + lengthdir_y(oWrench.sprite_width, target_direction), layer, obj_type);
+
+		
 
 		mask_index = sprite_index;
 	}

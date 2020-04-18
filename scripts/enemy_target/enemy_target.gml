@@ -43,7 +43,7 @@ if (x > room_width) {
 
 if (y < 0) {
 	target_direction = 270;
-	update_pathing = 500;
+	update_pathing = 120;
 }
 
 if (distance_to_object(target_inst) > attack_range) {

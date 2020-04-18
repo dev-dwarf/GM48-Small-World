@@ -13,10 +13,12 @@ if (active) {
 	
 	image_speed = 1;
 	
-	if (place_meeting(x,y,oPlayerHitbox) and oPowerGenerator.voltage > 2000 and alarm[0] <= 0) {
+	var price = max(1.0, instance_number(pTurret)/2) * 1000;
+	
+	if (place_meeting(x,y,oPlayerHitbox) and oPowerGenerator.voltage > price and alarm[0] <= 0) {
 		oPowerGenerator.target = id;	
 		oPowerGenerator.scale = 0.8;	
-		oPowerGenerator.voltage -= 2000;	
+		oPowerGenerator.voltage -= price;	
 		oPowerGenerator.target = noone;	
 		scale = 0.8;
 		
