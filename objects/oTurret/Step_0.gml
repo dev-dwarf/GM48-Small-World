@@ -26,8 +26,12 @@ if active {
 		
 			// create bullet
 			with instance_create_layer(x + lengthdir_x(sprite_width/2, image_angle), y + lengthdir_y(sprite_width/2, image_angle), layer, oTurretBullet) {
+				oCamera.screenshake += 0.05;
 				speed = 8;
 				direction = other.image_angle;
+				image_angle = other.image_angle;
+				image_xscale = 1.4;
+				image_yscale = 1.4;
 			}
 		} else {
 			shoot_timer--;	
@@ -69,7 +73,8 @@ if active {
 	
 		scale = approach(scale, 0.9, 0.02);
 	}
-		image_blend = c_white;
+	
+	image_blend = c_white;
 
 } else {
 	scale = lerp(scale, 0.7, 0.2);

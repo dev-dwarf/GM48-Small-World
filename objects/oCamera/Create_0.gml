@@ -7,8 +7,8 @@ view_camera[0] = cam;
 
 #region screenshake
 screenshake = 0.0;
-screenshake_intensity = 7.50;
-screenshake_decrease_per_step = 0.07;
+screenshake_intensity = 9.50;
+screenshake_decrease_per_step = 0.04;
 #endregion
 
 global.fx_layer = layer_create(-3000);
