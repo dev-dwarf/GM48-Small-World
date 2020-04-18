@@ -159,6 +159,14 @@
             }
         },
         {
+            "Key": "48a6d3b3-82d9-4614-b4d7-5e0bed9d2cb4",
+            "Value": {
+                "id": "c723c747-8ca2-4292-94e4-5180f170893f",
+                "resourcePath": "objects\\oCraftingStation\\oCraftingStation.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "4d541749-81b6-49d2-9d6f-dcf8fc8dc817",
             "Value": {
                 "id": "887486ad-10d0-4f35-b03e-21830df57e04",
