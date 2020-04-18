@@ -30,7 +30,8 @@ switch state {
 	
 	if (floor(death_speed) != round(death_speed)) {
 		for (var i = death_speed; i > 0 and death_speed > 2.5; i-=4.0) {
-			part_particles_create(global.part_system_below, x + choose(-1, 1) * i, y + 4, global.dust_up_particle, 1);	
+			instance_create_layer(x,y,"instances",oParticleGround)
+			//part_particles_create(global.part_system_below, x + choose(-1, 1) * i, y + 4, global.dust_up_particle, 1);	
 		}
 	}
 	
