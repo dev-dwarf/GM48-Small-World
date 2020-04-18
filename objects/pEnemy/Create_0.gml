@@ -3,7 +3,7 @@ scale = 1;
 flash = 0;
 hp = 2;
 damage = 1;
-move_speed_max = 1;
+move_speed_max =1.0;
 
 ignores_turrets = false;
 

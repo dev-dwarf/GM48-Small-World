@@ -7,6 +7,8 @@ if ds_list_find_index(hitobj, other) != -1
 other.flash = 7;
 other.scale = 0.6;
 other.hp -= damage;
+other.state = enemyStates.stun;
+other.stun_timer = 2;
 oCamera.screenshake += 0.16;
 
 ds_list_add(hitobj, other);
@@ -27,5 +29,6 @@ with other { move(8, dir) }
 if (!moved_camera) {
 	oCamera.x += lengthdir_x(3, image_angle);
 	oCamera.y += lengthdir_y(3, image_angle);
+	sleep(40);
 	moved_camera = true;
 }

@@ -1,6 +1,6 @@
 
 if (update_pathing <= 0) {
-	update_pathing = irandom_range(6, 20);
+	update_pathing = irandom_range(4, 7);
 	target_inst = oPowerGenerator;
 
 	//if (distance_to_object(instance_nearest(x,y,oTurret)) < distance_to_object(target_inst)) {
@@ -16,7 +16,7 @@ if (update_pathing <= 0) {
 			break;
 		}
 	
-		target_direction += power(-1, i) * 45 * i;
+		target_direction += power(-1, i) * 35 * i;
 	}
 } else {
 	update_pathing--;	
@@ -27,4 +27,8 @@ if (distance_to_object(target_inst) > attack_range) {
 	move_direction = angle_lerp(move_direction, target_direction, 0.2);
 	
 	move(move_speed, move_direction);
+} else {
+	return true;	
 }
+
+return false;

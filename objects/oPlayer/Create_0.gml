@@ -8,8 +8,8 @@ move_deceleration = 0.9;
 
 true_max_speed = 3.2;
 
-movement_vector[0] = 0;
-movement_vector[1] = 0;
+movement_vector[0] = 1;
+movement_vector[1] = 1;
 
 player_state = player_states.idle;
 

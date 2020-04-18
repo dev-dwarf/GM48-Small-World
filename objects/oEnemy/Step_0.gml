@@ -2,11 +2,15 @@
 event_inherited();
 
 switch state {
-	case enemyStates.target		:		 	
-	if (ignores_turrets) {
-		enemy_target_ignore_turret();	
+	case enemyStates.target		:		
+	var ready_to_attack = false;
+
+	ready_to_attack = enemy_target();	
+	
+	if (ready_to_attack) {
+		image_speed = 0;
 	} else {
-		enemy_target();	
+		image_speed = 1;	
 	}
 		
 	break;
