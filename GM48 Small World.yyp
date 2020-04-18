@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "0294c1ac-88f5-4215-947e-d70677d68a4a",
+            "Value": {
+                "id": "82cd6435-b907-4a15-9a52-de2bc4894d15",
+                "resourcePath": "shaders\\shFlash\\shFlash.yy",
+                "resourceType": "GMShader"
+            }
+        },
+        {
             "Key": "182086fe-1c65-4f48-884a-0f642908c1fd",
             "Value": {
                 "id": "8090a0b5-05ae-4b20-b19f-26f6aeea4aa6",
@@ -59,6 +67,14 @@
             "Value": {
                 "id": "95bbfa1f-8ea7-47f6-ba94-e2e57247a178",
                 "resourcePath": "objects\\oPlayer\\oPlayer.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "51a07994-99c0-4e9d-b792-38a6235c8f8d",
+            "Value": {
+                "id": "ba32f372-85f1-4c69-8554-79aeb655309c",
+                "resourcePath": "objects\\oEnemyP\\oEnemyP.yy",
                 "resourceType": "GMObject"
             }
         },
