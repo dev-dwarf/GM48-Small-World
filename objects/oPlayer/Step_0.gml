@@ -58,16 +58,16 @@ if (input_action[0] and oWrench.alarm[2] <= 0) {
 	//	oWrench.target_angle = target_direction + 60 * sign(movement_vector[1]) * oWrench.lever_state;
 	//}	
 	
-	if offset = -60
+	if offset = -40
 		{
 			oWrench.image_yscale = 1
-			offset = 60
+			offset = 40
 			xscale = -1
 		}
 		else
 		{
 			oWrench.image_yscale = -1
-			offset = -60
+			offset = -40
 			xscale = 1
 		}
 	
