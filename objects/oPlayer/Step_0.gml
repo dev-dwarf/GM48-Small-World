@@ -100,7 +100,7 @@ if move_speed != 0
 	if (floor(image_index) == 3 or floor(image_index) = 7) { //play footstep sounds on frames where foot hits ground
 		if (!footstep_played) {
 			play_sound(sndPlayerFootstep, 00, false, 1.3, .15);	
-			audio_sound_gain(sndPlayerFootstep, 0.01, 0);
+			audio_sound_gain(sndPlayerFootstep, 0.04, 0);
 			sleep(10);
 			footstep_played = true;	
 		}
