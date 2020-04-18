@@ -15,7 +15,7 @@ if (gamepad) {
 	input_vector[0] = check(vk_d) - check(vk_a);
 	input_vector[1] = check(vk_s) - check(vk_w);
 	
-	input_action[0] = mouse_check_button(mb_left);
+	input_action[0] = mouse_check_button_pressed(mb_left);
 }
 
 input_direction = point_direction( 0, 0, input_vector[0], input_vector[1]);
@@ -41,11 +41,11 @@ move(move_speed, move_direction);
 #region attack
 
 if (input_action[0] and oWrench.alarm[2] <= 0) {
-	if (input_vector[0] != 0) {
-		oWrench.image_angle -= 120 * sign(movement_vector[0]);
+	if (movement_vector[0] != 0) {
+		oWrench.image_angle = move_direction - 60 * sign(movement_vector[0]);
 	} else {
-		oWrench.image_angle -= 120 * -1 * sign(movement_vector[1]);
-	}
+		oWrench.image_angle = move_direction + 60 * sign(movement_vector[1]);
+	}	
 	
 	oWrench.alarm[2] = 2;
 	
