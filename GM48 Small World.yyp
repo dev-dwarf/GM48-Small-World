@@ -79,18 +79,18 @@
             }
         },
         {
-            "Key": "60d376f1-c988-43aa-b8da-39c0fceb3c77",
+            "Key": "60c4103e-06bd-4816-b211-696320ff4eed",
             "Value": {
-                "id": "7e2571c1-50fb-4a1f-84b6-250930b6d13c",
-                "resourcePath": "objects\\pSolid\\pSolid.yy",
+                "id": "58b286cd-5c41-44f0-9492-87fa4d81c57e",
+                "resourcePath": "objects\\oCamera\\oCamera.yy",
                 "resourceType": "GMObject"
             }
         },
         {
-            "Key": "6faa0b47-165c-439e-80e7-0ea0eae3b375",
+            "Key": "60d376f1-c988-43aa-b8da-39c0fceb3c77",
             "Value": {
-                "id": "82a1367b-9dfe-4a81-8d88-995225ba8091",
-                "resourcePath": "objects\\oCamera\\oCamera.yy",
+                "id": "7e2571c1-50fb-4a1f-84b6-250930b6d13c",
+                "resourcePath": "objects\\pSolid\\pSolid.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -319,6 +319,14 @@
             }
         },
         {
+            "Key": "d3397da0-3ca3-4d55-85a0-ce9341afe0b8",
+            "Value": {
+                "id": "09154a2c-844a-4a41-8d8a-5cf9d607a8f1",
+                "resourcePath": "sprites\\sBullet\\sBullet.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d6bb5cd5-6d30-4102-9144-110da76f4b45",
             "Value": {
                 "id": "16b154ca-e0e9-49ba-a8d7-32309260766b",
@@ -343,6 +351,14 @@
             }
         },
         {
+            "Key": "ee646a9b-8a49-43ba-b281-797794638118",
+            "Value": {
+                "id": "7d570401-9581-4b2c-b820-1b0878e3aa5e",
+                "resourcePath": "objects\\oWrench\\oWrench.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "f418569b-3bdd-4706-a0e4-364317f54032",
             "Value": {
                 "id": "707bf6f8-f92e-4a52-9ba7-5eab82304291",
@@ -364,6 +380,14 @@
                 "id": "b9a2b1bb-e59a-4526-8a64-68d57d590033",
                 "resourcePath": "views\\f7dffb45-5134-4b30-b624-b04504df1750.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "fbdce1d7-450e-434e-aa9f-4279e10789ea",
+            "Value": {
+                "id": "9b668aa8-5fb3-4b68-974d-ef521c3f735f",
+                "resourcePath": "sprites\\sWrench\\sWrench.yy",
+                "resourceType": "GMSprite"
             }
         }
     ],

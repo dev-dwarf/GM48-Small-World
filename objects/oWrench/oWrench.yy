@@ -1,19 +1,10 @@
 {
-    "id": "60c4103e-06bd-4816-b211-696320ff4eed",
+    "id": "ee646a9b-8a49-43ba-b281-797794638118",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "oCamera",
+    "name": "oWrench",
     "eventList": [
-        {
-            "id": "d2874891-f7e0-4ded-853a-157531317185",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "60c4103e-06bd-4816-b211-696320ff4eed"
-        }
+        
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
@@ -33,6 +24,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "00000000-0000-0000-0000-000000000000",
+    "spriteId": "fbdce1d7-450e-434e-aa9f-4279e10789ea",
     "visible": true
 }
