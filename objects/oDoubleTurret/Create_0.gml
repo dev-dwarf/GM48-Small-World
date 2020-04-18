@@ -3,7 +3,7 @@
 // Inherit the parent event
 event_inherited();
 
-shoot_speed = 2;
+shoot_speed = 4;
 shoot_timer = 0;
 shoot_target = noone;
 swivel_speed = 20;
