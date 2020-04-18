@@ -24,10 +24,12 @@ if active {
 		if (shoot_timer <= 0) {
 			shoot_timer = shoot_speed;
 		
+			oCamera.screenshake += 0.02
 			// create bullet
 			with instance_create_layer(x + lengthdir_x(sprite_width/2, image_angle), y + lengthdir_y(sprite_width/2, image_angle), layer, oTurretBullet) {
-				speed = 8;
-				direction = other.image_angle;
+				speed = 9;
+				direction = other.image_angle+irandom_range(-5,5);
+				image_angle = direction;
 			}
 		} else {
 			shoot_timer--;	
