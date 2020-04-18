@@ -1,23 +1,31 @@
 /// @description
-difficulty += 0.001;
+difficulty += 0.002;
 
-log(string(difficulty));
+if (top and oPowerGenerator.too_easy < 0.7) {
+	exit;
+}
+
+log(string(id) + "difficulty: " + string(difficulty));
 
 if (floor(difficulty) == ceil(last_difficulty)) {
 	switch(floor(difficulty)) {
 		default:
 		case 8:
 			cooldown[oFlyingEnemy] = 120;
-			cooldown[oEnemy] = 16;
+			cooldown[oEnemy] = 46;
+			break;
 		case 7:
 			cooldown[oFlyingEnemy] = 200;
-			cooldown[oEnemy] = 22;
+			cooldown[oEnemy] = 46;
+			break;
+		case 5:
+			cooldown[oEnemy] = 44;
 			break;
 		case 3:
-			cooldown[oEnemy] = 32;
+			cooldown[oEnemy] = 52;
 			break;
 		case 1:
-			cooldown[oEnemy] = 35;
+			cooldown[oEnemy] = 55;
 			break;
 		case 0:
 
@@ -29,10 +37,8 @@ last_difficulty = difficulty;
 if (global.spawn_enemies) {
 	switch(floor(difficulty)) {
 		default:
-		case 8:
-		case 6:
 			if (timer[oFlyingEnemy] <= 0) {
-				timer[oFlyingEnemy] = cooldown[oFlyingEnemy] + choose(-2, 4) - oPowerGenerator.too_easy * 8;
+				timer[oFlyingEnemy] = (cooldown[oFlyingEnemy] + choose(-2, 4) - oPowerGenerator.too_easy * 4)/max(1.0, difficulty/15);
 				
 				if (chance(20)) {
 					difficulty += 0.06;
@@ -41,6 +47,54 @@ if (global.spawn_enemies) {
 			} else {
 				timer[oFlyingEnemy] -= 1;
 			}
+			
+			if (timer[oEnemy] <= 0) {
+				timer[oEnemy] = (cooldown[oEnemy] + choose(-2, 4) - oPowerGenerator.too_easy * 5)/max(1.0, difficulty/15);
+				
+				if (chance(75)) {
+					difficulty += 0.02;
+					instance_create_layer(x,y+irandom_range(-8, 8),layer,oEnemy);
+					
+					if (chance(20)) { //double up
+						instance_create_layer(x,y+irandom_range(-8, 8),layer,oEnemy);
+					}
+				}
+				
+				if (chance(10)) timer[oEnemy] += irandom(100) + 60;
+			} else {
+				timer[oEnemy] -= 1;
+			}
+		case 8:
+		case 6:
+			if (timer[oFlyingEnemy] <= 0) {
+				timer[oFlyingEnemy] = cooldown[oFlyingEnemy] + choose(-2, 4) - oPowerGenerator.too_easy * 4;
+				
+				if (chance(20)) {
+					difficulty += 0.06;
+					instance_create_layer(x,y+irandom_range(-8, 8),layer,oFlyingEnemy);
+				}
+			} else {
+				timer[oFlyingEnemy] -= 1;
+			}
+			
+			if (timer[oEnemy] <= 0) {
+				timer[oEnemy] = cooldown[oEnemy] + choose(-2, 4) - oPowerGenerator.too_easy * 5;
+				
+				if (chance(75)) {
+					difficulty += 0.02;
+					instance_create_layer(x,y+irandom_range(-8, 8),layer,oEnemy);
+					
+					if (chance(20)) { //double up
+						instance_create_layer(x,y+irandom_range(-8, 8),layer,oEnemy);
+					}
+				}
+				
+				if (chance(10)) timer[oEnemy] += irandom(100) + 60;
+			} else {
+				timer[oEnemy] -= 1;
+			}
+			
+			break;
 		case 4: case 5: 
 			if (timer[oEnemy] <= 0) {
 				timer[oEnemy] = cooldown[oEnemy] + choose(-2, 4) - oPowerGenerator.too_easy * 5;
