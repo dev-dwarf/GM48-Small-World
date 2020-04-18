@@ -2,7 +2,7 @@
 hp = 4;
 max_hp = hp;
 
-knockback = 48;
+knockback = 1;
 
 enum enemyStates {
 	target,
