@@ -1,1 +1,1 @@
-delete = 10
+delete = 10;

@@ -1,20 +1,20 @@
 x = oPlayer.x
 y = oPlayer.y
+image_angle = 90;
+//delay = 0
 
-delay = 0
+//offset = 20
+//goal = 20
+//swung = false
 
-offset = 20
-goal = 20
-swung = false
+//xscale = 1
 
-xscale = 1
+//controller_angle = 0
 
-controller_angle = 0
+//reload = 0
+//reloaded = false
+//bc = 0
+//shoot = false
+//wait = 0
 
-reload = 0
-reloaded = false
-bc = 0
-shoot = false
-wait = 0
-
-shootdel = 0
+//shootdel = 0
