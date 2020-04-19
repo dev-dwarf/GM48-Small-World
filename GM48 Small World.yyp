@@ -647,6 +647,14 @@
             }
         },
         {
+            "Key": "8b3705fd-d09b-4ff8-a817-f9f755647312",
+            "Value": {
+                "id": "4dec4313-8360-40fd-bde1-33528f14b14b",
+                "resourcePath": "sprites\\sLightnignStart\\sLightnignStart.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8c8eedb3-4906-4a1e-af0d-1ffe1ba426c2",
             "Value": {
                 "id": "1184a3b3-02b7-4f76-b0ae-c660d256cc67",
