@@ -29,4 +29,9 @@ if (place_meeting(x,y,oPlayerHitbox) and voltage > 0) {
 	}
 }
 
+offset = random_range(-6,6)
+
+if hp <= 5
+instance_create_layer(x+offset,y+offset,"Top",oSmoke)
+
 if (hp < 0) game_restart();

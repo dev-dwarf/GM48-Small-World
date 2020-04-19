@@ -559,6 +559,14 @@
             }
         },
         {
+            "Key": "b11076b5-c11e-47ba-b107-574230315aac",
+            "Value": {
+                "id": "d002a32f-506f-4bb7-9297-30b957a0afa1",
+                "resourcePath": "sprites\\sBgFlat\\sBgFlat.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "b158f707-b307-4ef4-8714-1cbc9e5b51a2",
             "Value": {
                 "id": "7c3b2b94-6ff1-4019-a412-b9bb7971bfa6",
