@@ -167,6 +167,22 @@
             }
         },
         {
+            "Key": "47cabe3d-1ffa-409d-822d-c4ac1f859768",
+            "Value": {
+                "id": "82565d23-cea3-4d57-8b9d-ffa356888780",
+                "resourcePath": "sprites\\sEnemyA\\sEnemyA.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "4878fe70-80e2-4e61-a2d1-3313528a9ce1",
+            "Value": {
+                "id": "5c031964-fdb1-4b77-a4cd-b6c979ab63c4",
+                "resourcePath": "sounds\\sndMusic\\sndMusic.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "48a6d3b3-82d9-4614-b4d7-5e0bed9d2cb4",
             "Value": {
                 "id": "c723c747-8ca2-4292-94e4-5180f170893f",
