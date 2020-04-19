@@ -24,3 +24,16 @@ enum player_states {
 }
 
 footstep_played = false;
+
+
+var xx, yy;
+
+	mask_index = sTurretLaser;
+do {
+	xx = irandom_range(1 * DEFAULT_WIDTH/4, 3 * DEFAULT_WIDTH/4);
+	yy = DEFAULT_HEIGHT/2 + irandom_range(-10, 50);
+	
+} until place_free(xx, yy);
+	mask_index = sprite_index;
+
+instance_create_layer(xx, yy, layer, choose(oTurret, oLaserTurret, oDoubleTurret, oDoubleLaserTurret));

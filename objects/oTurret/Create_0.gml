@@ -13,4 +13,6 @@ shoot_range = DEFAULT_WIDTH * 0.2;
 targeting_delay = 18;
 targeting_timer = 0;
 
+gun_scale = 1.0;
+
 hp = 6;

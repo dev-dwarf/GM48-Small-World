@@ -13,5 +13,6 @@ shoot_range = DEFAULT_WIDTH ;
 targeting_delay = 50;
 targeting_timer = 0;
 
+//laser = noone;
 hp = 4;
 length = 0

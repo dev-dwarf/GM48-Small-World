@@ -13,7 +13,7 @@ if (voltage > (hp-1.8) * 1000) {
 	too_easy = 0;	
 }
 
-scale = lerp(scale, 1.0, 0.5);
+scale = lerp(scale, 1.0 + 0.025 * sin(current_time * 2 * pi * 0.01 * max(1.0, voltage)/max_voltage), 0.5);
 
 if (!instance_exists(target) or voltage == 0) {
 	target = noone;	

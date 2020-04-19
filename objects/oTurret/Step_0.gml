@@ -29,6 +29,8 @@ if active {
 		if (shoot_timer <= 0) {
 			shoot_timer = shoot_speed * oPowerGenerator.max_voltage/max(oPowerGenerator.voltage, 3000);
 			scale = 1.2;
+			gun_scale = 0.3;
+			
 			
 			play_sound(sndBasicTurret, 1, false, 1.0, 0.1);
 		
@@ -46,6 +48,7 @@ if active {
 			shoot_timer--;	
 		}
 	
+		
 		scale = lerp(scale, 1.0, 0.2);
 	} else {
 		if (shoot_target != noone) {
@@ -91,3 +94,5 @@ if active {
 	scale = lerp(scale, 0.7, 0.2);
 	//image_blend = c_gray;
 }
+
+gun_scale = lerp(gun_scale, 1.0, .2);

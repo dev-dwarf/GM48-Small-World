@@ -1,4 +1,4 @@
-if (!instance_exists(parent)) instance_destroy(id, false);
+if (!instance_exists(parent) or is_undefined(parent) or parent == noone) instance_destroy(id, false);
 
 dir = parent.image_angle
 

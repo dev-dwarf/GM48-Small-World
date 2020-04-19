@@ -135,6 +135,14 @@
             }
         },
         {
+            "Key": "338c68e7-7a7e-48d9-9ec5-a19afebc1ad6",
+            "Value": {
+                "id": "1ddbb932-5f58-4721-91c7-df622892f6bc",
+                "resourcePath": "sprites\\sTurretHitmask\\sTurretHitmask.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "33b5ba02-d430-4495-878b-8cad3aeff66e",
             "Value": {
                 "id": "86932b0a-e98f-4dcf-a056-c00b09ada77b",

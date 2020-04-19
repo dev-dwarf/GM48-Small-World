@@ -18,5 +18,12 @@ if (!moved_camera) {
 	moved_camera = true;
 }
 
+
+if object_is_ancestor(other.object_index, pTurret) {
+	with(other) {
+		hp = approach(hp, max_hp, 0.05);	
+	}
+}
+
 audio_sound_gain(hit_sound, 1, 0);
 audio_sound_gain(miss_sound, 0, 0);

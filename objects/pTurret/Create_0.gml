@@ -11,3 +11,5 @@ if (place_meeting(x,y, pSolid) or place_meeting(x,y, oDoor) or place_meeting(x,y
 } else {
 	sleep(20);	
 }
+
+mask_index = sTurretHitmask;
