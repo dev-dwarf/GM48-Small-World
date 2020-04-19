@@ -20,7 +20,7 @@ switch state {
 		if (floor(image_index) == 7) {
 			target_inst.hp--;
 			oCamera.screenshake = 0.2;
-			sleep(50);
+			//sleep(50);
 			image_index = 8;
 		}
 		

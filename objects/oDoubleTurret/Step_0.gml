@@ -23,12 +23,12 @@ if active {
 		image_angle -= sign(target_angle_difference) * min(swivel_speed, abs(target_angle_difference));
 	
 		if (shoot_timer <= 0) {
-			shoot_timer = shoot_speed * oPowerGenerator.max_voltage/max(oPowerGenerator.voltage, 3000);
+			shoot_timer = shoot_speed// * oPowerGenerator.max_voltage/max(oPowerGenerator.voltage, 3000);
 			scale = 1.2;
 		
 			oCamera.screenshake += 0.02
 			// create bullet
-			with instance_create_layer(x + lengthdir_x(sprite_width/3, image_angle), y + lengthdir_y(sprite_width/3, image_angle), layer, oTurretBullet) {
+			with instance_create_layer(x + lengthdir_x(sprite_width/3, image_angle), y + lengthdir_y(sprite_width/3, image_angle), layer, oTurretBullet2) {
 				  oCamera.screenshake += 0.01;
 				speed = 9;
 				direction = other.image_angle+irandom_range(-5,5);
