@@ -135,6 +135,14 @@
             }
         },
         {
+            "Key": "23731174-f377-4340-a6bd-1cbdf2f3c2f0",
+            "Value": {
+                "id": "429e5d9c-a3d8-4608-ad72-6f5d92a92d85",
+                "resourcePath": "sounds\\musPrimalDrums\\musPrimalDrums.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "23d9854d-a0e2-4e79-9091-a2f66bcad700",
             "Value": {
                 "id": "a87e6607-e39b-48c9-b48c-f9117783ceb9",
@@ -147,6 +155,14 @@
             "Value": {
                 "id": "5d0a88ab-57c7-4049-a06f-0e500832742e",
                 "resourcePath": "sounds\\sndBoom\\sndBoom.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "2ff4c52e-d469-47b9-baf0-0abd0e75fbe3",
+            "Value": {
+                "id": "22ebce0d-aa86-4f28-8f99-e867b4961b0b",
+                "resourcePath": "sounds\\musRoboLow\\musRoboLow.yy",
                 "resourceType": "GMSound"
             }
         },
@@ -191,6 +207,14 @@
             }
         },
         {
+            "Key": "3daee493-3995-4681-ae68-d3bfa98a5ed7",
+            "Value": {
+                "id": "5290f830-025c-48fd-b00a-454e52a8ebf8",
+                "resourcePath": "views\\3daee493-3995-4681-ae68-d3bfa98a5ed7.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "3e3b2e25-9fc4-419c-b0df-0938acb451fb",
             "Value": {
                 "id": "faba33e0-b16c-4c40-9de6-cda5dad8a4f5",
@@ -228,6 +252,22 @@
                 "id": "8b05d3f6-3040-4205-a559-bc1f2c35b0e3",
                 "resourcePath": "sprites\\sprite16\\sprite16.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "4240153b-833d-4770-842c-22b7d32376da",
+            "Value": {
+                "id": "434bd2d1-a651-4680-b179-0cb9e45ab17d",
+                "resourcePath": "sounds\\musFlutes\\musFlutes.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "43054b33-9cbf-48f7-9839-63cff8711d60",
+            "Value": {
+                "id": "0510ef74-35bb-4c2e-8854-1d0ca19a0643",
+                "resourcePath": "sounds\\musBellsLeft\\musBellsLeft.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -292,6 +332,14 @@
                 "id": "95bbfa1f-8ea7-47f6-ba94-e2e57247a178",
                 "resourcePath": "objects\\oPlayer\\oPlayer.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "5320b181-28c2-48d0-b424-3954751881f8",
+            "Value": {
+                "id": "5d68658a-2682-481e-afad-52f467d72a44",
+                "resourcePath": "views\\5320b181-28c2-48d0-b424-3954751881f8.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -407,6 +455,14 @@
             }
         },
         {
+            "Key": "722bf1c9-3b65-4338-8b87-6f08af3d7fa7",
+            "Value": {
+                "id": "78dcc914-3d2a-4ce2-b4ca-932e6472f8af",
+                "resourcePath": "sounds\\musAdditionalPercussion\\musAdditionalPercussion.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "72e54662-3cfa-4cc7-9038-90a947d9d592",
             "Value": {
                 "id": "ebac90ad-5229-4ed8-99f1-e305596ab107",
@@ -427,6 +483,14 @@
             "Value": {
                 "id": "61534b4b-002c-4cbf-8bea-b8c2be89997b",
                 "resourcePath": "sounds\\sndGrenadeTurretExplode\\sndGrenadeTurretExplode.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "781f269c-e64c-418b-8ba0-5cd9912ff894",
+            "Value": {
+                "id": "4095bcd9-36f2-4043-8d15-49c65bf6b54c",
+                "resourcePath": "sounds\\musRoboHigh\\musRoboHigh.yy",
                 "resourceType": "GMSound"
             }
         },
@@ -516,6 +580,14 @@
                 "id": "1184a3b3-02b7-4f76-b0ae-c660d256cc67",
                 "resourcePath": "sprites\\sBg\\sBg.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "8e8e1eca-816a-4972-b399-8f420ebedc76",
+            "Value": {
+                "id": "c4019bd1-b3c3-49c0-95de-2d9783ce6969",
+                "resourcePath": "sounds\\musDidgeridoo\\musDidgeridoo.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -679,6 +751,14 @@
             }
         },
         {
+            "Key": "ab973983-6e7f-4b5a-bcb6-24ccde2e250d",
+            "Value": {
+                "id": "f5296d12-4048-462c-bb36-c7e9b0046397",
+                "resourcePath": "sounds\\musBellsRight\\musBellsRight.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "ad906e5a-2ae1-4ed3-b63d-c803fbbf45da",
             "Value": {
                 "id": "a2febfbc-12cd-4bad-a2ff-1e125b6afd4a",
@@ -740,6 +820,14 @@
                 "id": "599e513a-4abb-4dbb-8c5f-ef53d3c079b4",
                 "resourcePath": "sprites\\sBullet1\\sBullet1.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "bee7045e-05a2-46ed-a625-44c296670db0",
+            "Value": {
+                "id": "70959d51-af74-4f77-9610-770982b59b30",
+                "resourcePath": "objects\\oMusicPlayer\\oMusicPlayer.yy",
+                "resourceType": "GMObject"
             }
         },
         {

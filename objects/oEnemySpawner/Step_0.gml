@@ -10,6 +10,9 @@ log(string(id) + "difficulty: " + string(difficulty));
 if (floor(difficulty) == ceil(last_difficulty)) {
 	switch(floor(difficulty)) {
 		default:
+			cooldown[oFlyingEnemy] = 120 * 8/ difficulty;
+			cooldown[oEnemy] = 46 * 8/ difficulty;
+		break;
 		case 8:
 			cooldown[oFlyingEnemy] = 120;
 			cooldown[oEnemy] = 46;
