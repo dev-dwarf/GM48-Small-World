@@ -183,6 +183,14 @@
             }
         },
         {
+            "Key": "460f1e4e-6304-4f81-a2e2-f600cd55b0e1",
+            "Value": {
+                "id": "1bab0156-c521-4be2-811f-4b5228502fb6",
+                "resourcePath": "sounds\\sndGrenadeTurretFire\\sndGrenadeTurretFire.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "47cabe3d-1ffa-409d-822d-c4ac1f859768",
             "Value": {
                 "id": "82565d23-cea3-4d57-8b9d-ffa356888780",
@@ -343,6 +351,14 @@
             }
         },
         {
+            "Key": "749863e7-616b-479e-a7ec-faab0d0efbc6",
+            "Value": {
+                "id": "61534b4b-002c-4cbf-8bea-b8c2be89997b",
+                "resourcePath": "sounds\\sndGrenadeTurretExplode\\sndGrenadeTurretExplode.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "78669a41-daec-4165-8992-d17e8b41b364",
             "Value": {
                 "id": "3613d709-485f-4269-be8b-235e5bf1a6b9",
@@ -492,6 +508,14 @@
                 "id": "e1847fd8-02d4-4cc8-a88e-ae26f95e8c78",
                 "resourcePath": "sprites\\sFlyerGibs\\sFlyerGibs.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "9d5cc2e0-33f5-457a-9fef-659ad2f4cfbc",
+            "Value": {
+                "id": "6dac21c6-ec7d-42da-bff4-80dbfc676cce",
+                "resourcePath": "sounds\\sndGameOver\\sndGameOver.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -671,6 +695,14 @@
             }
         },
         {
+            "Key": "c39c1e72-7b10-4151-b464-e7c18a5d95db",
+            "Value": {
+                "id": "b8112824-f468-4497-82e1-b40ac2f711b2",
+                "resourcePath": "objects\\oTurretGrenade\\oTurretGrenade.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "c4b9275f-569c-4203-b75c-184a1657d2d1",
             "Value": {
                 "id": "6657584d-e0e6-4bfc-b2db-d4b7c07912f6",
@@ -748,6 +780,22 @@
                 "id": "915232b0-f4df-495a-8e69-6baa84f971a3",
                 "resourcePath": "sprites\\sEnemy\\sEnemy.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ce734ddf-988f-45aa-be74-f11b4c0a868a",
+            "Value": {
+                "id": "24dc6263-1e21-4403-b2fd-64b04de8c5d5",
+                "resourcePath": "sounds\\sndBasicTurret\\sndBasicTurret.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "d057e794-cb80-42fe-9584-3eb1c366820a",
+            "Value": {
+                "id": "0e6a4613-8328-4d4b-b5fd-afecaf689815",
+                "resourcePath": "sounds\\sndWarning\\sndWarning.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -900,6 +948,14 @@
                 "id": "b9a2b1bb-e59a-4526-8a64-68d57d590033",
                 "resourcePath": "views\\f7dffb45-5134-4b30-b624-b04504df1750.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "f8ee660b-1207-4bc5-8324-17fae8d60afd",
+            "Value": {
+                "id": "ec897f8d-f22f-4dd7-a2db-796cf7ef2cd3",
+                "resourcePath": "sounds\\sndLaserTurret\\sndLaserTurret.yy",
+                "resourceType": "GMSound"
             }
         },
         {

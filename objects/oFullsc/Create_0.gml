@@ -51,6 +51,6 @@ window_set_size(ideal_width*zoom,ideal_height*zoom);
  
 alarm[0]=1; //Center Window
 alarm[2]=1; //Change Zoom
-window_set_fullscreen(true)
+window_set_fullscreen(false)
 
 room_goto_next()
