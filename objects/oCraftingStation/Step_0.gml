@@ -30,7 +30,7 @@ if (active) {
 		scale = 0.8;
 		
 		image_speed = 0;
-		alarm[0] = 300;
+		alarm[0] = 40;
 		// play lottery sound effect
 		
 		oWrench.turret_obj = choose(oTurret, oTurret, oTurret, oTurret, oTurret, oLaserTurret, oDoubleTurret, oDoubleLaserTurret);

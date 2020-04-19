@@ -85,9 +85,9 @@ if active {
 	
 		
 	
-	image_blend = c_red;
+	//image_blend = c_red;
 
 } else {
 	scale = lerp(scale, 0.7, 0.2);
-	image_blend = c_gray;
+	//image_blend = c_gray;
 }

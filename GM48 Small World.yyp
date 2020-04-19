@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "0847b412-74e7-4325-ada2-82196f009314",
+            "Value": {
+                "id": "ec892f1d-1f1c-41da-bc5f-feec2c9948d6",
+                "resourcePath": "objects\\oTurretGrenadeBullet\\oTurretGrenadeBullet.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "0a020dbd-3596-4504-b9f0-677dce11829e",
             "Value": {
                 "id": "1b5d82c1-bc75-4657-972d-b295d63e0a07",
@@ -695,14 +703,6 @@
             }
         },
         {
-            "Key": "c39c1e72-7b10-4151-b464-e7c18a5d95db",
-            "Value": {
-                "id": "b8112824-f468-4497-82e1-b40ac2f711b2",
-                "resourcePath": "objects\\oTurretGrenade\\oTurretGrenade.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "c4b9275f-569c-4203-b75c-184a1657d2d1",
             "Value": {
                 "id": "6657584d-e0e6-4bfc-b2db-d4b7c07912f6",
@@ -884,6 +884,14 @@
                 "id": "7762dca2-6cbf-453d-9250-5ff5ceea71be",
                 "resourcePath": "options\\android\\options_android.yy",
                 "resourceType": "GMAndroidOptions"
+            }
+        },
+        {
+            "Key": "e5a30b2f-2e8e-4db0-ae21-4a440b414060",
+            "Value": {
+                "id": "0ee4f779-16a8-4b48-8fb7-2a307b2ff61a",
+                "resourcePath": "sprites\\sGrenade\\sGrenade.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

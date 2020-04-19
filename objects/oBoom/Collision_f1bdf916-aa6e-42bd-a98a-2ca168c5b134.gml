@@ -7,7 +7,7 @@ if ds_list_find_index(hitobj, other) != -1
 
 other.flash = 7;
 other.scale = 0.6;
-other.hp -= 2;
+other.hp -= damage;
 if (other.state != enemyStates.dead)
 other.state = enemyStates.stun;
 other.stun_timer = 3;

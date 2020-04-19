@@ -27,14 +27,14 @@ if active {
 			scale = 1.2;
 		
 			oCamera.screenshake += 0.02
+			play_sound(sndGrenadeTurretFire, 5, false, 1.0, 0.1);
 			// create bullet
-			with instance_create_layer(x + lengthdir_x(sprite_width/3, image_angle), y + lengthdir_y(sprite_width/3, image_angle), layer, oTurretGrenade) {
-				  oCamera.screenshake += 0.01;
+			with instance_create_layer(x + lengthdir_x(sprite_width/3, image_angle), y + lengthdir_y(sprite_width/3, image_angle), layer, oTurretGrenadeBullet) {
 				speed = 5;
 				direction = other.image_angle+irandom_range(-5,5);
 				image_angle = direction;
-				image_xscale = 1.2;
-				image_yscale = 1.2;
+				image_xscale = 1.0;
+				image_yscale = 1.0;
 			}
 		} else {
 			shoot_timer--;	
@@ -79,9 +79,9 @@ if active {
 	
 		
 	
-	image_blend = c_purple;
+	//image_blend = c_purple;
 
 } else {
 	scale = lerp(scale, 0.7, 0.2);
-	image_blend = c_gray;
+	//image_blend = c_gray;
 }
