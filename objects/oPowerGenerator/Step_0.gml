@@ -53,7 +53,10 @@ offset = random_range(-6,6)
 
 if hp <= 5
 	instance_create_layer(x+offset,y+offset-24,"Top",oSmoke)
-
+if hp > 0
+{
+	global.points += 1	
+}
 
 if (!audio_is_playing(sndGameOver)) {
 	played_game_over = false;
@@ -73,5 +76,4 @@ if (hp < 0 and !played_game_over) {
 	
 }
 
-global.points += 1
 

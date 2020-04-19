@@ -13,7 +13,7 @@ var h_half = global.ideal_height/2
 
 
 
-if paused = true 
+if played_game_over = true 
 {
 	
 	charcount += 0.1
@@ -22,7 +22,7 @@ if paused = true
 	textpart = string_copy(global.points,1, charcount)
 	
 	
-	draw_text(w_half-(stringleng*16),h_half,textpart)
+	draw_text(w_half-100,h_half,textpart)
 	
 
 }

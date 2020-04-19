@@ -25,4 +25,5 @@ x = room_width/2;
 
 image_speed = 0;
 global.points = 0
+charcount = 0
 fTextB = font_add_sprite_ext(sTextB,"ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890",false,0)
