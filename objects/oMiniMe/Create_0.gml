@@ -13,7 +13,7 @@ move_deceleration = 0.9;
 true_max_speed = 3.2;
 max_heal_amount = 0.25;
 
-heal_amount = 0.15;
+heal_amount = 0.08;
 
 movement_vector[0] = 1;
 movement_vector[1] = 1;

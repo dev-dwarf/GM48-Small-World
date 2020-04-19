@@ -10,13 +10,14 @@ if (update_ai == 0 or target_inst == noone or !instance_exists(target_inst)) {
 	target_inst = oPlayer;
 	
 	with (pTurret) {
-		if hp < lowest_health {
+		if hp < lowest_health and active {
 			lowest_health = hp;
 			lowest_instance = id;
 		}
 	}
 	
-	target_inst = lowest_instance;
+	if (target_inst != noone)
+		target_inst = lowest_instance;
 } else {
 	update_ai--;	
 }

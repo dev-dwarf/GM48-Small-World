@@ -5,7 +5,7 @@ if (top and oPowerGenerator.too_easy < 0.7) {
 	exit;
 }
 
-log(string(id) + "difficulty: " + string(difficulty));
+//log(string(id) + "difficulty: " + string(difficulty));
 
 if (floor(difficulty) == ceil(last_difficulty)) {
 	switch(floor(difficulty)) {

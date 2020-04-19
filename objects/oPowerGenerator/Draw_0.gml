@@ -1,5 +1,5 @@
 /// @description
-log("too_easy: " + string(too_easy));
+//log("too_easy: " + string(too_easy));
 
 var flash_true = flash > 0
 if (flash_true) {

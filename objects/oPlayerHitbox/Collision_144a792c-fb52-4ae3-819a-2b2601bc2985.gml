@@ -34,7 +34,7 @@ if (!moved_camera) {
 	oCamera.x += lengthdir_x(3, image_angle);
 	oCamera.y += lengthdir_y(3, image_angle);
 	if (parent == oMiniMe) {
-		oWrenchLittle.scale = 1.3;
+		oWrenchLittle.scale = 0.8;
 	} else {
 		oWrench.scale = 1.3;
 	}

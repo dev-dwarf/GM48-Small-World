@@ -8,7 +8,7 @@ voltage = clamp(voltage, 0, hp * 1000);
 
 if (hp <= 0) {
 	if (!played_game_over) {
-		audio_stop_all();
+		//audio_pause_all();
 		play_sound(sndGameOver, 1000, false, 1.0, 0);
 		played_game_over = true;
 		image_speed = 1;
