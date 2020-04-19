@@ -1,2 +1,2 @@
-parent.firedelay = 15
+//parent.firedelay = 15
 instance_destroy()

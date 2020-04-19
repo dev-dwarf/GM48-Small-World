@@ -111,14 +111,6 @@
             }
         },
         {
-            "Key": "21d41ca4-a8ef-4406-a50b-9b838ccaabff",
-            "Value": {
-                "id": "6d929ed9-7296-4609-b280-eeecbecb73a3",
-                "resourcePath": "objects\\oWall\\oWall.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "23d9854d-a0e2-4e79-9091-a2f66bcad700",
             "Value": {
                 "id": "a87e6607-e39b-48c9-b48c-f9117783ceb9",
@@ -268,6 +260,14 @@
                 "id": "9f6ea3e9-e84d-43ff-89e4-a82c6be6537b",
                 "resourcePath": "views\\5c5c3ded-64d7-4ccb-bc4e-a8b4f2ac1c42.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "5c647812-1fbb-461a-a60d-b229c088180d",
+            "Value": {
+                "id": "5719f084-c1c3-4bc2-8025-35e3481e5039",
+                "resourcePath": "sprites\\sLaserEnds\\sLaserEnds.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

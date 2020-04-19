@@ -21,20 +21,25 @@ if active {
 	
 		var target_angle_difference = angle_difference(image_angle, target_angle);
 		image_angle -= sign(target_angle_difference) * min(swivel_speed, abs(target_angle_difference));
-	
+		
+			if instance_exists(oLaser)
+			{
+				aim = image_angle
+				
+				
+				length = 500
+			
+			}
 		if (shoot_timer <= 0) {
-			shoot_timer = shoot_speed * oPowerGenerator.max_voltage/max(oPowerGenerator.voltage, 3000);
+
+			shoot_timer = shoot_speed ;
 			scale = 1.2;
 		
 			oCamera.screenshake += 0.02
 			// create bullet
-			with instance_create_layer(x + lengthdir_x(sprite_width/3, image_angle), y + lengthdir_y(sprite_width/3, image_angle), layer, oTurretBullet) {
+			with instance_create_layer(x + lengthdir_x(sprite_width/3, image_angle), y + lengthdir_y(sprite_width/3, image_angle), layer, oLaser) {
 				  oCamera.screenshake += 0.01;
-				speed = 9;
-				direction = other.image_angle+irandom_range(-5,5);
-				image_angle = direction;
-				image_xscale = 1.2;
-				image_yscale = 1.2;
+				parent = other.id
 			}
 		} else {
 			shoot_timer--;	
