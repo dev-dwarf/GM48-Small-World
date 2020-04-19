@@ -43,6 +43,7 @@ switch state {
 	
 	if shootdel >= 180
 		{
+			play_sound(sndWisp,10,false,1,.3)
 			var target_inst = oPowerGenerator;
 			if (instance_exists(pTurret)) {
 				target_inst = instance_nearest(x,y,pTurret);	

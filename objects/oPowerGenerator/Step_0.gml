@@ -7,6 +7,10 @@ if (target != noone) {
 voltage = clamp(voltage, 0, max_voltage);
 
 if (hp <= 0) {
+	if global.points/60 >= global.hscore
+	{
+		global.hscore = global.points/60
+	}
 	if (!played_game_over) {
 		//audio_pause_all();
 		play_sound(sndGameOver, 1000, false, 1.0, 0);

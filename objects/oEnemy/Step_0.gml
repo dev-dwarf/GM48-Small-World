@@ -26,6 +26,7 @@ switch state {
 		}
 		
 		if (floor(image_index) == 7) {
+			play_sound(sndHit,10,false,1,.3)
 			target_inst.hp--;
 			target_inst.flash = 4;
 			oCamera.screenshake = 0.2;

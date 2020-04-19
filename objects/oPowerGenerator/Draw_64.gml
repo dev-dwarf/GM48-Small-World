@@ -15,14 +15,10 @@ var h_half = global.ideal_height/2
 
 if played_game_over = true 
 {
-	
-	charcount += 0.1
-
-	
-	textpart = string_copy(global.points,1, charcount)
-	
-	
-	draw_text(w_half-100,h_half,textpart)
-	
+		
+	draw_text(w_half-36*4,h_half-90,"HIGHSCORE")
+	draw_text(w_half-36*2,h_half-40,global.hscore)
+	draw_text(w_half-36*2,h_half+40,"SCORE")
+	draw_text(w_half-36*2,h_half+90,global.points/6)
 
 }
