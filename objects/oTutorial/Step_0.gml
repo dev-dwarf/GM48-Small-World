@@ -59,7 +59,7 @@ switch (tutorial_event) {
 				tutorial_event++;
 				scale = 0.0;
 				add_prompt_alarm = 50;
-				oPowerGenerator.voltage = 0;
+			//	oPowerGenerator.voltage = 0;
 			} else {
 				add_prompt_alarm -= 30;
 			}
@@ -115,3 +115,5 @@ switch (tutorial_event) {
 	break;
 		
 }
+
+oPowerGenerator.voltage = 1000;

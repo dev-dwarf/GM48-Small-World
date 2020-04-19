@@ -30,7 +30,6 @@ if (hp != 0) {
 					draw_sprite_ext(sLightning, other.lightning_index, x + vx * i, y  -51+ vy * i, _scale, _scale * min(1.0, max(i/16, 0.25)) - 0.1, dir + irandom_range(-5, 5), c_white, 1.0);
 					
 				}		
-		}
 		} else {
 			with target {
 				var dist = point_distance(x,y,other.x, other.y-51); var dir = point_direction(x,y,other.x, other.y-51);
@@ -43,3 +42,4 @@ if (hp != 0) {
 			}
 		}	
 	}
+}
