@@ -1,3 +1,5 @@
+window_set_fullscreen(fullscr)
+
 /// @description
 var screenshake_amount, screenshake_curve;
 screenshake = clamp(screenshake, 0, 1);
