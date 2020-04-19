@@ -1,4 +1,4 @@
 /// @description
 hitobj = ds_list_create();
 
-sleep(60);
+sleep(20);

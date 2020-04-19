@@ -80,7 +80,7 @@ if (input_action[0] and oWrench.alarm[2] <= 0) {
 	if (oWrench.turret_obj == noone) {
 		with instance_create_layer(x,y,"instances",oPlayerHitbox)
 		{
-			damage = .5;
+			damage = .75;
 			image_yscale = other.image_xscale;
 			image_angle = target_direction;
 		

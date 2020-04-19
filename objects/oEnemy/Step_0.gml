@@ -58,7 +58,10 @@ switch state {
 	if (floor(death_speed) != round(death_speed)) {
 		for (var i = death_speed; i > 0 and death_speed > 2.5; i-=4.0) {
 			instance_create_layer(x,y,"instances",oParticleGround)
-			//part_particles_create(global.part_system_below, x + choose(-1, 1) * i, y + 4, global.dust_up_particle, 1);	
+			if (chance(75)) {
+				part_type_alpha1(global.blood_particle, random_range(0.5, 1));
+				part_particles_create(global.part_system_permanent, xprevious + irandom(16)-8, yprevious + irandom(6)-3, global.blood_particle, 1);
+			}//part_particles_create(global.part_system_below, x + choose(-1, 1) * i, y + 4, global.dust_up_particle, 1);	
 		}
 	}
 	

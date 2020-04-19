@@ -1,6 +1,9 @@
 /// @description
-if (alarm[1] > 4) {
-	image_index = 1;
+if (alarm[1] > 3) {
+	image_index = 2;
+	if (alarm[1] > 4)
+		image_index = 1;
+	
 } else {
 	image_index = 0;	
 }
