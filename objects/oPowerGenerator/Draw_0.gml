@@ -18,5 +18,5 @@ if (target != noone and instance_exists(target)) {
 
 draw_sprite_ext(sprite_index, image_index, x, y, image_xscale * scale, image_yscale * scale, 0, c_white, 1);
 
-draw_text(x,y,string(round(voltage)));
+//draw_text(x,y,string(round(voltage)));
 
