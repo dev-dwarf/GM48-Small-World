@@ -9,7 +9,8 @@ if (other.state == enemyStates.dead) {
 other.flash = 7;
 other.scale = 0.6;
 other.hp -= .5;
-other.state = enemyStates.stun;
+if (other.state != enemyStates.dead)
+	other.state = enemyStates.stun;
 other.stun_timer = 3;
 oCamera.screenshake += 0.003;
 

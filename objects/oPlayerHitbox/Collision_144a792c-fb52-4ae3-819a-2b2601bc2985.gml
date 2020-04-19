@@ -21,7 +21,8 @@ if (other.hp <= 0) {
 	other.death_speed = 8;
 	other.move_direction = image_angle;
 } else {
-	other.state = enemyStates.stun;
+	if (other.state != enemyStates.dead)
+		other.state = enemyStates.stun;
 	other.stun_timer = 2;	
 }
 

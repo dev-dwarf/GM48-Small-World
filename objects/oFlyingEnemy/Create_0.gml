@@ -1,7 +1,7 @@
 /// @description
 event_inherited();
 
-hp = 1;
+hp = 1.0;
 attack_range   = 0;
 update_pathing = 5;
 

@@ -3,8 +3,8 @@ if (update_pathing <= 0) {
 	update_pathing = irandom_range(14/move_speed_max, 20/move_speed_max);
 	target_inst = oPowerGenerator;
 
-	if (distance_to_object(instance_nearest(x,y,oTurret)) < distance_to_object(target_inst) and !ignores_turrets) {
-		target_inst = instance_nearest(x,y,oTurret);
+	if (distance_to_object(instance_nearest(x,y,pTurret)) < distance_to_object(target_inst) and !ignores_turrets) {
+		target_inst = instance_nearest(x,y,pTurret);
 	}
 
 	target_direction = point_direction(x,y,target_inst.x, target_inst.y);
