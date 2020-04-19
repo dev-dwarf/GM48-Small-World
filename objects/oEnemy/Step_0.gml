@@ -10,7 +10,20 @@ switch state {
 	move(move_speed, move_direction);
 	
 	if (ready_to_attack) {
-		image_speed = 0;
+		if (sprite_index != sEnemyA) {
+			image_xscale = sign(target_inst.x - x)
+			image_speed = 1;
+			image_index = 0;
+			sprite_index = sEnemyA;
+		}
+		
+		if (floor(image_index) == 7) {
+			target_inst.hp--;
+			oCamera.screenshake = 0.2;
+			sleep(50);
+			image_index = 8;
+		}
+		
 	} else {
 		image_speed = 1;	
 	}

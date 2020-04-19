@@ -1,6 +1,6 @@
 /// @description
 
-difficulty = 4.0 + 3.0 * top;
+difficulty = 3.0 * top;
 last_difficulty = difficulty;
 
 timer[oEnemy] = irandom(20);
