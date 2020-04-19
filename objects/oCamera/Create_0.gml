@@ -34,3 +34,8 @@ part_type_direction(global.dust_up_particle , 45, 125, 0, 3);
 part_type_speed(global.dust_up_particle, 2.5, 2.8, -0.17, 0.05);
 part_type_life(global.dust_up_particle, 20, 26);
 part_type_gravity(global.dust_up_particle, 0.1, 270);
+
+global.blood_particle = part_type_create();
+part_type_sprite(global.blood_particle, sBlood, false, false, true);
+part_type_size(global.blood_particle, 0.95, 1.05, 0, 0);
+part_type_life(global.blood_particle, 30, 36);

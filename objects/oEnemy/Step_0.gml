@@ -23,6 +23,7 @@ switch state {
 		}
 		
 	} else {
+		sprite_index = sEnemyR;
 		move(move_speed, move_direction);
 		image_speed = 1;	
 	}
