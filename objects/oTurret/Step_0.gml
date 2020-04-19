@@ -30,7 +30,7 @@ if active {
 			shoot_timer = shoot_speed * oPowerGenerator.max_voltage/max(oPowerGenerator.voltage, 3000);
 			scale = 1.2;
 			
-			play_sound(sndBasicTurret, 5, false, 1.0, 0.1);
+			play_sound(sndBasicTurret, 1, false, 1.0, 0.1);
 		
 			oCamera.screenshake += 0.02
 			// create bullet

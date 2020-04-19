@@ -27,7 +27,7 @@ if active {
 			scale = 1.2;
 		
 			oCamera.screenshake += 0.02
-			play_sound(sndGrenadeTurretFire, 5, false, 1.0, 0.1);
+			play_sound(sndGrenadeTurretFire, 1, false, 1.0, 0.1);
 			// create bullet
 			with instance_create_layer(x + lengthdir_x(sprite_width/3, image_angle), y + lengthdir_y(sprite_width/3, image_angle), layer, oTurretGrenadeBullet) {
 				speed = 5;

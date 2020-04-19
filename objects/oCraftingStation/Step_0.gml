@@ -33,6 +33,6 @@ if (active) {
 		alarm[0] = 40;
 		// play lottery sound effect
 		
-		oWrench.turret_obj = choose(oTurret, oTurret, oTurret, oTurret, oTurret, oLaserTurret, oDoubleTurret, oDoubleLaserTurret);
+		oWrench.turret_obj = choose(oTurret, oLaserTurret, oDoubleTurret, oDoubleLaserTurret);
 	}
 }

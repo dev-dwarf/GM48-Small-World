@@ -34,7 +34,7 @@ if active {
 
 			shoot_timer = shoot_speed ;
 			scale = 1.2;
-			play_sound(sndLaserTurret, 5, false, 1.0, 0.05);
+			play_sound(sndLaserTurret, 2, false, 1.0, 0.05);
 		
 			oCamera.screenshake += 0.02
 			// create bullet
