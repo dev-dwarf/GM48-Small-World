@@ -31,7 +31,7 @@ if active {
 			oCamera.screenshake += 0.02
 			// create bullet
 			with instance_create_layer(x + lengthdir_x(sprite_width/3, image_angle), y + lengthdir_y(sprite_width/3, image_angle), layer, oTurretBullet2) {
-				  oCamera.screenshake += 0.01;
+
 				speed = 9;
 				direction = other.image_angle+irandom_range(-5,5);
 				image_angle = direction;

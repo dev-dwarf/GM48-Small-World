@@ -3,7 +3,6 @@ if (hp != 0) {
 	if (target != noone and instance_exists(target)) {
 		if (target == oDoor) {
 			with target {
-				draw_line_color(x,y,other.x,other.y, c_blue, c_white);
 				var dist = point_distance(x,y,other.x, other.y-51); var dir = point_direction(x,y,other.x, other.y-51);
 				var _scale = 1.5 * max(0.2, other.voltage/other.max_voltage);
 				var vx = _scale * lengthdir_x(7, dir); var vy = _scale * lengthdir_y(7, dir); 
@@ -14,7 +13,6 @@ if (hp != 0) {
 			}
 		} else {
 			with target {
-				draw_line_color(x,y,other.x,other.y, c_blue, c_white);
 				var dist = point_distance(x,y,other.x, other.y-51); var dir = point_direction(x,y,other.x, other.y-51);
 				var _scale = 1.5 * max(0.2, other.voltage/other.max_voltage);
 				var vx = _scale * lengthdir_x(7, dir); var vy = _scale * lengthdir_y(7, dir); 

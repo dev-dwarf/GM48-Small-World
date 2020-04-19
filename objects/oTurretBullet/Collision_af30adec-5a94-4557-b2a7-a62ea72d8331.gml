@@ -7,7 +7,7 @@ instance_destroy();
 
 other.flash = 7;
 other.scale = 0.6;
-other.hp -= 3;
+other.hp -= 4;
 if (other.state != enemyStates.dead)
 	other.state = enemyStates.stun;
 other.stun_timer = 3;

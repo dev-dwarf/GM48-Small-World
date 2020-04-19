@@ -4,7 +4,7 @@ if (target != noone) {
 	voltage = approach(voltage, 0, voltage_base_decrease_per_step/capacitors);	
 }
 
-voltage = clamp(voltage, 0, hp * 1000);
+//voltage = clamp(voltage, 0, hp * 1000);
 
 if (hp <= 0) {
 	if (!played_game_over) {
@@ -28,7 +28,7 @@ if (voltage > (hp-1.8) * 1000) {
 	too_easy = 0;	
 }
 
-scale = lerp(scale, 1.0 + 0.025 * sin(current_time * 2 * pi * 0.01 * max(1.0, voltage)/max_voltage), 0.5);
+scale = lerp(scale, 1.0 + 0.015 * sin(current_time * 2 * pi * 0.01 * max(1.0, voltage)/max_voltage), 0.5);
 
 if (!instance_exists(target) or voltage == 0) {
 	target = noone;	
