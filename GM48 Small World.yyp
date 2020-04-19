@@ -271,6 +271,14 @@
             }
         },
         {
+            "Key": "5b8cba80-5432-4a1e-ae5c-b5e3f0f30610",
+            "Value": {
+                "id": "6a674850-5469-4c46-a09d-4b265c734fb9",
+                "resourcePath": "sprites\\sTurretLaser\\sTurretLaser.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "5c5c3ded-64d7-4ccb-bc4e-a8b4f2ac1c42",
             "Value": {
                 "id": "9f6ea3e9-e84d-43ff-89e4-a82c6be6537b",
@@ -908,6 +916,14 @@
                 "id": "7d570401-9581-4b2c-b820-1b0878e3aa5e",
                 "resourcePath": "objects\\oWrench\\oWrench.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "f1003989-8c26-4dbe-9886-fa763a327d9d",
+            "Value": {
+                "id": "3bb819a8-052a-49b3-ad7c-dafd2b431ff7",
+                "resourcePath": "sprites\\sTurretGun\\sTurretGun.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
