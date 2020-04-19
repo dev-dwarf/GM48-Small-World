@@ -1319,6 +1319,14 @@
             }
         },
         {
+            "Key": "f9329cf9-315c-4e1e-b433-61dd000c4f01",
+            "Value": {
+                "id": "e1ab1c0c-dadd-4282-8c43-e4132811d123",
+                "resourcePath": "sprites\\sTextGen\\sTextGen.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "f95b2257-c907-4ec7-808f-58409e35cc9a",
             "Value": {
                 "id": "af6263a1-813f-4197-894f-b6b74bf31767",

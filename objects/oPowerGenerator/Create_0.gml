@@ -20,7 +20,7 @@ lightning_index = 0;
 scale = 1.0;
 
 global.spawn_enemies = true;	
-fTextS = font_add_sprite_ext(sTextS,"ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890",false,0)
+fTextS = font_add_sprite_ext(sTextGen,"ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890",false,0)
 x = room_width/2;
 
 image_speed = 0;
