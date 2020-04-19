@@ -2,6 +2,7 @@
 
 // Inherit the parent event
 event_inherited();
+hp = 3;
 
 if (place_meeting(x,y, pSolid) or place_meeting(x,y, oDoor) or place_meeting(x,y,oPowerGenerator)) {
 	

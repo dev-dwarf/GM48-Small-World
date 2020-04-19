@@ -7,8 +7,6 @@ switch state {
 
 	ready_to_attack = enemy_target();	
 	
-	move(move_speed, move_direction);
-	
 	if (ready_to_attack) {
 		if (sprite_index != sEnemyA) {
 			image_xscale = sign(target_inst.x - x)
@@ -25,6 +23,7 @@ switch state {
 		}
 		
 	} else {
+		move(move_speed, move_direction);
 		image_speed = 1;	
 	}
 		

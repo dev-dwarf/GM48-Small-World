@@ -1,19 +1,20 @@
 /// @description
-if (other.state != enemyStates.dead) {
-	other.hp--;	
+if (other.state == enemyStates.dead) {
+	exit;
+}
 	instance_create_layer(x,y,layer,oBDeath);
 	instance_destroy();
-}
+
 
 other.flash = 7;
 other.scale = 0.6;
 other.hp -= .1;
 other.state = enemyStates.stun;
 other.stun_timer = 3;
-oCamera.screenshake += 0.02;
+oCamera.screenshake += 0.003;
 
 var dir = image_angle;
-var knockback = 8;
+var knockback = 4;
 
 if (other.hp <= 0) {
 	knockback += 4;

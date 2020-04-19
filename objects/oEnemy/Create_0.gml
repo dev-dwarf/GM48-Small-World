@@ -15,3 +15,5 @@ target_direction = 0;
 target_inst = noone;
 
 ignores_turrets = false;
+
+gibs_sprite
