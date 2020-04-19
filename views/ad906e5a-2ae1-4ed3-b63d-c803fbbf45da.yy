@@ -7,7 +7,9 @@
         "8a43ba2d-b1b6-405c-bb08-d76ee62b0a96",
         "60c4103e-06bd-4816-b211-696320ff4eed",
         "41dca659-d5ae-443c-aa8c-49bae5007885",
-        "bee7045e-05a2-46ed-a625-44c296670db0"
+        "bee7045e-05a2-46ed-a625-44c296670db0",
+        "ed1be4a0-66e0-43bd-bafe-50c15fc45026",
+        "db4bf36b-4a16-433b-a560-45b8ac73cee7"
     ],
     "filterType": "GMObject",
     "folderName": "virtual",

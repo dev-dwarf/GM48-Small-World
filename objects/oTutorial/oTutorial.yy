@@ -1,19 +1,10 @@
 {
-    "id": "41dca659-d5ae-443c-aa8c-49bae5007885",
+    "id": "db4bf36b-4a16-433b-a560-45b8ac73cee7",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "oFullsc",
+    "name": "oTutorial",
     "eventList": [
-        {
-            "id": "79ae41b8-057c-4c2d-a89b-c8c646ea7e85",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 2,
-            "eventtype": 7,
-            "m_owner": "41dca659-d5ae-443c-aa8c-49bae5007885"
-        }
+        
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

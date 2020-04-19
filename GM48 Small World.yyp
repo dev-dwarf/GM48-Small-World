@@ -215,6 +215,14 @@
             }
         },
         {
+            "Key": "38c8e8b5-f1ff-465b-ad36-b96a10d0d9b6",
+            "Value": {
+                "id": "b8999acd-4834-4317-bd18-8f68c08786e9",
+                "resourcePath": "rooms\\rTutorialRoom\\rTutorialRoom.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "3daee493-3995-4681-ae68-d3bfa98a5ed7",
             "Value": {
                 "id": "5290f830-025c-48fd-b00a-454e52a8ebf8",
@@ -1047,6 +1055,14 @@
             }
         },
         {
+            "Key": "db4bf36b-4a16-433b-a560-45b8ac73cee7",
+            "Value": {
+                "id": "253c0c0c-eabe-4534-90c1-0c2908bf25d7",
+                "resourcePath": "objects\\oTutorial\\oTutorial.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "dc97d038-d440-4fbd-9e6b-07ba7d41a0e4",
             "Value": {
                 "id": "0f6e93cd-dba9-4019-8e1d-80d666502544",
@@ -1108,6 +1124,14 @@
                 "id": "bcee6a63-4f5a-400a-84f9-165c2e953429",
                 "resourcePath": "sprites\\sTextS\\sTextS.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ed1be4a0-66e0-43bd-bafe-50c15fc45026",
+            "Value": {
+                "id": "c881931b-4187-4beb-8cb6-723299b9b6c6",
+                "resourcePath": "objects\\oMusicPlayerTutorial\\oMusicPlayerTutorial.yy",
+                "resourceType": "GMObject"
             }
         },
         {

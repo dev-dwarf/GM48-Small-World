@@ -1,5 +1,5 @@
 /// @description
-if (place_meeting(x,y,oPlayerHitbox)) {
+if (place_meeting(x,y,oPlayerHitbox) and oPlayerHitbox.parent == oPlayer) {
 	oPowerGenerator.target = object_index;	
 	oPowerGenerator.scale = 0.8;	
 	//scale = 0.8;

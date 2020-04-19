@@ -42,6 +42,7 @@ switch state {
 	break;
 	case enemyStates.stun		:		 
 	stun_timer--;
+	image_index = 0;
 	
 	if (stun_timer <= 0) state = enemyStates.target;
 	break;

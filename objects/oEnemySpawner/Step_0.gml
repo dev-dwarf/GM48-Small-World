@@ -10,8 +10,8 @@ if (top and oPowerGenerator.too_easy < 0.7) {
 if (floor(difficulty) == ceil(last_difficulty)) {
 	switch(floor(difficulty)) {
 		default:
-			cooldown[oFlyingEnemy] = 120 * 8/ difficulty;
-			cooldown[oEnemy] = 46 * 8/ difficulty;
+			cooldown[oFlyingEnemy] = 65 * 16/ difficulty;
+			cooldown[oEnemy] = 66 * 16/ difficulty;
 		break;
 		case 8:
 			cooldown[oFlyingEnemy] = 120;
@@ -43,7 +43,7 @@ if (global.spawn_enemies) {
 			if (timer[oFlyingEnemy] <= 0) {
 				timer[oFlyingEnemy] = (cooldown[oFlyingEnemy] + choose(-2, 4) - oPowerGenerator.too_easy * 4)/max(1.0, difficulty/15);
 				
-				if (chance(20)) {
+				if (chance(30)) {
 					difficulty += 0.06;
 					instance_create_layer(x,y+irandom_range(-8, 8),layer,oFlyingEnemy);
 				}
@@ -54,11 +54,11 @@ if (global.spawn_enemies) {
 			if (timer[oEnemy] <= 0) {
 				timer[oEnemy] = (cooldown[oEnemy] + choose(-2, 4) - oPowerGenerator.too_easy * 5)/max(1.0, difficulty/15);
 				
-				if (chance(75)) {
+				if (chance(100)) {
 					difficulty += 0.02;
 					instance_create_layer(x,y+irandom_range(-8, 8),layer,oEnemy);
 					
-					if (chance(20)) { //double up
+					if (chance(40)) { //double up
 						instance_create_layer(x,y+irandom_range(-8, 8),layer,oEnemy);
 					}
 				}
@@ -67,14 +67,14 @@ if (global.spawn_enemies) {
 			} else {
 				timer[oEnemy] -= 1;
 			}
-		case 30: too_easy = 1.0;	
-		case 15: too_easy = max(0.5, too_easy);
+		case 22: too_easy = 1.0;	
+		case 15: too_easy = max(0.4, too_easy);
 		case 8: case 7:
 		case 6:
 			if (timer[oFlyingEnemy] <= 0) {
 				timer[oFlyingEnemy] = cooldown[oFlyingEnemy] + choose(-2, 4) - oPowerGenerator.too_easy * 4;
 				
-				if (chance(20)) {
+				if (chance(25)) {
 					difficulty += 0.06;
 					instance_create_layer(x,y+irandom_range(-8, 8),layer,oFlyingEnemy);
 				}
@@ -85,7 +85,7 @@ if (global.spawn_enemies) {
 			if (timer[oEnemy] <= 0) {
 				timer[oEnemy] = cooldown[oEnemy] + choose(-2, 4) - oPowerGenerator.too_easy * 5;
 				
-				if (chance(75)) {
+				if (chance(85)) {
 					difficulty += 0.02;
 					instance_create_layer(x,y+irandom_range(-8, 8),layer,oEnemy);
 					

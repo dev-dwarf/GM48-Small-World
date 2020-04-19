@@ -4,7 +4,7 @@
 #region
 var pos = audio_sound_get_track_position(track_id[musRoboLow]);
 
-log(string(pos) + " : " + string(previous_robot_position)); 
+//log(string(pos) + " : " + string(previous_robot_position)); 
 if (pos < previous_robot_position) {
 	robot_loop_count++;
 	//log("loop++ = " + string(robot_loop_count));
