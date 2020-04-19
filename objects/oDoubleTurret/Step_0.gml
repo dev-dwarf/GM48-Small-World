@@ -85,3 +85,6 @@ if active {
 	scale = lerp(scale, 0.7, 0.2);
 	image_blend = c_gray;
 }
+
+if hp <= 3
+instance_create_layer(x,y,layer,oSmoke)
