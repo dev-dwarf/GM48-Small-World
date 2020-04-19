@@ -19,7 +19,7 @@ global.part_system_permanent = part_system_create()
 
 part_system_depth(global.part_system_above, -2000);
 part_system_depth(global.part_system_below, -900 );
-part_system_depth(global.part_system_permanent, -870);
+part_system_depth(global.part_system_permanent, -770);
 
 part_system_automatic_update(global.part_system_permanent, false);
 

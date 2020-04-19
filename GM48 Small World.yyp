@@ -111,6 +111,14 @@
             }
         },
         {
+            "Key": "23d9854d-a0e2-4e79-9091-a2f66bcad700",
+            "Value": {
+                "id": "a87e6607-e39b-48c9-b48c-f9117783ceb9",
+                "resourcePath": "sprites\\sBgWall\\sBgWall.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "2fbb62d1-0c0b-44b4-8a6f-14903213a10f",
             "Value": {
                 "id": "5d0a88ab-57c7-4049-a06f-0e500832742e",
