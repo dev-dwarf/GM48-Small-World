@@ -16,3 +16,4 @@ targeting_timer = 0;
 gun_scale = 1.0;
 
 hp = 6;
+max_hp = hp;

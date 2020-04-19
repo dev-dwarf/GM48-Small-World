@@ -17,7 +17,7 @@ offset = irandom_range(-4,4)
 //}
 
 if hp < max_hp {
-	var chnce = abs(abs(hp - max_hp) - 2 * active) * 15;
+	var chnce = min(0, (abs(hp - max_hp) - 2 * active)) * 15;
 	if (chance(chnce)) {
 		instance_create_layer(x+offset,y+offset,"Top",oSmoke)
 	}
