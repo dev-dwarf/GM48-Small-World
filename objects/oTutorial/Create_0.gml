@@ -1,9 +1,33 @@
 /// @description
-tutorial_events = 0;
+tutorial_event = 0;
 var gamepad = gamepad_is_connected(0)
 if gamepad {
-	tutorial_event_text[0] = "Use left joystick to move, and right trigger or X to attack";
-	tutorial_event_text[1] = 
+	tutorial_event_text[0, 0] = "USE LEFT JOYSTICK TO MOVE,";
+	tutorial_event_text[0, 1] = "AND RIGHT TRIGGER OR X TO ATTACK";
+	prompt_text = "ATTACK TO CONTINUE";
 } else {
-	tutorial_event_text[0] = "Use wasd to move, and left_mouse to attack";
+	tutorial_event_text[0, 0] = "USE WASD TO MOVE,";
+	tutorial_event_text[0, 1] = "AND LEFT_MOUSE TO ATTACK";
+	prompt_text = "ATTACK TO CONTINUE";
+
 }
+	tutorial_event_text[1, 0] = "ATTACK A TURRET TO GIVE IT POWER"
+	tutorial_event_text[1, 1] = ""
+	
+	tutorial_event_text[2, 0] = "ATTACK THE GENERATOR TO DISCONNECT TURRETS,";
+	tutorial_event_text[2, 1] = "AND AGAIN TO STOP ENEMIES SPAWNING";
+	
+	tutorial_event_text[3, 0] = "DEFEAT ENEMIES TO GAIN POWER."
+	tutorial_event_text[3, 1] = "BREAK CORPSES FOR A BONUS"
+	
+	tutorial_event_text[4, 0] = "SPEND POWER TO GET TURRETS FROM THE,"
+	tutorial_event_text[4, 1] = "RIGHT AND POWERUPS FROM THE LEFT"
+
+	
+	tutorial_event_text[5, 0] = "READY TO PLAY?";
+	tutorial_event_text[5, 1] = prompt_text;
+	
+fTextS = font_add_sprite_ext(sTextS,"ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890",false,0)
+
+add_prompt_alarm = 80;
+scale = 0.0;

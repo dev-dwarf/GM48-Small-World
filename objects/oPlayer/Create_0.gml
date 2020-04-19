@@ -28,7 +28,7 @@ enum player_states {
 }
 
 footstep_played = false;
-
+body_angle = 0;
 
 
 var freebie = instance_create_layer(0, 0, layer, choose(oTurret, oLaserTurret, oDoubleTurret, oDoubleLaserTurret));

@@ -112,7 +112,7 @@ if (movement_vector[0] != 0) {
 	oWrench.image_yscale = sign(movement_vector[0]) * oWrench.lever_state;
 }
 
-image_angle = movement_vector[0] * -3;
+body_angle = movement_vector[0] * -3;
 
 #endregion
 
