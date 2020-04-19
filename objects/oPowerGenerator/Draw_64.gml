@@ -5,3 +5,24 @@ if (audio_is_playing(sndGameOver)) {
 	
 	draw_set_alpha(1);
 }
+
+draw_set_font(fTextB)
+
+var w_half = global.ideal_width/2
+var h_half = global.ideal_height/2
+
+
+
+if paused = true 
+{
+	
+	charcount += 0.1
+
+	
+	textpart = string_copy(global.points,1, charcount)
+	
+	
+	draw_text(w_half-(stringleng*16),h_half,textpart)
+	
+
+}

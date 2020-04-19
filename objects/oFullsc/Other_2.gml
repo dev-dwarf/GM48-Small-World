@@ -1,5 +1,5 @@
 randomize()
-
+global.hscore = 0
 ///Properties
 ideal_width=0; //Doesn't matter because we are going to calculate this.
 ideal_height= 540;
