@@ -16,4 +16,4 @@ target_inst = noone;
 
 ignores_turrets = false;
 
-gibs_sprite
+gibs_sprite = sEnemyGibs;

@@ -16,3 +16,5 @@ target_inst = noone;
 ignores_turrets = true;
 
 knockback = 4;
+
+gibs_sprite = sFlyerGibs;

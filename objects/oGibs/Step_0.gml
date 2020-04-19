@@ -15,10 +15,12 @@ if (z < 0) {
     }
 }
 
-if (zspeed == 0) image_alpha-=0.05;
+if (zspeed == 0) image_alpha-=0.03;
 
 if (image_alpha == 0) instance_destroy();
 
-speed = approach(speed, 0, 0.25);
+move_speed = approach(move_speed, 0, 0.1);
+
+move(move_speed, move_direction);
 
 image_angle += zspeed;

@@ -7,8 +7,6 @@ if ds_list_find_index(hitobj, other) != -1
 other.flash = 7;
 other.scale = 0.6;
 other.hp -= damage;
-other.state = enemyStates.stun;
-other.stun_timer = 2;
 oCamera.screenshake = 0.1;
 
 ds_list_add(hitobj, other);
@@ -22,6 +20,9 @@ if (other.hp <= 0) {
 	other.max_knockup = 16;
 	other.death_speed = 8;
 	other.move_direction = image_angle;
+} else {
+	other.state = enemyStates.stun;
+	other.stun_timer = 2;	
 }
 
 if (other.object_index == oFlyingEnemy) knockback += 20;
