@@ -1,5 +1,5 @@
 /// @description
-difficulty += 0.004;
+difficulty += 0.0034;
 
 if (top and oPowerGenerator.too_easy < 0.7) {
 	exit;
@@ -68,10 +68,10 @@ if (global.spawn_enemies) {
 				timer[oEnemy] -= 1;
 			}
 			
-			if (timer[oWisp] <= 0) {
+			if (timer[oWisp] <= 0 and !top) {
 				timer[oWisp] = (cooldown[oWisp] + choose(-2, 4) - oPowerGenerator.too_easy * 5)/max(1.0, difficulty/15);
 				
-				if (chance(70)) {
+				if (chance(30)) {
 					difficulty += 0.03;
 					instance_create_layer(x,y+irandom_range(-8, 8),layer,oWisp);
 
@@ -82,10 +82,10 @@ if (global.spawn_enemies) {
 				timer[oWisp] -= 1;
 			}
 			
-			if (timer[oBigEnemy] <= 0) {
+			if (timer[oBigEnemy] <= 0 and !top) {
 				timer[oBigEnemy] = (cooldown[oWisp] + choose(-2, 4) - oPowerGenerator.too_easy * 5)/max(1.0, difficulty/15);
 				
-				if (chance(70)) {
+				if (chance(100)) {
 					difficulty += 0.03;
 					instance_create_layer(x,y+irandom_range(-8, 8),layer,oBigEnemy);
 
@@ -99,10 +99,10 @@ if (global.spawn_enemies) {
 		case 16: oPowerGenerator.too_easy = 1.0;	
 		case 11: case 12: case 13: case 14: case 15:
 		case 10: case 9: oPowerGenerator.too_easy = max(0.2, oPowerGenerator.too_easy);
-			if (timer[oWisp] <= 0) {
+			if (timer[oWisp] <= 0 and !instance_exists(oWisp)) {
 				timer[oWisp] = cooldown[oWisp] + choose(-2, 4) - oPowerGenerator.too_easy * 5;
 				
-				if (chance(40)) {
+				if (chance(10)) {
 					difficulty += 0.03;
 					instance_create_layer(x,y+irandom_range(-8, 8),layer,oWisp);
 

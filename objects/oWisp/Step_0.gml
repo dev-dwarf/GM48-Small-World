@@ -41,7 +41,7 @@ switch state {
 	
 	shootdel ++;
 	
-	if shootdel >= 60
+	if shootdel >= 180
 		{
 			var target_inst = oPowerGenerator;
 			if (instance_exists(pTurret)) {
