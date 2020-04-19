@@ -6,7 +6,7 @@ move_speed_max = 1.9; //base speed
 move_acceleration = 0.5;
 move_deceleration = 0.9;
 
-true_max_speed = 3.2;
+true_max_speed = 2.3;
 max_heal_amount = 0.25;
 
 heal_amount = 0.05;

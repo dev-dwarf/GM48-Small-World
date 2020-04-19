@@ -5,6 +5,7 @@
 ///@param optional-pitch
 ///@param optional-variance
 
+
 var index		= argument[0];
 var priority	= argument[1];
 var loop		= argument[2];
@@ -20,5 +21,9 @@ if (argument_count > 3) {
 	audio_sound_pitch(sound_id, pitch + variance);
 }
 
+
+if (audio_is_playing(sndGameOver) and argument[0] != sndGameOver) {
+	audio_sound_gain(sound_id, 0, 0);
+}
 // return
 return sound_id;

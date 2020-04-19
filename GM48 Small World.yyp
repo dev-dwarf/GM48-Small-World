@@ -119,6 +119,14 @@
             }
         },
         {
+            "Key": "18cff86c-359d-4ee2-a339-b649e9cec18f",
+            "Value": {
+                "id": "9de0767a-c005-4069-bae4-c6e3ed6f16cf",
+                "resourcePath": "sprites\\sLightning\\sLightning.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1c7afd09-24d4-4acc-9989-abbff82e258d",
             "Value": {
                 "id": "011829a1-46d1-4d26-9d8e-5c12a07b36cb",
@@ -263,6 +271,14 @@
             }
         },
         {
+            "Key": "4a922c40-f09c-4e03-b84d-43a4d62fbc71",
+            "Value": {
+                "id": "c74d2e33-f82e-4320-b304-df29160a2c34",
+                "resourcePath": "sprites\\sTurretBase\\sTurretBase.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4d541749-81b6-49d2-9d6f-dcf8fc8dc817",
             "Value": {
                 "id": "887486ad-10d0-4f35-b03e-21830df57e04",
@@ -375,6 +391,14 @@
             }
         },
         {
+            "Key": "704010d4-3167-4154-9e5c-2a6b5450410d",
+            "Value": {
+                "id": "8ded181c-8439-4ca6-a97a-80c84d12b2f0",
+                "resourcePath": "objects\\oMiniMe\\oMiniMe.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "70a78158-6f9f-4f60-9fce-55e5359f6daa",
             "Value": {
                 "id": "40dee892-8c32-4133-b1c5-5343682529c4",
@@ -419,6 +443,14 @@
             "Value": {
                 "id": "96005bb9-70aa-4b70-8992-769cadfced35",
                 "resourcePath": "objects\\oPlayerHitbox\\oPlayerHitbox.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "7a1d9043-7844-45c9-853f-39127b9bcf6f",
+            "Value": {
+                "id": "1798560b-9dac-4316-be80-4d0e7c6c64fe",
+                "resourcePath": "objects\\oWrenchLittle\\oWrenchLittle.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -1020,6 +1052,14 @@
                 "id": "ec897f8d-f22f-4dd7-a2db-796cf7ef2cd3",
                 "resourcePath": "sounds\\sndLaserTurret\\sndLaserTurret.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "f95b2257-c907-4ec7-808f-58409e35cc9a",
+            "Value": {
+                "id": "af6263a1-813f-4197-894f-b6b74bf31767",
+                "resourcePath": "objects\\oPowerupStation\\oPowerupStation.yy",
+                "resourceType": "GMObject"
             }
         },
         {

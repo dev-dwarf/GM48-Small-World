@@ -109,15 +109,17 @@ if (input_action[0] and oWrench.alarm[2] <= 0) {
 }
 
 if (movement_vector[0] != 0) {
-	//oWrench.image_yscale = sign(movement_vector[0]) * oWrench.lever_state;
+	oWrench.image_yscale = sign(movement_vector[0]) * oWrench.lever_state;
 }
+
+image_angle = movement_vector[0] * -3;
 
 #endregion
 
 if move_speed != 0
 {
 	
-	sprite_index = sPlayerR
+	sprite_index = sPlayerR		
 	
 	if (floor(image_index) == 3 or floor(image_index) = 7) { //play footstep sounds on frames where foot hits ground
 		if (!footstep_played) {
@@ -125,6 +127,14 @@ if move_speed != 0
 			audio_sound_gain(sndPlayerFootstep, 0.04, 0);
 			sleep(10);
 			footstep_played = true;	
+			 var dust = instance_create_layer(x,y+8,"instances",oParticleGround)
+			 
+			dust.image_blend = make_color_rgb(200, 212, 93);
+			if (distance_to_object(instance_nearest(x,y, oEnemy)) < 20) {
+				dust.image_blend = make_color_rgb(156, 42, 112);
+			}
+			//scale = surface_get_width(application_surface)/DEFAULT_WIDTH;
+			//dust.image_blend = draw_getpixel(x * scale, (y+8) * scale);
 		}
 	} else {
 		footstep_played = false;	

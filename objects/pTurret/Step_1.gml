@@ -4,6 +4,20 @@ if (hp < 0) {
 	instance_destroy();	
 }
 
+if (instance_number(pTurret) > 4) {
+	var lowest_health = hp;
+	var lowest_instance = id;
+	
+	with (pTurret) {
+		if hp < lowest_health {
+			lowest_health = hp;
+			lowest_instance = id;
+		}
+	}
+	
+	instance_destroy(lowest_instance);
+}
+
 offset = irandom_range(-4,4)
 
 //if hp <= 3 {

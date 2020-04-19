@@ -1,9 +1,5 @@
 /// @description
 
-if (instance_number(pTurret) > 4) {
-	instance_destroy();
-}
-
 // Inherit the parent event
 if (place_meeting(x,y,oPlayerHitbox)) {
 	oPowerGenerator.target = pTurret;	

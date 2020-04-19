@@ -15,7 +15,7 @@ if (oPowerGenerator.target == pTurret) {
 
 // targeting code
 if active {
-	oPowerGenerator.voltage_base_decrease_per_step = 15 * instance_number(pTurret);
+	oPowerGenerator.voltage_base_decrease_per_step = 14 * instance_number(pTurret);
 	if (shoot_target != noone and instance_exists(shoot_target) and shoot_target.state != enemyStates.dead) {
 		var target_angle = point_direction(x,y,shoot_target.x, shoot_target.y);
 	

@@ -33,10 +33,16 @@ with other { move(knockback, dir) }
 if (!moved_camera) {
 	oCamera.x += lengthdir_x(3, image_angle);
 	oCamera.y += lengthdir_y(3, image_angle);
-	oWrench.scale = 1.3;
+	if (parent == oMiniMe) {
+		oWrenchLittle.scale = 1.3;
+	} else {
+		oWrench.scale = 1.3;
+	}
 	sleep(50);
 	moved_camera = true;
 }
 
-audio_sound_gain(hit_sound, 1, 0);
-audio_sound_gain(miss_sound, 0, 0);
+if (!audio_is_playing(sndGameOver)) {
+	audio_sound_gain(hit_sound, 1, 0);
+	audio_sound_gain(miss_sound, 0, 0);
+}
