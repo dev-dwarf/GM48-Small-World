@@ -198,7 +198,7 @@ if (instance_exists(oBigEnemy)) {
 
 
 //UPDATE AUDIO GAIN
-var quite = 1;
+var quite = 3;
 if (oPowerGenerator.hp <= 0) quite = 2;
 for (var i = musPrimalDrums; i <= musBellsRight; i++) {
 	audio_sound_gain(track_id[i], gain[i]/quite, 0);	

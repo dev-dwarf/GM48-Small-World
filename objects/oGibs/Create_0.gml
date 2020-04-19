@@ -11,3 +11,4 @@ image_alpha = 6
 move_speed = irandom(4) + 8;
 move_direction = irandom_range(55, 115);
 
+gib = 0
