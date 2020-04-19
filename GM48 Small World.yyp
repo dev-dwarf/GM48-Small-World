@@ -63,6 +63,14 @@
             }
         },
         {
+            "Key": "0c39b68d-75f7-4eae-9afe-48b83d7abf97",
+            "Value": {
+                "id": "f3f41a5d-b475-4ccb-9e78-fa6cc440fade",
+                "resourcePath": "objects\\oSplat\\oSplat.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "0ebac6af-360c-4558-ada3-5422c2c59859",
             "Value": {
                 "id": "061e9a32-b146-4d4b-89e4-5bcf5ec7a632",
@@ -335,6 +343,14 @@
             }
         },
         {
+            "Key": "4ae8c4f9-d7bf-494b-ae64-f8eba5863bb6",
+            "Value": {
+                "id": "c4ead790-37e0-4189-8ddc-94946945c923",
+                "resourcePath": "sprites\\sBolt\\sBolt.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4d541749-81b6-49d2-9d6f-dcf8fc8dc817",
             "Value": {
                 "id": "887486ad-10d0-4f35-b03e-21830df57e04",
@@ -364,6 +380,14 @@
                 "id": "dc04296b-5eff-48f4-a107-f68fc9fab3a6",
                 "resourcePath": "views\\548301ab-72a8-4ddb-a7aa-3752dc891cea.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "579c60b6-a813-4a85-90d2-c2a59cd05527",
+            "Value": {
+                "id": "1ba78f56-e2f7-46fb-9976-b31157991c33",
+                "resourcePath": "sprites\\sSmoke1\\sSmoke1.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -551,6 +575,14 @@
             }
         },
         {
+            "Key": "7b66af9d-e277-4d34-8ffe-18920ecf5d4a",
+            "Value": {
+                "id": "9657537d-f7f3-4c64-b5d8-cd79c89a02ae",
+                "resourcePath": "objects\\oWisp\\oWisp.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "7cb0a65e-1422-4cb2-8116-21237e9b3d92",
             "Value": {
                 "id": "504ca58e-81b7-4fa3-903b-e52dfb993352",
@@ -588,6 +620,14 @@
                 "id": "927ff9c3-6c0a-4fe3-80a9-69b3a44bb955",
                 "resourcePath": "options\\ios\\options_ios.yy",
                 "resourceType": "GMiOSOptions"
+            }
+        },
+        {
+            "Key": "87dc7b50-234f-46e0-8eaf-015b5541919a",
+            "Value": {
+                "id": "e7cac0ec-bfc2-406c-9640-9ab599b51e61",
+                "resourcePath": "sprites\\sSplat\\sSplat.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -655,6 +695,14 @@
             }
         },
         {
+            "Key": "977a8307-7598-4912-a1e7-90de9127a79e",
+            "Value": {
+                "id": "833eb8e2-2e2b-4cc3-9980-7f3916d52c6f",
+                "resourcePath": "objects\\oSmoke1\\oSmoke1.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "977d4afc-a853-4921-a021-07554c3a4f6e",
             "Value": {
                 "id": "07f664ae-6462-4515-8ba5-731352c8d44c",
@@ -692,6 +740,14 @@
                 "id": "e1847fd8-02d4-4cc8-a88e-ae26f95e8c78",
                 "resourcePath": "sprites\\sFlyerGibs\\sFlyerGibs.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "9d015dba-74fd-4fb3-ab8e-2353366c34c9",
+            "Value": {
+                "id": "60cf76b5-5e54-4250-8313-6c60b5d482c2",
+                "resourcePath": "objects\\oBolt\\oBolt.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -967,6 +1023,14 @@
             }
         },
         {
+            "Key": "cd60f9eb-eca1-4fb8-bde7-7c42447906bd",
+            "Value": {
+                "id": "2c20028b-8217-4134-a49b-072cbffbcf4e",
+                "resourcePath": "sprites\\sWispD\\sWispD.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "cd77c284-72bc-43fa-b95b-597f969109ec",
             "Value": {
                 "id": "5448ca91-7d6d-4882-bb38-ebee59625728",
@@ -996,6 +1060,14 @@
                 "id": "0e6a4613-8328-4d4b-b5fd-afecaf689815",
                 "resourcePath": "sounds\\sndWarning\\sndWarning.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "d123be22-44bb-4d0b-88d5-c861389dd374",
+            "Value": {
+                "id": "043113d6-266b-4bdd-a289-35ed83e799a3",
+                "resourcePath": "sprites\\sWisp\\sWisp.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
