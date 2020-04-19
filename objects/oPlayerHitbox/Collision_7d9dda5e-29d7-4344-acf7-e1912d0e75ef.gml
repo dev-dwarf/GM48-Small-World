@@ -21,7 +21,7 @@ if (!moved_camera) {
 
 if object_is_ancestor(other.object_index, pTurret) {
 	with(other) {
-		hp = approach(hp, max_hp, 0.05);	
+		hp = approach(hp, max_hp, oPlayer.heal_amount);	
 	}
 }
 

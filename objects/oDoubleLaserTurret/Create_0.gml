@@ -14,3 +14,4 @@ targeting_delay = 28;
 targeting_timer = 0;
 
 hp = 8;
+max_hp = hp;

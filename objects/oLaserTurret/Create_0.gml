@@ -15,4 +15,5 @@ targeting_timer = 0;
 
 //laser = noone;
 hp = 4;
+max_hp = hp;
 length = 0
