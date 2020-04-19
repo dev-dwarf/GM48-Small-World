@@ -11,7 +11,10 @@ if (hp <= 0) {
 		audio_stop_all();
 		play_sound(sndGameOver, 1000, false, 1.0, 0);
 		played_game_over = true;
+		image_speed = 1;
 	}
+	
+	if (floor(image_index) == image_number-1) image_speed = 0;
 		
 	flash = (hp * 5) mod 2;
 	hp -= 0.1;	
@@ -44,7 +47,7 @@ if (place_meeting(x,y,oPlayerHitbox) and voltage > 0) {
 offset = random_range(-6,6)
 
 if hp <= 5
-instance_create_layer(x+offset,y+offset,"Top",oSmoke)
+	instance_create_layer(x+offset,y+offset-24,"Top",oSmoke)
 
 
 if (!audio_is_playing(sndGameOver)) {
