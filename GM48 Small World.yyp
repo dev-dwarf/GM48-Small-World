@@ -1143,6 +1143,14 @@
             }
         },
         {
+            "Key": "de98a5f4-a314-49e8-b09b-22abb9a41788",
+            "Value": {
+                "id": "762d36a3-571f-455b-8af3-e7b00712aa20",
+                "resourcePath": "scripts\\wisp_target\\wisp_target.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "e1139621-661a-47f4-84c5-aaca83e416d2",
             "Value": {
                 "id": "f6d4a171-7a94-4dfc-90be-189725e09241",
@@ -1314,6 +1322,7 @@
         "d2454090-a896-4454-a31d-4cb98c621f56",
         "f467d119-9065-4d66-9fcb-5dfd3e68c4ba",
         "d35f80b0-f135-4880-bf42-ae9a70069f5d",
+        "de98a5f4-a314-49e8-b09b-22abb9a41788",
         "5b8c7890-d4d3-4403-820d-36273e06fd77"
     ],
     "tutorial": ""

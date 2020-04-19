@@ -137,6 +137,8 @@ if move_speed != 0
 			if (move_speed_max > base_move_speed) {
 				repeat(2)
 					instance_create_layer(x+irandom_range(-7, 7),y+8,"InstancesB",oParticleSpeed);
+					
+				oParticleSpeed.image_angle = move_direction + irandom_range(-7, 7)
 			}
 			//scale = surface_get_width(application_surface)/DEFAULT_WIDTH;
 			//dust.image_blend = draw_getpixel(x * scale, (y+8) * scale);

@@ -37,16 +37,21 @@ switch state {
 	
 	var ready_to_attack = false;
 
-	ready_to_attack = enemy_target();	
+	ready_to_attack = wisp_target();	
 	
 	shootdel ++;
 	
 	if shootdel >= 60
 		{
+			var target_inst = oPowerGenerator;
+			if (instance_exists(pTurret)) {
+				target_inst = instance_nearest(x,y,pTurret);	
+			}
+			
 			shootdel = 0
 			with instance_create_layer(x,y,"Bullets", oBolt)
 			{
-				dir = point_direction(x,y,oPowerGenerator.x,oPowerGenerator.y)
+				dir = point_direction(x,y,target_inst.x,target_inst.y)
 			}
 		}
 	
@@ -54,8 +59,9 @@ switch state {
 	
 		
 	} else {
-		;
-		move(move_speed, move_direction);
+		
+		if point_distance(x,y,target_point_x,target_point_y) > 5
+			move(move_speed, move_direction);
 		image_speed = 1;	
 	}
 		

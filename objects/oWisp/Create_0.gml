@@ -5,9 +5,9 @@ hp = 4;
 lasthp = hp;
 
 attack_range   = 4;
-update_pathing = 10;
+update_pathing = 0;
 
-move_speed_max = 0.4;
+move_speed_max = 0.8;
 
 move_direction = 0
 move_speed = 0;

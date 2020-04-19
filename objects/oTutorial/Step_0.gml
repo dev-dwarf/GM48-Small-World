@@ -30,7 +30,7 @@ switch (tutorial_event) {
 					x = irandom_range(1 * DEFAULT_WIDTH/4, 3 * DEFAULT_WIDTH/4);
 					y = DEFAULT_HEIGHT/2 + irandom_range(-10, 50);
 	
-				} until place_free(x, y);
+				} until !place_meeting(x, y, oPlayer);
 				
 				active = false;
 				oPowerGenerator.target = noone;
