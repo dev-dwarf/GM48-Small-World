@@ -23,7 +23,7 @@ if (!moved_camera) {
 }
 
 
-if object_is_ancestor(other.object_index, pTurret) {
+if object_is_ancestor(other.object_index, pTurret) and other.hp < other.max_hp{
 	var heal_amount = parent.heal_amount; 
 	
 	with(other) {

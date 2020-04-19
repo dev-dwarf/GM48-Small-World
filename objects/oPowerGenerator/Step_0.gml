@@ -73,3 +73,5 @@ if (hp < 0 and !played_game_over) {
 	
 }
 
+global.points += 1
+

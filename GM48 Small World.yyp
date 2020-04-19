@@ -879,6 +879,14 @@
             }
         },
         {
+            "Key": "ad9d9cb7-ddf0-45e0-854f-d59947f852e6",
+            "Value": {
+                "id": "b1eb34d4-4d3d-4c29-8d39-8c5070064ff4",
+                "resourcePath": "sprites\\sRandomPower\\sRandomPower.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "b11076b5-c11e-47ba-b107-574230315aac",
             "Value": {
                 "id": "d002a32f-506f-4bb7-9297-30b957a0afa1",
