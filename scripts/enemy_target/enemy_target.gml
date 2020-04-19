@@ -34,15 +34,15 @@ if (update_pathing <= 0) {
 
 if (x < 0) {
 	target_direction = 0;
-	update_pathing = 120;	
+	update_pathing = 140;	
 }
 if (x > room_width) {
 	target_direction = 180;
-	update_pathing = 120;
+	update_pathing = 140;
 }
 
-if (y < 0) {
-	target_direction = 270;
+if (y > room_height) {
+	target_direction = 90;
 	update_pathing = 120;
 }
 
