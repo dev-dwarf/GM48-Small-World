@@ -18,3 +18,4 @@ possible_drops[3, 0] = oDoubleLaserTurret;
 scale = 1.0;
 
 lever_index = 0;
+drop_index = 0;
