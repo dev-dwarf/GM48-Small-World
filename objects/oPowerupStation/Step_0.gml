@@ -31,6 +31,8 @@ if (active) {
 		oPowerGenerator.target = noone;	
 		scale = 0.8;
 		
+		lever_index = 1;
+		
 		times_rolled++;
 		
 		image_speed = 0;
@@ -61,3 +63,9 @@ if (active) {
 		oPowerGenerator.target = noone;	
 	}
 }
+var price = 2000 + times_rolled * times_rolled * 400;
+	if (oPowerGenerator.voltage > price and alarm[0] <= 0) {
+		image_blend = c_white;
+	} else {
+		image_blend = c_gray;	
+	}
