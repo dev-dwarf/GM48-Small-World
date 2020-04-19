@@ -1,3 +1,5 @@
+if (!instance_exists(parent)) instance_destroy(id, false);
+
 dir = parent.image_angle
 
 image_angle = dir

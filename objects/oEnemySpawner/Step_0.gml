@@ -64,7 +64,9 @@ if (global.spawn_enemies) {
 			} else {
 				timer[oEnemy] -= 1;
 			}
-		case 8:
+		case 30: too_easy = 1.0;	
+		case 15: too_easy = max(0.5, too_easy);
+		case 8: case 7:
 		case 6:
 			if (timer[oFlyingEnemy] <= 0) {
 				timer[oFlyingEnemy] = cooldown[oFlyingEnemy] + choose(-2, 4) - oPowerGenerator.too_easy * 4;
