@@ -31,7 +31,7 @@ footstep_played = false;
 
 var xx, yy;
 
-	mask_index = sTurretLaser;
+	mask_index = sTurretHitmask;
 do {
 	xx = irandom_range(1 * DEFAULT_WIDTH/4, 3 * DEFAULT_WIDTH/4);
 	yy = DEFAULT_HEIGHT/2 + irandom_range(-10, 50);

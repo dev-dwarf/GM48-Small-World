@@ -1,4 +1,4 @@
-/// @description
+// @description
 if (hp < 0) {
 	
 	instance_destroy();	
@@ -17,7 +17,7 @@ offset = irandom_range(-4,4)
 //}
 
 if hp < max_hp {
-	var chnce = min(0, (abs(hp - max_hp) - 2 * active)) * 15;
+	var chnce = max(0, (abs(hp - max_hp) - active * 3)) * 30;
 	if (chance(chnce)) {
 		instance_create_layer(x+offset,y+offset,"Top",oSmoke)
 	}

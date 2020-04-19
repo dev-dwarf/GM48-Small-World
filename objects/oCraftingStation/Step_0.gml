@@ -34,5 +34,10 @@ if (active) {
 		// play lottery sound effect
 		
 		oWrench.turret_obj = choose(oTurret, oLaserTurret, oDoubleTurret, oDoubleLaserTurret);
+	} 
+	
+	if !(oPowerGenerator.voltage > price and alarm[0] <= 0) {
+		active = false;
+		oPowerGenerator.target = noone;	
 	}
 }
