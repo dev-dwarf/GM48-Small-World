@@ -1,6 +1,16 @@
 /// @description
 event_inherited();
 
+if lasthp != hp {
+	repeat (2) {
+		part_type_alpha1(global.blood_particle, random_range(0.5, 1));
+		part_particles_create(global.part_system_permanent, xprevious + irandom(16)-8, yprevious + irandom(6)-3, global.blood_particle, 1);
+		
+		
+	}
+	lasthp = hp;
+}
+
 switch state {
 	case enemyStates.target		:		
 	var ready_to_attack = false;

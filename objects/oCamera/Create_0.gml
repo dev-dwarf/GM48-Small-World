@@ -15,9 +15,13 @@ global.fx_layer = layer_create(-3000);
 
 global.part_system_above = part_system_create()
 global.part_system_below = part_system_create()
+global.part_system_permanent = part_system_create()
 
 part_system_depth(global.part_system_above, -2000);
 part_system_depth(global.part_system_below, -900 );
+part_system_depth(global.part_system_permanent, -870);
+
+part_system_automatic_update(global.part_system_permanent, false);
 
 global.fullscreen = true;
 
@@ -37,5 +41,8 @@ part_type_gravity(global.dust_up_particle, 0.1, 270);
 
 global.blood_particle = part_type_create();
 part_type_sprite(global.blood_particle, sBlood, false, false, true);
-part_type_size(global.blood_particle, 0.95, 1.05, 0, 0);
-part_type_life(global.blood_particle, 30, 36);
+part_type_orientation(global.blood_particle, 0, 359, 0, 0, 0);
+part_type_size(global.blood_particle, 0.95, 1.15, 0, 0);
+part_type_color1(global.blood_particle, c_gray);
+//part_type_life(global.blood_particle, 500, 520);
+part_type_alpha1(global.blood_particle, 1);

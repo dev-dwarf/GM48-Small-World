@@ -23,7 +23,10 @@ if (gamepad) {
 input_direction = point_direction( 0, 0, input_vector[0], input_vector[1]);
 input_magnitude = min(1.0, point_distance( 0, 0, input_vector[0], input_vector[1])); //cap this at 1 so that diagonals are not faster
 
-if (input_restart) room_restart();
+if (input_restart) {
+	room_restart();
+	part_system_clear(global.part_system_permanent);
+}
 
 #endregion
 

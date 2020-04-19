@@ -34,4 +34,8 @@ offset = random_range(-6,6)
 if hp <= 5
 instance_create_layer(x+offset,y+offset,"Top",oSmoke)
 
-if (hp < 0) game_restart();
+if (hp < 0) {
+	room_restart();
+	part_system_clear(global.part_system_permanent);
+}
+
