@@ -4,3 +4,7 @@
 event_inherited();
 
 times_rolled = 0;
+
+
+lever_index = 0;
+drop_index =0.0;

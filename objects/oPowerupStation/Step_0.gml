@@ -31,6 +31,8 @@ if (active) {
 		oPowerGenerator.target = noone;	
 		scale = 0.8;
 		
+		lever_index = 1;
+		
 		times_rolled++;
 		
 		image_speed = 0;
@@ -42,15 +44,18 @@ if (active) {
 		switch effect {
 			case 0:
 				oPlayer.move_speed_max = approach( oPlayer.move_speed_max, oPlayer.true_max_speed, 0.1);
+				drop_index = 0;
 				break;
 			case 1:
 				oPlayer.heal_amount = approach( oPlayer.heal_amount, oPlayer.max_heal_amount, 0.05);
+				drop_index = 1;
 				break;
 			case 2:
 				if (!instance_exists(oMiniMe)) {
 					// TODO: create particles
 					instance_create_layer(x, y + 60, layer, oMiniMe);
 				}
+				drop_index = 2;
 				break;
 		}
 		// TODO: play sounds!
@@ -61,3 +66,11 @@ if (active) {
 		oPowerGenerator.target = noone;	
 	}
 }
+var price = 2000 + times_rolled * times_rolled * 400;
+	if (oPowerGenerator.voltage > price and alarm[0] <= 0) {
+		image_blend = c_white;
+		drop_index+=0.1
+		drop_index = wrap(drop_index, 0, 2.9);
+	} else {
+		image_blend = c_gray;	
+	}
