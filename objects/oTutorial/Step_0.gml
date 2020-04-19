@@ -6,6 +6,7 @@ add_prompt_alarm--;
 switch (tutorial_event) {
 	case 0:
 		instance_destroy(pTurret, false);
+		instance_destroy(pEnemy)
 		global.spawn_enemies = false;
 		
 		if ((gamepad_button_check_pressed(0, gp_face3) or gamepad_button_check_pressed(0, gp_shoulderrb) or mouse_check_button_pressed(mb_left))) {
@@ -19,8 +20,9 @@ switch (tutorial_event) {
 		}		
 	break;
 	case 1:
+		global.spawn_enemies = false;
 		if (!instance_exists(pTurret)) {
-			global.spawn_enemies = false;
+			
 			freebie = instance_create_layer(0, 0, layer, choose(oTurret, oLaserTurret, oDoubleTurret, oDoubleLaserTurret));
 
 			with freebie {
@@ -49,6 +51,7 @@ switch (tutorial_event) {
 	//	}
 	break;
 	case 2:
+		global.spawn_enemies = false;
 		//if ((gamepad_button_check_pressed(0, gp_face3) or gamepad_button_check_pressed(0, gp_shoulderrb) or mouse_check_button_pressed(mb_left))) {		
 			var special_condition = (oPowerGenerator.target == oDoor);
 			
@@ -95,6 +98,7 @@ switch (tutorial_event) {
 		}		
 	break;	
 	case 5:		
+		global.spawn_enemies = false;
 		if ((gamepad_button_check_pressed(0, gp_face3) or gamepad_button_check_pressed(0, gp_shoulderrb) or mouse_check_button_pressed(mb_left))) {
 			if (add_prompt_alarm < 0) {
 				tutorial_event++;
