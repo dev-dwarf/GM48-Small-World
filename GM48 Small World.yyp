@@ -151,6 +151,14 @@
             }
         },
         {
+            "Key": "2eea925c-6ed8-44f5-a1ce-97b082d62322",
+            "Value": {
+                "id": "57d480df-8617-4709-bc48-dddffd1ee7e8",
+                "resourcePath": "objects\\oParticleHeal\\oParticleHeal.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "2fbb62d1-0c0b-44b4-8a6f-14903213a10f",
             "Value": {
                 "id": "5d0a88ab-57c7-4049-a06f-0e500832742e",
@@ -455,6 +463,14 @@
             }
         },
         {
+            "Key": "70e20c13-3af4-4544-9179-764738f0f15a",
+            "Value": {
+                "id": "a7726313-eea1-421d-879d-9247f348992e",
+                "resourcePath": "sprites\\sSpeedSparkle\\sSpeedSparkle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "722bf1c9-3b65-4338-8b87-6f08af3d7fa7",
             "Value": {
                 "id": "78dcc914-3d2a-4ce2-b4ca-932e6472f8af",
@@ -739,6 +755,14 @@
             "Value": {
                 "id": "ec384e9e-0289-49b5-bde6-3254c59159de",
                 "resourcePath": "objects\\oParticleGround\\oParticleGround.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "a80f9d87-23e7-4e77-bdd1-d8a679b895f6",
+            "Value": {
+                "id": "aae02450-f79b-4a8e-9083-3bec7fee7e5b",
+                "resourcePath": "objects\\oParticleSpeed\\oParticleSpeed.yy",
                 "resourceType": "GMObject"
             }
         },

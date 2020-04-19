@@ -9,7 +9,7 @@ if (gamepad) {
 	input_vector[0] = gamepad_axis_value(0, gp_axislh);
 	input_vector[1] = gamepad_axis_value(0, gp_axislv);
 	
-	input_action[0] = gamepad_button_check_pressed(0, gp_face3);
+	input_action[0] = gamepad_button_check_pressed(0, gp_face3) or gamepad_button_check_pressed(0, gp_shoulderrb);
 	input_restart   = gamepad_button_check_pressed(0, gp_select);
 
 } else {
@@ -132,6 +132,11 @@ if move_speed != 0
 			dust.image_blend = make_color_rgb(200, 212, 93);
 			if (distance_to_object(instance_nearest(x,y, oEnemy)) < 20) {
 				dust.image_blend = make_color_rgb(156, 42, 112);
+			}
+			
+			if (move_speed_max > base_move_speed) {
+				repeat(2)
+					instance_create_layer(x+irandom_range(-7, 7),y+8,"InstancesB",oParticleSpeed);
 			}
 			//scale = surface_get_width(application_surface)/DEFAULT_WIDTH;
 			//dust.image_blend = draw_getpixel(x * scale, (y+8) * scale);

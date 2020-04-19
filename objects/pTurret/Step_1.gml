@@ -4,6 +4,8 @@ if (hp < 0) {
 	instance_destroy();	
 }
 
+mask_index = sTurretHitmask;
+
 if (instance_number(pTurret) > 4) {
 	var lowest_health = hp;
 	var lowest_instance = id;

@@ -4,7 +4,7 @@ if (target != noone) {
 	voltage = approach(voltage, 0, voltage_base_decrease_per_step/capacitors);	
 }
 
-//voltage = clamp(voltage, 0, hp * 1000);
+voltage = clamp(voltage, 0, hp * 1000);
 
 if (hp <= 0) {
 	if (!played_game_over) {
@@ -28,16 +28,21 @@ if (voltage > (hp-1.8) * 1000) {
 	too_easy = 0;	
 }
 
-scale = lerp(scale, 1.0 + 0.015 * sin(current_time * 2 * pi * 0.01 * max(1.0, voltage)/max_voltage), 0.5);
+scale = lerp(scale, 1.0 + 0.025 * sin(current_time * 2 * pi * 0.01 * max(1.0, voltage)/max_voltage), 0.5);
 
 if (!instance_exists(target) or voltage == 0) {
 	target = noone;	
 }
 
-if (place_meeting(x,y,oPlayerHitbox) and voltage > 0) {
-	target = oDoor;
+if (place_meeting(x,y,oPlayerHitbox) and alarm[2] <= 0 and voltage > 0) {
+	 alarm[2] = 10;
+	if (target != noone) {
+		target = noone;	
+	} else {
+		target = oDoor;
+	}
 	scale = 0.8;
-	oCamera.screenshake += 0.04;
+	oCamera.screenshake += 0.08;
 	with (oPlayerHitbox) {
 		audio_sound_gain(hit_sound, 1, 0);
 		audio_sound_gain(miss_sound, 0, 0);	

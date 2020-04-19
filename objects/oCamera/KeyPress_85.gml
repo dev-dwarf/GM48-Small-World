@@ -1,1 +1,0 @@
-fullscr = !fullscr

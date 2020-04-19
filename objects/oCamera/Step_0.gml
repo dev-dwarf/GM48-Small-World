@@ -1,5 +1,9 @@
 window_set_fullscreen(fullscr)
 
+if (check_p(ord("U")) or (gamepad_is_connected(0) and (gamepad_button_check_pressed(0, gp_padu) or gamepad_button_check_pressed(0, gp_padd)))) {
+	fullscr = !fullscr
+}
+
 /// @description
 var screenshake_amount, screenshake_curve;
 screenshake = clamp(screenshake, 0, 1);

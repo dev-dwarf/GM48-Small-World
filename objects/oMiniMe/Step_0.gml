@@ -22,6 +22,10 @@ if (update_ai == 0 or target_inst == noone or !instance_exists(target_inst)) {
 	update_ai--;	
 }
 
+if (is_undefined(target_inst) or !instance_exists(target_inst) or is_undefined(target_inst.id)) {
+	target_inst	= oPlayer.id;
+}
+
 	var input_direction = point_direction( x, y, target_inst.x, target_inst.y);
 	var input_magnitude = min(1.0, point_distance( x, y, target_inst.x, target_inst.y)); //cap this at 1 so that diagonals are not faster
 

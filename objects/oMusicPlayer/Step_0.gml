@@ -4,11 +4,12 @@
 #region
 var pos = audio_sound_get_track_position(track_id[musRoboLow]);
 
-//log(string(pos) + " : " + string(previous_robot_position)); 
+log(string(pos) + " : " + string(previous_robot_position)); 
 if (pos < previous_robot_position) {
 	robot_loop_count++;
-	log("loop++ = " + string(robot_loop_count));
+	//log("loop++ = " + string(robot_loop_count));
 }
+if (pos > 7.0 and !(previous_robot_position > 7.0)) robot_loop_count++;
 previous_robot_position = pos;
 
 var avg_difficulty = 0, bottom_gate_open = false, enemies_count = 0, enemies_near_generator = false, generator_hp, generator_voltage;
@@ -34,9 +35,9 @@ with oPowerGenerator {
 #endregion
 
 #region set gains
-
-if (avg_difficulty <= 20 and robot_loop_count <= 32) {
-	gain[musRoboLow	] = 1;
+var fade_speed = 0.02;
+if (avg_difficulty <= 20 and robot_loop_count <= 24) {
+	gain[musRoboLow	] = 0.6;
 	gain[musRoboHigh] = 0;
 	
 	if (robot_loop_count >= 1) {
@@ -45,7 +46,7 @@ if (avg_difficulty <= 20 and robot_loop_count <= 32) {
 		if (robot_loop_count mod 8 >= 6) {
 			gain[musAdditionalPercussion] = 1;
 		
-			if (robot_loop_count mod 8 >= 8) {
+			if (robot_loop_count mod 8 >= 7) {
 				gain[musPrimalDrums] = 0;
 			}
 		} else {
@@ -58,16 +59,16 @@ if (avg_difficulty <= 20 and robot_loop_count <= 32) {
 
 	if (robot_loop_count mod 4 <= 2 and robot_loop_count > 2) {
 		gain[musBellsLeft] = 1;
-		log("musBellsLeft");
+		//log("musBellsLeft");
 	} else {
-		gain[musBellsLeft] = approach(gain[musBellsLeft], 0, 0.1);	
+		gain[musBellsLeft] = approach(gain[musBellsLeft], 0, fade_speed);	
 	}
 
 	if (robot_loop_count mod 4 > 2 and robot_loop_count > 8) {
 		gain[musBellsRight] = 1;
-		log("musBellsRight");
+	//	log("musBellsRight");
 	} else {
-		gain[musBellsRight] = approach(gain[musBellsRight], 0, 0.1);	
+		gain[musBellsRight] = approach(gain[musBellsRight], 0, fade_speed);	
 	}
 	
 	if (generator_hp <= 2) {
@@ -80,22 +81,22 @@ if (avg_difficulty <= 20 and robot_loop_count <= 32) {
 	}	gain[musRoboHigh] = 1;
 	
 	if (bottom_gate_open or enemies_count > 15 or enemies_near_generator) and robot_loop_count > 2 {
-		gain[musDidgeridoo] = 1;
+		gain[musDidgeridoo] = approach(gain[musDidgeridoo], 1, fade_speed);
 	} else {
-		gain[musDidgeridoo] = approach(gain[musDidgeridoo], 0, 0.1);
+		gain[musDidgeridoo] = approach(gain[musDidgeridoo], 0, fade_speed);
 	}
 	
 	if (bottom_gate_open or generator_hp <= 3) and robot_loop_count > 4 {
 		gain[musFlutes] = 1;
 		gain[musAdditionalPercussion] = 1;
 	} else {
-		gain[musFlutes] = approach(gain[musFlutes], 0, 0.1);
+		gain[musFlutes] = approach(gain[musFlutes], 0, fade_speed);
 	}
 
 #endregion
-} else if ((avg_difficulty <= 30 or (robot_loop_count >= 32)) and avg_difficulty <= 50) {	
-	gain[musRoboLow	] = approach(gain[musRoboLow ], 0, 0.1);
-	gain[musRoboHigh] = approach(gain[musRoboHigh], 1, 0.1);  
+} else if ((avg_difficulty <= 30 or (robot_loop_count >= 24)) and avg_difficulty <= 50) {	
+	gain[musRoboLow	] = approach(gain[musRoboLow ], 0, fade_speed);
+	gain[musRoboHigh] = approach(gain[musRoboHigh], 0.8, fade_speed);  
 	
 	if (robot_loop_count >= 1) {
 		gain[musPrimalDrums] = 1;
@@ -113,16 +114,16 @@ if (avg_difficulty <= 20 and robot_loop_count <= 32) {
 	#region basics
 	if (robot_loop_count mod 4 <= 2 and robot_loop_count > 2) {
 		gain[musBellsLeft] = 1;
-		log("musBellsLeft");
+		//log("musBellsLeft");
 	} else {
-		gain[musBellsLeft] = approach(gain[musBellsLeft], 0, 0.1);	
+		gain[musBellsLeft] = approach(gain[musBellsLeft], 0, fade_speed);	
 	}
 
 	if (robot_loop_count mod 4 > 2 and robot_loop_count > 8) {
 		gain[musBellsRight] = 1;
-		log("musBellsRight");
+		//log("musBellsRight");
 	} else {
-		gain[musBellsRight] = approach(gain[musBellsRight], 0, 0.1);	
+		gain[musBellsRight] = approach(gain[musBellsRight], 0, fade_speed);	
 	}
 	
 	if (generator_hp <= 2) {
@@ -137,20 +138,20 @@ if (avg_difficulty <= 20 and robot_loop_count <= 32) {
 	if (bottom_gate_open or enemies_count > 15 or enemies_near_generator) and robot_loop_count > 2 {
 		gain[musDidgeridoo] = 1;
 	} else {
-		gain[musDidgeridoo] = approach(gain[musDidgeridoo], 0, 0.1);
+		gain[musDidgeridoo] = approach(gain[musDidgeridoo], 0, fade_speed);
 	}
 	
 	if (bottom_gate_open or generator_hp <= 3) and robot_loop_count > 4 {
 		gain[musFlutes] = 1;
 		gain[musAdditionalPercussion] = 1;
 	} else {
-		gain[musFlutes] = approach(gain[musFlutes], 0, 0.1);
+		gain[musFlutes] = approach(gain[musFlutes], 0, fade_speed);
 	}
 
 #endregion
 } else {
-	gain[musRoboLow	] = approach(gain[musRoboLow ], 1, 0.1);
-	gain[musRoboHigh] = approach(gain[musRoboHigh], 1, 0.1);  
+	gain[musRoboLow	] = approach(gain[musRoboLow ],  1.0, fade_speed);
+	gain[musRoboHigh] = approach(gain[musRoboHigh],  1.0, fade_speed);  
 	
 	if (robot_loop_count >= 1) {
 		gain[musPrimalDrums] = 1;
@@ -177,14 +178,14 @@ if (avg_difficulty <= 20 and robot_loop_count <= 32) {
 	if (bottom_gate_open or enemies_count > 15 or enemies_near_generator) and robot_loop_count > 2 {
 		gain[musDidgeridoo] = 1;
 	} else {
-		gain[musDidgeridoo] = approach(gain[musDidgeridoo], 0, 0.1);
+		gain[musDidgeridoo] = approach(gain[musDidgeridoo], 0, fade_speed);
 	}
 	
 	if (bottom_gate_open or generator_hp <= 3 or enemies_count > 20) and robot_loop_count > 4 {
 		gain[musFlutes] = 1;
 		gain[musAdditionalPercussion] = 1;
 	} else {
-		gain[musFlutes] = approach(gain[musFlutes], 0, 0.1);
+		gain[musFlutes] = approach(gain[musFlutes], 0, fade_speed);
 	}
 
 #endregion
@@ -198,8 +199,7 @@ if (instance_exists(oBigEnemy)) {
 
 
 //UPDATE AUDIO GAIN
-var quite = 4;
-if (oPowerGenerator.hp <= 0) quite = 2;
+if (oPowerGenerator.hp <= 0) overall_volume = approach(overall_volume, 0, 0.005);
 for (var i = musPrimalDrums; i <= musBellsRight; i++) {
-	audio_sound_gain(track_id[i], gain[i]/quite, 0);	
+	audio_sound_gain(track_id[i], gain[i]*overall_volume*master_gain[i], 0);	
 }

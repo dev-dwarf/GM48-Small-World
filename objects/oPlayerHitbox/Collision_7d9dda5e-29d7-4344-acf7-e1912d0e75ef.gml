@@ -24,8 +24,12 @@ if (!moved_camera) {
 
 
 if object_is_ancestor(other.object_index, pTurret) {
+	var heal_amount = parent.heal_amount; 
+	
 	with(other) {
-		hp = approach(hp, max_hp, oPlayer.heal_amount);	
+		hp = approach(hp, max_hp, heal_amount);	
+		repeat(heal_amount/0.05)
+			instance_create_layer(x+irandom_range(-6, 6),y+irandom_range(-2, 2),global.fx_layer,oParticleHeal)
 	}
 }
 
