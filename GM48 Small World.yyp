@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "01d76f29-e991-479b-a7b6-64bcbdc69890",
+            "Value": {
+                "id": "04a74a48-1c7b-4431-a894-9666c6729cb1",
+                "resourcePath": "sprites\\sTurretGat\\sTurretGat.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0294c1ac-88f5-4215-947e-d70677d68a4a",
             "Value": {
                 "id": "82cd6435-b907-4a15-9a52-de2bc4894d15",
@@ -156,6 +164,14 @@
                 "id": "b042b9f7-c3df-47a3-ba58-a78f94e43bd6",
                 "resourcePath": "objects\\oLaserTurret\\oLaserTurret.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "386caa03-4086-45c9-a218-3d283e72d08b",
+            "Value": {
+                "id": "c39f31ac-6897-4761-83ba-36db79015cd6",
+                "resourcePath": "sprites\\sTurretGatGun\\sTurretGatGun.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -907,6 +923,14 @@
             "Value": {
                 "id": "0ee4f779-16a8-4b48-8fb7-2a307b2ff61a",
                 "resourcePath": "sprites\\sGrenade\\sGrenade.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e672c61a-030c-46b2-9bcf-a6858db9fdeb",
+            "Value": {
+                "id": "6eebc42c-6e16-45aa-82f8-d0d7f81d144b",
+                "resourcePath": "sprites\\sTurretLauncher\\sTurretLauncher.yy",
                 "resourceType": "GMSprite"
             }
         },

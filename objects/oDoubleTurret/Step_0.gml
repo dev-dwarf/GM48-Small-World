@@ -27,7 +27,7 @@ if active {
 			scale = 1.2;
 			
 			play_sound(sndBasicTurret, 1, false, 1.5, 0.1);
-		
+			audio_sound_gain(sndBasicTurret,0.4,0)
 			oCamera.screenshake += 0.02
 			// create bullet
 			with instance_create_layer(x + lengthdir_x(sprite_width/3, image_angle), y + lengthdir_y(sprite_width/3, image_angle), layer, oTurretBullet2) {
