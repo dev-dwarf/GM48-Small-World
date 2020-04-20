@@ -44,6 +44,11 @@ if input_magnitude != 0 { // if there is input, set move speed and direction
 move(move_speed, move_direction);
 #endregion
 
+if (!gamepad) {
+	cursor_sprite = sCursor;
+	if (mouse_check_button(mb_left)) cursor_sprite = sCursor1;
+}
+
 #region attack
 
 if (input_action[0] and oWrench.alarm[2] <= 0) {	

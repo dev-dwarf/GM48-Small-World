@@ -69,4 +69,4 @@ window_set_fullscreen(false)
 room_goto_next()
 
 
-global.fullscreen = true;
+global.fullscreen = false;
