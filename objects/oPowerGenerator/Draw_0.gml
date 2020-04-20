@@ -10,7 +10,7 @@ if (flash_true) {
 draw_set_font(fTextS)
 
 
-draw_sprite_ext(sprite_index, image_index, x, y - 2, image_xscale * scale * 0.8, -0.3 * image_yscale * scale, 0, c_black, SHADOW_ALPHA);
+draw_sprite_ext(sprite_index, image_index, x, y - 2, image_xscale * scale * 0.8, -0.3 * image_yscale * scale, SHADOW_ANGLE, c_black, SHADOW_ALPHA);
 draw_sprite_ext(sprite_index, image_index, x, y, image_xscale * scale, image_yscale * scale, 0, c_white, 1);
 
 draw_set_halign(fa_center);

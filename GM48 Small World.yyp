@@ -1415,6 +1415,14 @@
             }
         },
         {
+            "Key": "fd6407cf-706b-40b7-a472-4b36f83dcd32",
+            "Value": {
+                "id": "5d30d411-1f1b-4d4e-ab22-60bb4716eb1e",
+                "resourcePath": "sounds\\sndGetVolts\\sndGetVolts.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "fe779560-a856-4cba-94a2-66b5af8f4d04",
             "Value": {
                 "id": "846ba723-edb5-475d-8814-74420cf7ec27",

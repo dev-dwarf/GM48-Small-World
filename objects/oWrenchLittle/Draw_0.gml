@@ -8,7 +8,7 @@ if (alarm[1] > 3) {
 	image_index = 0;	
 }
 
-draw_sprite_ext(sprite_index, 0, oMiniMe.x, oMiniMe.y+5, image_xscale * scale * 0.8, image_yscale * scale * -1 * 0.6, image_angle, c_black, SHADOW_ALPHA);
+draw_sprite_ext(sprite_index, 0, oMiniMe.x, oMiniMe.y+5, image_xscale * scale * 0.8, image_yscale * scale * -1 * 0.6, image_angle+SHADOW_ANGLE, c_black, SHADOW_ALPHA);
 
 
 draw_sprite_ext(sprite_index, image_index, x, y, image_xscale * scale, image_yscale * scale, image_angle, image_blend, image_alpha);

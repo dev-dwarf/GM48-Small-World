@@ -11,6 +11,9 @@ for (var i = 0; i < 2; i++) {
 	}
 }
 
+var snd = play_sound(sndGetVolts, 2, false, 2.0, 0.15);
+	audio_sound_gain(snd, 0.7 * audio_sound_get_gain(snd), 0);
 repeat(1) {
+	
 	instance_create_layer(x +irandom(10)-5,y +irandom(10)-5,global.fx_layer, oPowerParticle);
 }

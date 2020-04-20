@@ -1,7 +1,8 @@
 #macro DEFAULT_WIDTH 384	
 #macro DEFAULT_HEIGHT 216
 #macro SCALE 3
-#macro SHADOW_ALPHA 0.3
+#macro SHADOW_ALPHA 0.4
+#macro SHADOW_ANGLE 2
 
 #macro vk_a ord("A")
 #macro vk_s ord("S")
