@@ -10,3 +10,7 @@ for (var i = 0; i < 2; i++) {
 		move_direction = irandom(360);
 	}
 }
+
+repeat(1) {
+	instance_create_layer(x +irandom(10)-5,y +irandom(10)-5,global.fx_layer, oPowerParticle);
+}

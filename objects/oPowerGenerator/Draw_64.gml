@@ -15,10 +15,10 @@ var h_half = global.ideal_height/2
 
 if played_game_over = true 
 {
-		
-	draw_text(w_half-36*4,h_half-90,"HIGHSCORE")
-	draw_text(w_half-36*2,h_half-40,global.hscore)
-	draw_text(w_half-36*2,h_half+40,"SCORE")
-	draw_text(w_half-36*2,h_half+90,global.points/6)
+	draw_set_halign(fa_center)
+	draw_text(display_get_gui_width()/2,h_half-90,"HIGHSCORE")
+	draw_text(display_get_gui_width()/2,h_half-40,global.hscore)
+	draw_text(display_get_gui_width()/2,h_half+40,"SCORE")
+	draw_text(display_get_gui_width()/2,h_half+90,global.points)
 
 }

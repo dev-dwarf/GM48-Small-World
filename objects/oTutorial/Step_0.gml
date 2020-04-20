@@ -71,7 +71,7 @@ switch (tutorial_event) {
 		global.spawn_enemies = true;
 		
 	//	if ((gamepad_button_check_pressed(0, gp_face3) or gamepad_button_check_pressed(0, gp_shoulderrb) or mouse_check_button_pressed(mb_left))) {		
-		var special_condition = (oPowerGenerator.voltage > 400);
+		var special_condition = (oPowerGenerator.voltage > 3000);
 			
 			if (special_condition) {
 				tutorial_event++;
@@ -83,21 +83,34 @@ switch (tutorial_event) {
 		//}
 		break;
 	case 4:
-		instance_destroy(pTurret);
+	//	instance_destroy(pTurret);
 		instance_destroy(pEnemy)
 		global.spawn_enemies = false;
-		
-		if ((gamepad_button_check_pressed(0, gp_face3) or gamepad_button_check_pressed(0, gp_shoulderrb) or mouse_check_button_pressed(mb_left))) {
-			if (add_prompt_alarm < 0) {
+		var special_condition = (oCraftingStation.lever_index == 1);
+			
+			if (special_condition) {
 				tutorial_event++;
 				scale = 0.0;
 				add_prompt_alarm = 50;
 			} else {
 				add_prompt_alarm -= 30;
-			}
-		}		
+			}	
 	break;	
-	case 5:		
+	case 5:
+		//instance_destroy(pTurret);
+		instance_destroy(pEnemy)
+		global.spawn_enemies = false;
+		var special_condition = (oPowerupStation.lever_index == 1);
+			
+			if (special_condition) {
+				tutorial_event++;
+				scale = 0.0;
+				add_prompt_alarm = 50;
+			} else {
+				add_prompt_alarm -= 30;
+			}	
+	break;	
+	case 6:		
 		global.spawn_enemies = false;
 		if ((gamepad_button_check_pressed(0, gp_face3) or gamepad_button_check_pressed(0, gp_shoulderrb) or mouse_check_button_pressed(mb_left))) {
 			if (add_prompt_alarm < 0) {
@@ -109,11 +122,23 @@ switch (tutorial_event) {
 			}
 		}		
 	break;	
-	case 6:
+	case 7:		
+		global.spawn_enemies = false;
+		if ((gamepad_button_check_pressed(0, gp_face3) or gamepad_button_check_pressed(0, gp_shoulderrb) or mouse_check_button_pressed(mb_left))) {
+			if (add_prompt_alarm < 0) {
+				tutorial_event++;
+				scale = 0.0;
+				add_prompt_alarm = 50;
+			} else {
+				add_prompt_alarm -= 30;
+			}
+		}		
+	break;	
+	case 8:
 	
 	room_goto_next();
 	break;
 		
 }
 
-oPowerGenerator.voltage = 1000;
+oPowerGenerator.voltage = 3000;

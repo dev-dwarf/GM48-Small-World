@@ -13,7 +13,7 @@ shoot_range = DEFAULT_WIDTH * 0.25;
 targeting_delay = 18;
 targeting_timer = 0;
 
-hp = 6;
+hp = 6 + 2 * oPlayer.heal_amount/0.05;
 max_hp = hp;
 
 gun_scale = 1.0;

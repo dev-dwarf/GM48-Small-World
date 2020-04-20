@@ -91,7 +91,7 @@ switch state {
 	play_sound(choose(sndBoom,sndBoom2), 10, false, 1.5, .1)
 	oCamera.screenshake += 0.14;
 	for (var i = 0; i < 2 * pi; i += pi/8) {
-		with instance_create_layer(x+6+24*cos(i),y+24+24*sin(i),"Bullets",oSmoke1){
+		with instance_create_layer(x+6+24*cos(i)*i/pi,y+24+24*sin(i)*i/pi,"Bullets",oSmoke1){
 			image_xscale = 0.7;
 			image_yscale = 0.7;
 		}

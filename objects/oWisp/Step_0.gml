@@ -41,16 +41,16 @@ switch state {
 	
 	shootdel ++;
 	
-	if shootdel >= 180
+	if shootdel >= 120
 		{
-			play_sound(sndWisp,10,false,1,.3)
+			play_sound(sndWisp,10,false,1,0)
 			var target_inst = oPowerGenerator;
 			if (instance_exists(pTurret)) {
 				target_inst = instance_nearest(x,y,pTurret);	
 			}
 			
 			shootdel = 0
-			with instance_create_layer(x,y,"Bullets", oBolt)
+			with instance_create_layer(x,y,global.fx_layer, oBolt)
 			{
 				dir = point_direction(x,y,target_inst.x,target_inst.y)
 			}

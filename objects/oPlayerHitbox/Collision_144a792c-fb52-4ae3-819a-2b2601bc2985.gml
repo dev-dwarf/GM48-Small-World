@@ -28,6 +28,10 @@ if (other.hp <= 0) {
 
 if (other.object_index == oFlyingEnemy) knockback += 20;
 
+if (other.object_index == oBigEnemy) knockback = 4;
+
+if (other.object_index == oWisp) knockback += 5;
+
 with other { move(knockback, dir) }
 
 if (!moved_camera) {

@@ -14,6 +14,6 @@ targeting_delay = 50;
 targeting_timer = 0;
 
 //laser = noone;
-hp = 4;
+hp = 4 + oPlayer.heal_amount/0.05;
 max_hp = hp;
 length = 0

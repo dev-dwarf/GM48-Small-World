@@ -13,4 +13,4 @@ timer[oWisp] = irandom(20);
 cooldown[oWisp] = 500;
 
 timer[oBigEnemy] = irandom(20);
-cooldown[oBigEnemy] = 1200;
+cooldown[oBigEnemy] = 1000;

@@ -7,9 +7,12 @@ if (target != noone) {
 voltage = clamp(voltage, 0, max_voltage);
 
 if (hp <= 0) {
-	if global.points/60 >= global.hscore
+	if global.points >= global.hscore and room == rGameRoom
 	{
-		global.hscore = global.points/60
+		global.hscore = global.points;
+		var file = file_text_open_write("highscore.txt");
+		file_text_write_real(file, global.hscore)
+		file_text_close(file)
 	}
 	if (!played_game_over) {
 		//audio_pause_all();
@@ -38,7 +41,7 @@ if (!instance_exists(target) or voltage == 0) {
 	target = noone;	
 }
 
-if (place_meeting(x,y,oPlayerHitbox) and alarm[2] <= 0 and voltage > 0) {
+if (place_meeting(x,y,oPlayerHitbox) and alarm[2] <= 0) {
 	 alarm[2] = 10;
 	if (target != noone) {
 		target = noone;	
@@ -55,8 +58,14 @@ if (place_meeting(x,y,oPlayerHitbox) and alarm[2] <= 0 and voltage > 0) {
 
 offset = random_range(-6,6)
 
-if hp <= 5
-	instance_create_layer(x+offset,y+offset-24,"Top",oSmoke)
+if hp < max_hp {
+	repeat (2) {
+		var chnce = max(0, abs(hp - max_hp)) * 30;
+		if (chance(chnce)) {
+			instance_create_layer(x+offset*2.4,y-20+offset,"Top",oSmoke)
+		}
+	}
+}
 if hp > 0
 {
 	global.points += 1	

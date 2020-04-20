@@ -1,7 +1,8 @@
-window_set_fullscreen(fullscr)
 
 if (check_p(ord("U")) or (gamepad_is_connected(0) and (gamepad_button_check_pressed(0, gp_padu) or gamepad_button_check_pressed(0, gp_padd)))) {
 	fullscr = !fullscr
+	global.fullscreen = !global.fullscreen;
+	window_set_fullscreen(fullscr)
 }
 
 /// @description
@@ -22,3 +23,5 @@ if (screenshake > 0) {
 
 x = lerp(x, 0, 0.5);
 y = lerp(y, 0, 0.5);
+
+frames_slept = approach(frames_slept, 0, 25);

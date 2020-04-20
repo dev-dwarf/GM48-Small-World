@@ -25,8 +25,6 @@ part_system_depth(global.part_system_permanent, -770);
 
 part_system_automatic_update(global.part_system_permanent, false);
 
-global.fullscreen = true;
-
 randomize();
 
 resize_window();
@@ -49,4 +47,6 @@ part_type_color1(global.blood_particle, c_gray);
 //part_type_life(global.blood_particle, 500, 520);
 part_type_alpha1(global.blood_particle, 1);
 
-fullscr = true
+fullscr = false;
+
+frames_slept = 0;

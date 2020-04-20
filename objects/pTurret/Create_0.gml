@@ -9,7 +9,7 @@ if (place_meeting(x,y, pSolid) or place_meeting(x,y, oDoor) or place_meeting(x,y
 	oWrench.turret_obj = object_index;
 	instance_destroy(id, false);
 } else {
-	sleep(20);	
+	alarm[4] = 1;
 }
 
 mask_index = sTurretHitmask;

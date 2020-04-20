@@ -74,7 +74,7 @@ if (input_action[0] and oWrench.alarm[2] <= 0) {
 			xscale = 1
 		}
 	
-	oWrench.alarm[2] = 7;
+	oWrench.alarm[2] = 7 * move_speed_max/1.9; //increase attack speed if speed upgrade
 	oWrench.alarm[1] = 10; //give some time before returning to neutral state
 	
 	if (oWrench.turret_obj == noone) {

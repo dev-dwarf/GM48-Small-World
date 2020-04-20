@@ -20,7 +20,7 @@ if (active) {
 	
 	image_speed = 1;
 	
-	var price = 2000 + times_rolled * times_rolled * 400;
+	var price = 2000 + times_rolled * 500;
 	
 	if (price > oPowerGenerator.max_voltage) instance_destroy();
 	
@@ -66,10 +66,10 @@ if (active) {
 		oPowerGenerator.target = noone;	
 	}
 }
-var price = 2000 + times_rolled * times_rolled * 400;
+var price = 2000 + times_rolled * 500;
 	if (oPowerGenerator.voltage > price and alarm[0] <= 0) {
 		image_blend = c_white;
-		drop_index+=0.1
+		drop_index+=0.2
 		drop_index = wrap(drop_index, 0, 2.9);
 	} else {
 		image_blend = c_gray;	

@@ -1,5 +1,18 @@
 randomize()
 global.hscore = 0
+global.skip_tutorial = false;
+
+if (file_exists("highscore.txt")) {
+	var file = file_text_open_read("highscore.txt");
+	global.hscore = file_text_read_real(file);	
+	file_text_close(file)
+	global.skip_tutorial = true;
+} else {
+	var file = file_text_open_write("highscore.txt");
+	file_text_write_real(file, 0)
+	file_text_close(file)
+}
+
 ///Properties
 ideal_width=0; //Doesn't matter because we are going to calculate this.
 ideal_height= 540;
@@ -54,3 +67,6 @@ alarm[2]=1; //Change Zoom
 window_set_fullscreen(false)
 
 room_goto_next()
+
+
+global.fullscreen = true;

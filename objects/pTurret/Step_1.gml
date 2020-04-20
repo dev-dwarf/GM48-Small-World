@@ -4,6 +4,8 @@ if (hp < 0) {
 	instance_destroy();	
 }
 
+hp = approach(hp, max_hp, 0.005);
+
 mask_index = sTurretHitmask;
 
 if (instance_number(pTurret) > 4) {

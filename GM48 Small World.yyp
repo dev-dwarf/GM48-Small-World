@@ -55,6 +55,14 @@
             }
         },
         {
+            "Key": "099a4d5a-3e4f-40da-816e-f418aa103b73",
+            "Value": {
+                "id": "daeb3f7c-e089-4455-ac92-f82e23e5ee9d",
+                "resourcePath": "objects\\oPowerParticle\\oPowerParticle.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "0a020dbd-3596-4504-b9f0-677dce11829e",
             "Value": {
                 "id": "1b5d82c1-bc75-4657-972d-b295d63e0a07",
@@ -916,6 +924,14 @@
                 "id": "7c3b2b94-6ff1-4019-a412-b9bb7971bfa6",
                 "resourcePath": "scripts\\wrap\\wrap.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "b24bb2f4-a4fc-4b1d-9be0-0834ecf439b7",
+            "Value": {
+                "id": "65dd276d-bd90-4f08-ae03-ba4a8a309ec4",
+                "resourcePath": "sprites\\sPowerSpark\\sPowerSpark.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
