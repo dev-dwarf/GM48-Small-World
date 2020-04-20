@@ -44,4 +44,4 @@ for (var i = musPrimalDrums; i <= musBellsRight; i++) {
 
 previous_robot_position = 0;
 robot_loop_count = 0;
-overall_volume = 0.6 * 0;
+overall_volume = 0.6;
