@@ -2,6 +2,8 @@ randomize()
 global.hscore = 0
 global.skip_tutorial = false;
 
+window_set_fullscreen(true)
+
 //file_delete("highscore.txt")
 if (file_exists("highscore.txt")) {
 	var file = file_text_open_read("highscore.txt");
@@ -65,9 +67,10 @@ window_set_size(ideal_width*zoom,ideal_height*zoom);
  
 alarm[0]=1; //Center Window
 alarm[2]=1; //Change Zoom
-window_set_fullscreen(false)
+
 
 room_goto_next()
 
 
-global.fullscreen = false;
+global.fullscreen = true;
+window_set_fullscreen(global.fullscreen)
