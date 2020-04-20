@@ -83,7 +83,7 @@ if (global.spawn_enemies) {
 			}
 			
 			if (timer[oBigEnemy] <= 0 and !top) {
-				timer[oBigEnemy] = (cooldown[oWisp] + choose(-2, 4) - oPowerGenerator.too_easy * 5)/max(1.0, difficulty/15);
+				timer[oBigEnemy] = cooldown[oBigEnemy]
 				
 				if (chance(100)) {
 					difficulty += 0.03;

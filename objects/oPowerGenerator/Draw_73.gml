@@ -1,7 +1,6 @@
 /// @description
 if (hp != 0) {
 	if (target != noone and instance_exists(target)) {
-			draw_sprite(sLightnignStart, other.lightning_index, x, y -51);
 		if (target == oDoor) {
 				var target_x = 348; target_y = 141;
 				var dist = point_distance(x, y-51, target_x,target_y); var dir = point_direction(x, y-51, target_x,target_y);
@@ -41,5 +40,7 @@ if (hp != 0) {
 				}
 			}
 		}	
+		
+					draw_sprite(sLightnignStart, other.lightning_index, x, y -51);
 	}
 }
