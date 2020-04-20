@@ -151,6 +151,14 @@
             }
         },
         {
+            "Key": "1a3cca1f-0605-4f59-b537-d48293a141cc",
+            "Value": {
+                "id": "fb58e7f8-cc4e-4997-ae7d-a53504dc8559",
+                "resourcePath": "sprites\\sBossGibs\\sBossGibs.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1c7afd09-24d4-4acc-9989-abbff82e258d",
             "Value": {
                 "id": "011829a1-46d1-4d26-9d8e-5c12a07b36cb",

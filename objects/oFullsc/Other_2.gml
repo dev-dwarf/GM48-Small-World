@@ -2,6 +2,7 @@ randomize()
 global.hscore = 0
 global.skip_tutorial = false;
 
+//file_delete("highscore.txt")
 if (file_exists("highscore.txt")) {
 	var file = file_text_open_read("highscore.txt");
 	global.hscore = file_text_read_real(file);	

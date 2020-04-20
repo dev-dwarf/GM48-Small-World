@@ -7,10 +7,13 @@ timer[oEnemy] = irandom(20);
 cooldown[oEnemy] = 60;
 
 timer[oFlyingEnemy] = irandom(20);
-cooldown[oFlyingEnemy] = 240;
+cooldown[oFlyingEnemy] = 340;
 
 timer[oWisp] = irandom(20);
 cooldown[oWisp] = 500;
 
 timer[oBigEnemy] = irandom(20);
 cooldown[oBigEnemy] = 1000;
+
+timer[0] = 60 * 30;
+timer[1] = 300;

@@ -20,4 +20,4 @@ ignores_turrets = false;
 damaged = false;
 snd_played = false;
 
-gibs_sprite = sEnemyGibs;
+gibs_sprite = sBossGibs;

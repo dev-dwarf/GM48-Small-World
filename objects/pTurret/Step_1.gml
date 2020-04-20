@@ -8,13 +8,13 @@ hp = approach(hp, max_hp, 0.005);
 
 mask_index = sTurretHitmask;
 
-if (instance_number(pTurret) > 4) {
-	var lowest_health = hp;
+if (instance_number(pTurret) > global.max_turrets) {
+	var lowest_health = hp/max_hp;
 	var lowest_instance = id;
 	
 	with (pTurret) {
-		if hp < lowest_health {
-			lowest_health = hp;
+		if hp/max_hp < lowest_health {
+			lowest_health = hp/max_hp;
 			lowest_instance = id;
 		}
 	}

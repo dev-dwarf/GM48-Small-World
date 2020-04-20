@@ -20,7 +20,7 @@ if (active) {
 	
 	image_speed = 1;
 	
-	var price = 2000 + times_rolled * 500;
+	var price = 2000 + times_rolled * 250;
 	
 	if (price > oPowerGenerator.max_voltage) instance_destroy();
 	
@@ -48,6 +48,7 @@ if (active) {
 				break;
 			case 1:
 				oPlayer.heal_amount = approach( oPlayer.heal_amount, oPlayer.max_heal_amount, 0.05);
+				oPowerGenerator.hp++;
 				drop_index = 1;
 				break;
 			case 2:
@@ -55,6 +56,7 @@ if (active) {
 					// TODO: create particles
 					instance_create_layer(x, y + 60, layer, oMiniMe);
 				}
+				global.max_turrets++;
 				drop_index = 2;
 				break;
 		}
@@ -66,7 +68,7 @@ if (active) {
 		oPowerGenerator.target = noone;	
 	}
 }
-var price = 2000 + times_rolled * 500;
+var price = 2000 + times_rolled * 250;
 	if (oPowerGenerator.voltage > price and alarm[0] <= 0) {
 		image_blend = c_white;
 		drop_index+=0.2

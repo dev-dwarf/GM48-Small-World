@@ -1,5 +1,5 @@
 /// @description
-difficulty += 0.0039;
+difficulty += 0.0029;
 
 if (top and oPowerGenerator.too_easy < 0.7) {
 	exit;
@@ -10,7 +10,7 @@ if (top and oPowerGenerator.too_easy < 0.7) {
 if (floor(difficulty) == ceil(last_difficulty)) {
 	switch(floor(difficulty)) {
 		default:
-			cooldown[oFlyingEnemy] = 65 * 16/ difficulty;
+			cooldown[oFlyingEnemy] = 100 * 16/ difficulty;
 			cooldown[oEnemy] = 66 * 16/ difficulty;
 			cooldown[oWisp] = 80 * 16/difficulty;
 		break;
@@ -19,7 +19,7 @@ if (floor(difficulty) == ceil(last_difficulty)) {
 			cooldown[oEnemy] = 46;
 			break;
 		case 7:
-			cooldown[oFlyingEnemy] = 200;
+			cooldown[oFlyingEnemy] = 300;
 			cooldown[oEnemy] = 46;
 			break;
 		case 5:
@@ -41,6 +41,8 @@ last_difficulty = difficulty;
 if (global.spawn_enemies) {
 	switch(floor(difficulty)) {
 		default:
+		if (timer[0] > 0) {
+			timer[0]--;
 			if (timer[oFlyingEnemy] <= 0) {
 				timer[oFlyingEnemy] = (cooldown[oFlyingEnemy] + choose(-2, 4) - oPowerGenerator.too_easy * 4)/max(1.0, difficulty/15);
 				
@@ -99,6 +101,13 @@ if (global.spawn_enemies) {
 			} else {
 				timer[oBigEnemy] -= 1;
 			}
+		} else {
+			timer[1]--;
+			if (timer[1] <= 0) {
+				timer[1] = 500;
+				timer[0] = 60 * 3 * difficulty;
+			}
+		}
 			break;
 		case 16: oPowerGenerator.too_easy = 1.0;	
 		case 11: case 12: case 13: case 14: case 15:
@@ -152,7 +161,7 @@ if (global.spawn_enemies) {
 				timer[oEnemy] = cooldown[oEnemy] + choose(-2, 4) - oPowerGenerator.too_easy * 5;
 				
 				if (chance(75)) {
-					difficulty += 0.02;
+					difficulty += 0.01;
 					instance_create_layer(x,y+irandom_range(-8, 8),layer,oEnemy);
 					
 					if (chance(20)) { //double up
@@ -171,7 +180,7 @@ if (global.spawn_enemies) {
 				timer[oEnemy] = cooldown[oEnemy] + choose(-2, 4) - oPowerGenerator.too_easy * 10;
 				
 				if (chance(60)) {
-					difficulty += 0.04;
+					difficulty += 0.01;
 					instance_create_layer(x,y+irandom_range(-8, 8),layer,oEnemy);
 				}
 			} else {
