@@ -37,14 +37,14 @@ with oPowerGenerator {
 var fade_speed = 0.02;
 if (avg_difficulty <= 20 and robot_loop_count <= 24) {
 	if (robot_loop_count > 1) {
-		gain[musFlutes] = 0.4;
+		gain[musFlutes] = 0.2;
 	}
 	
 	if (oTutorial.tutorial_event >= 3) {
 		gain[musRoboHigh] = 0.3;
 	}
 	
-	if (oTutorial.tutorial_event > 6) {
+	if (oTutorial.tutorial_event >= 6) {
 		gain[musPrimalDrums] = 0.8;
 	}
 } 

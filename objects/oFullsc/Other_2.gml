@@ -4,7 +4,7 @@ global.skip_tutorial = false;
 
 window_set_fullscreen(true)
 
-file_delete("highscore.txt")
+//file_delete("highscore.txt")
 if (file_exists("highscore.txt")) {
 	var file = file_text_open_read("highscore.txt");
 	global.hscore = file_text_read_real(file);	
