@@ -1,12 +1,12 @@
 /// @description
 
 // Inherit the parent event
-if (place_meeting(x,y,oPlayerHitbox) and oPlayerHitbox.parent == oPlayer) {
+var inst = instance_place(x,y,oPlayerHitbox)
+if (inst and inst.parent == oPlayer) {
 	oPowerGenerator.target = pTurret;	
 	oPowerGenerator.scale = 0.8;	
 	//scale = 0.8;
 }
-
 if (oPowerGenerator.target == pTurret) {
 	active = true;
 } else {

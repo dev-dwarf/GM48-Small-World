@@ -46,3 +46,4 @@ if (active) {
 } else {
 	image_blend = c_gray;
 }
+
