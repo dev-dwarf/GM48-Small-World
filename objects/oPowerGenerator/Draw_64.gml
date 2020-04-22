@@ -12,7 +12,6 @@ var w_half = global.ideal_width/2
 var h_half = global.ideal_height/2
 
 
-
 if played_game_over = true 
 {
 	draw_set_halign(fa_center)

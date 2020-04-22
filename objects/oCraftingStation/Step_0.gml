@@ -51,6 +51,7 @@ if (active) {
 			case oDoubleTurret		: drop_index = 2;break;
 			case oDoubleLaserTurret	: drop_index = 3;break;
 		}
+		// TODO: play slot sounds!
 	} 
 	
 	if !(oPowerGenerator.voltage > price and alarm[0] <= 0) {

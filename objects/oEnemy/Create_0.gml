@@ -8,6 +8,7 @@ attack_range   = 4;
 update_pathing = 10;
 
 move_speed_max = 0.4;
+zap_self = false;
 
 
 move_direction = 0

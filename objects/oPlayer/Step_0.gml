@@ -10,6 +10,7 @@ if (gamepad) {
 	input_vector[1] = gamepad_axis_value(0, gp_axislv);
 	
 	input_action[0] = gamepad_button_check_pressed(0, gp_face3) or gamepad_button_check_pressed(0, gp_shoulderrb);
+	input_action[1] = gamepad_button_check_pressed(0, gp_face2) or gamepad_button_check_pressed(0, gp_shoulderlb);
 	input_restart   = gamepad_button_check_pressed(0, gp_select);
 
 } else {
@@ -17,6 +18,7 @@ if (gamepad) {
 	input_vector[1] = check(vk_s) - check(vk_w);
 	
 	input_action[0] = mouse_check_button_pressed(mb_left);
+	input_action[1] = mouse_check_button_pressed(mb_right);
 	input_restart   = check_p(vk_r);
 }
 
@@ -50,6 +52,11 @@ if (!gamepad) {
 }
 
 #region attack
+
+if (input_action[1]) {
+	oPowerGenerator.target = noone;	
+	//TODO: play power disconnect sound
+}
 
 if (input_action[0] and oWrench.alarm[2] <= 0) {	
 	//oWrench.lever_state *= -1;

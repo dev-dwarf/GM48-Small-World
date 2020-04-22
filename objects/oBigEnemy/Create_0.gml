@@ -1,7 +1,7 @@
 /// @description
 event_inherited();
 
-hp = 12;
+hp = 18;
 lasthp = hp;
 
 attack_range   = 4;

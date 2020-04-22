@@ -5,11 +5,17 @@ if ds_list_find_index(hitobj, other) != -1
 	exit;
 }
 
+
 other.flash = 7;
 other.scale = 0.6;
 other.hp -= damage;
-if (other.state != enemyStates.dead)
-other.state = enemyStates.stun;
+if (other.state != enemyStates.dead) {
+	other.state = enemyStates.stun;
+	
+	if (parent == pTurret) {
+		other.hp = -1;	
+	}
+}
 other.stun_timer = 3;
 oCamera.screenshake += 0.16;
 

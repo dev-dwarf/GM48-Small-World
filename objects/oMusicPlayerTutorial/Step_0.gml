@@ -40,11 +40,11 @@ if (avg_difficulty <= 20 and robot_loop_count <= 24) {
 		gain[musFlutes] = 0.4;
 	}
 	
-	if (oTutorial.tutorial_event >= 2) {
+	if (oTutorial.tutorial_event >= 3) {
 		gain[musRoboHigh] = 0.3;
 	}
 	
-	if (oTutorial.tutorial_event > 3) {
+	if (oTutorial.tutorial_event > 6) {
 		gain[musPrimalDrums] = 0.8;
 	}
 } 

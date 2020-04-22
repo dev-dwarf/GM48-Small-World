@@ -60,7 +60,7 @@ if (active) {
 				drop_index = 2;
 				break;
 		}
-		// TODO: play sounds!
+		// TODO: play slot sounds!
 	} 
 	
 	if !(oPowerGenerator.voltage > price and alarm[0] <= 0) {

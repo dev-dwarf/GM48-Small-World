@@ -4,6 +4,8 @@
 #macro SHADOW_ALPHA 0.4
 #macro SHADOW_ANGLE 2
 
+#macro MUTE_MUSIC false
+
 #macro vk_a ord("A")
 #macro vk_s ord("S")
 #macro vk_d ord("D")

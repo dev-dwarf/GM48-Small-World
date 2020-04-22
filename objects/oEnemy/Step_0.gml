@@ -30,6 +30,18 @@ switch state {
 			target_inst.hp--;
 			target_inst.flash = 4;
 			oCamera.screenshake = 0.2;
+			if (target_inst.object_index == oPowerGenerator) {
+				flash = 4;
+				state = enemyStates.stun;
+				stun_timer = 8;
+				zap_self = true;
+				move_direction = point_direction(oPowerGenerator.x, oPowerGenerator.y-51,x,y);
+				move_speed = 4;
+				
+				move(move_speed, move_direction);
+				
+				death_speed = 6;
+			}
 			//sleep(50);
 			image_index = 8;
 		}
@@ -45,7 +57,15 @@ switch state {
 	stun_timer--;
 	image_index = 0;
 	
-	if (stun_timer <= 0) state = enemyStates.target;
+	
+	if (stun_timer <= 0) {
+		if (!zap_self) {
+			state = enemyStates.target;
+		} else {
+			state = enemyStates.dead;
+			zap_self = false;	
+		}
+	}
 	break;
 	case enemyStates.dead		:	
 	
