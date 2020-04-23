@@ -47,3 +47,10 @@ if (active) {
 	image_blend = c_gray;
 }
 
+if (flash > 0 and !on_list) {
+	if (!on_list) {
+		on_list = true;
+		ds_list_add(oFlashDrawer.flash_list, id);
+	}
+	flash--;
+}

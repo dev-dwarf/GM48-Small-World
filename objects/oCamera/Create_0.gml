@@ -5,7 +5,7 @@ view_visible[0] = true;
 cam = camera_create_view(0, 0, DEFAULT_WIDTH, DEFAULT_HEIGHT, 0, -1, -1, -1, DEFAULT_WIDTH, DEFAULT_HEIGHT);
 view_camera[0] = cam;
 
-//show_debug_overlay(true)
+show_debug_overlay(true)
 
 #region screenshake
 screenshake = 0.0;
@@ -48,3 +48,5 @@ part_type_alpha1(global.blood_particle, 1);
 fullscr = false;
 
 frames_slept = 0;
+
+instance_create_layer(x,y,layer,oFlashDrawer);

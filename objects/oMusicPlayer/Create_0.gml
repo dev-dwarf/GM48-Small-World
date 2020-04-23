@@ -29,14 +29,23 @@ gain[musRoboHigh				 ] = 0;
 gain[musFlutes					 ] = 0;
 gain[musBellsRight				 ] = 0;
 
-master_gain[musPrimalDrums				 ] = 0.7;
-master_gain[musDidgeridoo				 ] = 1;
-master_gain[musBellsLeft				 ] = 0.8;
-master_gain[musAdditionalPercussion		 ] = 1;
-master_gain[musRoboLow					 ] = 0.40;
-master_gain[musRoboHigh					 ] = 0.38;
-master_gain[musFlutes					 ] = 0.8;
-master_gain[musBellsRight				 ] = 0.8;
+//master_gain[musPrimalDrums				 ] = 0.7;
+//master_gain[musDidgeridoo				 ] = 1;
+//master_gain[musBellsLeft				 ] = 0.8;
+//master_gain[musAdditionalPercussion		 ] = 1;
+//master_gain[musRoboLow					 ] = 0.40;
+//master_gain[musRoboHigh					 ] = 0.38;
+//master_gain[musFlutes					 ] = 0.8;
+//master_gain[musBellsRight				 ] = 0.8;
+
+master_gain[musPrimalDrums				 ] = 1.0;
+master_gain[musDidgeridoo				 ] = 1.0;
+master_gain[musBellsLeft				 ] = 1.0;
+master_gain[musAdditionalPercussion		 ] = 1.0;
+master_gain[musRoboLow					 ] = 1.0;
+master_gain[musRoboHigh					 ] = 1.0;
+master_gain[musFlutes					 ] = 1.0;
+master_gain[musBellsRight				 ] = 1.0;
 
 for (var i = musPrimalDrums; i <= musBellsRight; i++) {
 	audio_sound_gain(track_id[i], gain[i], 0);	

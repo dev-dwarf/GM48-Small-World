@@ -2,9 +2,11 @@
 event_inherited();
 
 if lasthp != hp {
+	var _sys = global.part_system_permanent;
+	var _type = global.blood_particle
 	repeat (2) {
-		part_type_alpha1(global.blood_particle, random_range(0.5, 1));
-		part_particles_create(global.part_system_permanent, xprevious + irandom(16)-8, yprevious + irandom(6)-3, global.blood_particle, 1);
+	//	part_type_alpha1(global.blood_particle, random_range(0.5, 1));
+		part_particles_create(_sys, xprevious + irandom(16)-8, yprevious + irandom(6)-3, _type, 1);
 		
 		
 	}
@@ -20,7 +22,7 @@ if state != enemyStates.dead
 		particle = 0
 		var xx = random_range(-5,5)
 		var yy = random_range(-5,5)
-		instance_create_layer(x+xx,y+yy,"Bullets",oSmoke1)
+		instance_create_layer(x+xx,y+yy,"Bullets",oSmoke2)
 	}
 	
 	particle2 += 1
@@ -28,7 +30,7 @@ if state != enemyStates.dead
 	if particle2 >= 10
 	{
 		particle2 = 0
-		instance_create_layer(x,y,"instancesB",oSplat)
+		instance_create_layer(x,y,"instancesB",oSplat1)
 	}
 }
 
@@ -88,8 +90,9 @@ switch state {
 			var dust = instance_create_layer(x,y,"instances",oParticleGround)
 			dust.image_blend = make_color_rgb(156, 42, 112);
 			if (chance(75)) {
-				part_type_alpha1(global.blood_particle, random_range(0.5, 1));
-				part_particles_create(global.part_system_permanent, xprevious + irandom(16)-8, yprevious + irandom(6)-3, global.blood_particle, 1);
+				var _sys = global.part_system_permanent;
+				var _type = global.blood_particle
+				part_particles_create(_sys, xprevious + irandom(16)-8, yprevious + irandom(6)-3, _type, 1);
 			}//part_particles_create(global.part_system_below, x + choose(-1, 1) * i, y + 4, global.dust_up_particle, 1);	
 		}
 	}

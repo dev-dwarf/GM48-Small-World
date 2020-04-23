@@ -1,5 +1,13 @@
-
-if (update_pathing <= 0) {
+if (update_pathing <= 0) {	
+	if (instance_number(object_index) > 40 and chance(20)) {
+		var friend = instance_nearest(x,y,object_index);	
+		move_speed = friend.move_speed;
+		move_direction = friend.move_direction;
+		target_inst = friend.target_inst;
+		update_pathing = irandom_range(14/move_speed_max, 20/move_speed_max);
+		return false;
+	}
+	
 	update_pathing = irandom_range(14/move_speed_max, 20/move_speed_max);
 	target_inst = oPowerGenerator;
 

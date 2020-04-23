@@ -16,28 +16,29 @@ if (gamepad) {
 	
 	input_action[0] = gamepad_button_check_pressed(0, gp_face3) or gamepad_button_check_pressed(0, gp_shoulderrb);
 	input_action[1] = gamepad_button_check_pressed(0, gp_face2) or gamepad_button_check_pressed(0, gp_shoulderlb);
-
-	if (input_vector[0] != 0) {
-		gamepad_cooldown = 15;
-	} 
-	
-	if (input_vector[1] != 0) {
-		play_sound(sndWrenchMiss, 0, false, 1.0, 0.3)
-		selected = selected + input_vector[1];
-		gamepad_cooldown = 15;
-	} 
 } else {
+	if (gamepad_cooldown <= 0) {
+		input_vector[0] = check(vk_d) - check(vk_a);
+		input_vector[1] = check(vk_s) - check(vk_w);
+	} else {
+		input_vector[0] = false;
+		input_vector[1] = false;
+		gamepad_cooldown--;	
+	}
+	
 	input_action[0] = mouse_check_button_pressed(mb_left) or check_p(vk_enter);
 	input_action[1] = mouse_check_button_pressed(mb_right) or check_p(vk_escape);
-	
-	input_vector[0] = check_p(vk_d) - check_p(vk_a);
-	input_vector[1] = check_p(vk_s) - check_p(vk_w);
-	
-	if (input_vector[1] != 0) {
-		play_sound(sndWrenchMiss, 0, false, 1.0, 0.3)
-		selected += input_vector[1];
-	}
 }
+
+if (input_vector[0] != 0) {
+	gamepad_cooldown = 15;
+} 
+	
+if (input_vector[1] != 0) {
+	play_sound(sndWrenchMiss, 0, false, 1.0, 0.3)
+	selected = selected + input_vector[1];
+	gamepad_cooldown = 15;
+} 
 
 selected = wrap(selected, 0, max_selected[state]);
 	
@@ -81,16 +82,16 @@ switch state {
 			play_sound(sndPlayerFootstep, 0, false, 1.0, 0.2)
 			
 			switch options[? "1." + string(selected) + ".text"] {
-				case "MUSIC"		: options[? "1.1.value"] += 0.1 * sign(input_vector[0]); 
+				case "MUSIC"		: options[? "1.1.value"] += slider_step * sign(input_vector[0]); 
 									  options[? "1.1.value"] = clamp(options[? "1.1.value"], 0, 1) 
 									  break;
 									  
-				case "SFX"			: options[? "1.2.value"] += 0.1 * sign(input_vector[0]); 
+				case "SFX"			: options[? "1.2.value"] += slider_step * sign(input_vector[0]); 
 									  options[? "1.2.value"] = clamp(options[? "1.2.value"], 0, 1) 
-									  play_sound(sndLaserTurret, 0, false, 1.0, 0.2)
+									  play_sound(sndBasicTurret, 0, false, 1.0, 0.2)
 									  break;
 									  
-				case "SHAKE"		: options[? "1.3.value"] += 0.1 * sign(input_vector[0]); 
+				case "SHAKE"		: options[? "1.3.value"] += slider_step * sign(input_vector[0]); 
 									  options[? "1.3.value"] = clamp(options[? "1.3.value"], 0, 1) 
 									  oCamera.screenshake = 0.8;
 									  break;
@@ -109,12 +110,14 @@ global.auto_click = options[? "1.4.value"];
 global.fullscreen = options[? "1.5.value"];
 
 oPlayer.image_angle = -3;
-oPlayer.image_xscale = 1;
+
+if (input_vector[0] != 0)
+	oPlayer.image_xscale = input_vector[0];
 
 var scale = DEFAULT_WIDTH/display_get_gui_width()
 var height = 72 * scale;
 
-oPlayer.x = (DEFAULT_WIDTH - string_width(options[? string(state) + "." + string(selected) + ".text"]) * scale - (oPlayer.sprite_width*2 + 10) )/2;
+oPlayer.x = (DEFAULT_WIDTH - string_width(options[? string(state) + "." + string(selected) + ".text"]) * scale - (abs(oPlayer.sprite_width)*2 + 10) )/2;
 oPlayer.y = (DEFAULT_HEIGHT - height * max_selected[state])/2 + height * selected + 10 * (1 - state);
 
 #endregion

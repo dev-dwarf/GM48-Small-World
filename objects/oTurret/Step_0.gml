@@ -35,6 +35,11 @@ if active {
 		
 			oCamera.screenshake += 0.02
 			// create bullet
+			if (instance_number(oShell) < 15 or chance(25)) {
+				var shell = instance_create_layer(x+irandom_range(-8, 8), y+irandom_range(-8, 8), layer, oShell);
+				shell.image_blend = make_color_rgb(104, 111, 153);
+			}
+			
 			with instance_create_layer(x + lengthdir_x(sprite_width/3, image_angle), y + lengthdir_y(sprite_width/3, image_angle), layer, oTurretBullet) {
 				  oCamera.screenshake += 0.01;
 				speed = 9;

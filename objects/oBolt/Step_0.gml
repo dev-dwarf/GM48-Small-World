@@ -1,4 +1,4 @@
-instance_create_layer(x,y,"Bullets",oSmoke1)
+instance_create_layer(x,y,"Bullets",oSmoke2)
 //instance_create_layer(x,y,"Bullets",oSplat)
 
 x += lengthdir_x(spd,dir)

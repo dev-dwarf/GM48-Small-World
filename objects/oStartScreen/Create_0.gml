@@ -51,7 +51,7 @@ if (global.skip_tutorial) {
 	
 	options[? "1.0.value"] = 1.0;
 	options[? "1.1.value"] = 0.7;
-	options[? "1.2.value"] = 1.0;
+	options[? "1.2.value"] = 0.7;
 	options[? "1.3.value"] = 0.6;
 	options[? "1.4.value"] = false;
 	options[? "1.5.value"] = true;
@@ -71,6 +71,7 @@ global.fullscreen = options[? "1.5.value"];
 fTextB = font_add_sprite_ext(sTextB,"ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890",false,0)
 scale = 1;
 robot_orange = make_color_rgb(240,181,65);
+slider_step = 0.05;
 
 enum startScreenMenus {
 	main,

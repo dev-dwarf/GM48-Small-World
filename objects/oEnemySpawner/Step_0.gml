@@ -1,9 +1,10 @@
 /// @description
-difficulty += 0.0023;
-
 if (top and oPowerGenerator.too_easy < 0.7) {
+	difficulty = instance_nearest(x, y, oEnemySpawner).difficulty;
 	exit;
 }
+
+difficulty += 0.026 * min(1.0, difficulty/15);
 
 //log(string(id) + "difficulty: " + string(difficulty));
 
@@ -12,13 +13,13 @@ if (floor(difficulty) == ceil(last_difficulty)) {
 		default:
 		if (difficulty >= 16) {
 			cooldown[oFlyingEnemy] = 100 * 16/ difficulty;
-			cooldown[oEnemy] = 66 * 16/ difficulty;
+			cooldown[oEnemy] = 89 * 16/ difficulty;
 			cooldown[oWisp] = 80 * 16/difficulty;
 		}
 		break;
 		case 8: 
 			cooldown[oFlyingEnemy] = 120;
-			cooldown[oEnemy] = 46;
+			cooldown[oEnemy] = 72;
 			break;
 		case 7: case 6:
 			cooldown[oFlyingEnemy] = 300;
@@ -40,12 +41,14 @@ if (floor(difficulty) == ceil(last_difficulty)) {
 }
 last_difficulty = difficulty;
 
+//log(string(difficulty));
+
 if (global.spawn_enemies) {
 	switch(floor(difficulty)) {
-		default:
+		default: if (difficulty < 16) exit;
 		if (timer[0] > 0) {
 			timer[0]--;
-			if (timer[oFlyingEnemy] <= 0) {
+			if (timer[oFlyingEnemy] <= 0 and instance_number(oFlyingEnemy) < 4) {
 				timer[oFlyingEnemy] = (cooldown[oFlyingEnemy] + choose(-2, 4) - oPowerGenerator.too_easy * 4)/max(1.0, difficulty/15);
 				
 				if (chance(30)) {
@@ -95,8 +98,8 @@ if (global.spawn_enemies) {
 				
 				if (chance(100)) {
 					difficulty += 0.03;
-					instance_create_layer(x,y+irandom_range(-8, 8),layer,oBigEnemy);
-
+					var inst = instance_create_layer(x,y+irandom_range(-8, 8),layer,oBigEnemy);
+					inst.hp += 2 * difficulty/20;
 				}
 				
 				if (chance(10)) timer[oBigEnemy] += irandom(100) + 60;
@@ -113,7 +116,7 @@ if (global.spawn_enemies) {
 			break;
 		case 17: case 18: case 19: case 20:
 			timer[0]--;
-			if (timer[oFlyingEnemy] <= 0) {
+			if (timer[oFlyingEnemy] <= 0 and instance_number(oFlyingEnemy) < 4) {
 				timer[oFlyingEnemy] = (cooldown[oFlyingEnemy] + choose(-2, 4) - oPowerGenerator.too_easy * 4)/max(1.0, difficulty/15);
 				
 				if (chance(28)) {
@@ -181,7 +184,7 @@ if (global.spawn_enemies) {
 			}
 		case 8: case 7:
 		case 6:
-			if (timer[oFlyingEnemy] <= 0) {
+			if (timer[oFlyingEnemy] <= 0 and instance_number(oFlyingEnemy) < 4) {
 				timer[oFlyingEnemy] = cooldown[oFlyingEnemy] + choose(-2, 4) - oPowerGenerator.too_easy * 4;
 				
 				if (chance(25)) {

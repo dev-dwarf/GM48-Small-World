@@ -2,7 +2,8 @@
 if (other.state == enemyStates.dead) {
 	exit;
 }
-instance_create_layer(x,y,layer,oBDeath);
+if (instance_count < 50)
+	instance_create_layer(x,y,layer,oBDeath);
 instance_destroy();
 
 other.flash = 7;

@@ -31,6 +31,12 @@ if active {
 		
 			oCamera.screenshake += 0.02
 			play_sound(sndGrenadeTurretFire, 1, false, 1.0, 0.1);
+			
+			var shell = instance_create_layer(x+irandom_range(-8, 8), y+irandom_range(-8, 8), layer, oShell);
+			shell.image_blend = make_color_rgb(104, 111, 153);
+			shell.image_xscale = 0.5;
+			shell.image_yscale = 0.5;
+			shell.sprite_index = sGrenade;
 			// create bullet
 			with instance_create_layer(x + lengthdir_x(sprite_width/3, image_angle), y + lengthdir_y(sprite_width/3, image_angle), layer, oTurretGrenadeBullet) {
 				speed = 5;

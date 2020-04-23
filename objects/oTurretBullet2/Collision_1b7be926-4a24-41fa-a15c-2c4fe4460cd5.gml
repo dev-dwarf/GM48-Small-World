@@ -2,6 +2,7 @@
 if (other.state == enemyStates.dead) {
 	exit;
 }
+if (instance_count < 50)
 	instance_create_layer(x,y,layer,oBDeath);
 	instance_destroy();
 

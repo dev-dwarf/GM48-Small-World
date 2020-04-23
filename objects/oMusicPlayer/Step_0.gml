@@ -89,7 +89,7 @@ if (avg_difficulty <= 20 and robot_loop_count <= 24) {
 	}
 	
 	if (bottom_gate_open or generator_hp <= 3) and robot_loop_count > 4 {
-		gain[musFlutes] = 1;
+		gain[musFlutes] = approach(gain[musFlutes], 1, fade_speed);
 		gain[musAdditionalPercussion] = 1;
 	} else {
 		gain[musFlutes] = approach(gain[musFlutes], 0, fade_speed);
@@ -138,13 +138,13 @@ if (avg_difficulty <= 20 and robot_loop_count <= 24) {
 	}	gain[musRoboHigh] = 1;
 	
 	if (bottom_gate_open or enemies_count > 15 or enemies_near_generator) and robot_loop_count > 2 {
-		gain[musDidgeridoo] = 1;
+		gain[musDidgeridoo] = approach(gain[musDidgeridoo], 1, fade_speed);
 	} else {
 		gain[musDidgeridoo] = approach(gain[musDidgeridoo], 0, fade_speed);
 	}
 	
 	if (bottom_gate_open or generator_hp <= 3) and robot_loop_count > 4 {
-		gain[musFlutes] = 1;
+		gain[musFlutes] = approach(gain[musFlutes], 1, fade_speed);
 		gain[musAdditionalPercussion] = 1;
 	} else {
 		gain[musFlutes] = approach(gain[musFlutes], 0, fade_speed);

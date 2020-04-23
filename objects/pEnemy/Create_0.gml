@@ -18,6 +18,7 @@ death_speed = 4;
 knockup = 0;
 
 state = enemyStates.target;
+on_list = false;
 
 enum enemyStates {
 	target,

@@ -1,6 +1,6 @@
 /// @description
 
-difficulty = 3.0 * top;
+difficulty = 0.2 + 3.0 * top;
 last_difficulty = difficulty;
 
 timer[oEnemy] = irandom(20);
@@ -13,7 +13,7 @@ timer[oWisp] = irandom(20);
 cooldown[oWisp] = 500;
 
 timer[oBigEnemy] = irandom(20);
-cooldown[oBigEnemy] = 1000;
+cooldown[oBigEnemy] = 800;
 
 timer[0] = 60 * 30;
 timer[1] = 300;

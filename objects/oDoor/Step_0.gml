@@ -7,7 +7,7 @@ if (oPowerGenerator.target == object_index) {
 
 if (active) {
 	global.spawn_enemies = false;	
-	oPowerGenerator.voltage_base_decrease_per_step = 11;
+	oPowerGenerator.voltage_base_decrease_per_step = 25;
 } else {
 	global.spawn_enemies = true;	
 }

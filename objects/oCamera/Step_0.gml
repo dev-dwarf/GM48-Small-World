@@ -28,3 +28,5 @@ x = lerp(x, 0, 0.5);
 y = lerp(y, 0, 0.5);
 
 frames_slept = approach(frames_slept, 0, 25);
+
+log(string(instance_count));
