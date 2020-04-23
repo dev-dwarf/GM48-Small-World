@@ -143,7 +143,7 @@ if move_speed != 0
 			audio_sound_gain(snd, 0.06 * global.sfx_volume, 0);
 			sleep(10);
 			footstep_played = true;	
-			 var dust = instance_create_layer(x,y+8,"instances",oParticleGround)
+			 var dust = instance_create_layer(xprevious,yprevious+8,"instances",oParticleGround)
 			 
 			dust.image_blend = make_color_rgb(200, 212, 93);
 			if (distance_to_object(instance_nearest(x,y, oEnemy)) < 20) {

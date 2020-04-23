@@ -55,6 +55,8 @@ switch state {
 								  
 				case "EXIT"		: game_end(); break;
 			}
+			
+			oCamera.screenshake = 0.5;
 		}
 	break;
 	case startScreenMenus.options:
@@ -71,6 +73,8 @@ switch state {
 				case "AUTO-CLICK"	: options[? "1.4.value"] = !options[? "1.4.value"]; break;
 				case "FULLSCREEN"	: options[? "1.5.value"] = !options[? "1.5.value"]; break;
 			}
+			
+			oCamera.screenshake = 0.5;
 		}
 		
 		if (input_vector[0] != 0) {
@@ -103,5 +107,14 @@ global.sfx_volume = options[? "1.2.value"];
 global.screenshake_volume = options[? "1.3.value"];
 global.auto_click = options[? "1.4.value"];
 global.fullscreen = options[? "1.5.value"];
+
+oPlayer.image_angle = -3;
+oPlayer.image_xscale = 1;
+
+var scale = DEFAULT_WIDTH/display_get_gui_width()
+var height = 72 * scale;
+
+oPlayer.x = (DEFAULT_WIDTH - string_width(options[? string(state) + "." + string(selected) + ".text"]) * scale - (oPlayer.sprite_width*2 + 10) )/2;
+oPlayer.y = (DEFAULT_HEIGHT - height * max_selected[state])/2 + height * selected + 10 * (1 - state);
 
 #endregion

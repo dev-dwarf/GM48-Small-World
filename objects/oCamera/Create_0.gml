@@ -9,7 +9,7 @@ view_camera[0] = cam;
 
 #region screenshake
 screenshake = 0.0;
-screenshake_intensity = 10.50;
+screenshake_intensity = 9.50;
 screenshake_decrease_per_step = 0.08;
 #endregion
 
@@ -26,9 +26,7 @@ part_system_depth(global.part_system_permanent, -770);
 part_system_automatic_update(global.part_system_permanent, false);
 
 randomize();
-
 resize_window();
-
 
 global.dust_up_particle = part_type_create();
 

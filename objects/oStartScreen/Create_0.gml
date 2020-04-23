@@ -5,7 +5,7 @@ gamepad_cooldown = 0;
 max_selected[startScreenMenus.main] = 3;
 max_selected[startScreenMenus.options] = 5;
 
-file_delete(program_directory + "configuration.json");
+//file_delete(program_directory + "configuration.json");
 if (file_exists(program_directory + "configuration.json")) { //if config exists load it
 	options = ds_map_secure_load(program_directory + "configuration.json")
 	
