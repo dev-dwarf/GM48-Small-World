@@ -23,16 +23,6 @@ if (!moved_camera) {
 }
 
 
-if object_is_ancestor(other.object_index, pTurret) and other.hp < other.max_hp{
-	var heal_amount = parent.heal_amount; 
-	
-	with(other) {
-		hp = approach(hp, max_hp, heal_amount);	
-		repeat(heal_amount/0.05)
-			instance_create_layer(x+irandom_range(-6, 6),y+irandom_range(-2, 2),global.fx_layer,oParticleHeal)
-	}
-}
-
 if (!audio_is_playing(sndGameOver)) {
 	audio_sound_gain(hit_sound, 1 * global.sfx_volume, 0);
 	audio_sound_gain(miss_sound, 0, 0);

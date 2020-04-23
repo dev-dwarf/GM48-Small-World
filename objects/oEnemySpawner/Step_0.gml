@@ -1,5 +1,5 @@
 /// @description
-difficulty += 0.0029;
+difficulty += 0.0023;
 
 if (top and oPowerGenerator.too_easy < 0.7) {
 	exit;

@@ -10,6 +10,8 @@ if (gamepad) {
 	input_vector[1] = gamepad_axis_value(0, gp_axislv);
 	
 	input_action[0] = gamepad_button_check_pressed(0, gp_face3) or gamepad_button_check_pressed(0, gp_shoulderrb);
+	if (global.auto_click) 	input_action[0] = gamepad_button_check(0, gp_face3) or gamepad_button_check(0, gp_shoulderrb);
+
 	input_action[1] = gamepad_button_check_pressed(0, gp_face2) or gamepad_button_check_pressed(0, gp_shoulderlb);
 	input_restart   = gamepad_button_check_pressed(0, gp_select);
 
@@ -18,6 +20,8 @@ if (gamepad) {
 	input_vector[1] = check(vk_s) - check(vk_w);
 	
 	input_action[0] = mouse_check_button_pressed(mb_left);
+	if (global.auto_click) 	input_action[0] = mouse_check_button(mb_left);
+	
 	input_action[1] = mouse_check_button_pressed(mb_right);
 	input_restart   = check_p(vk_r);
 }
@@ -86,8 +90,8 @@ if (input_action[0] and oWrench.alarm[2] <= 0) {
 			xscale = 1
 		}
 	
-	oWrench.alarm[2] = 7 * move_speed_max/1.9; //increase attack speed if speed upgrade
-	oWrench.alarm[1] = 10; //give some time before returning to neutral state
+	oWrench.alarm[2] = floor(7 * base_move_speed/move_speed_max) + 3 * global.auto_click; //increase attack speed if speed upgrade
+	oWrench.alarm[1] = floor(10 * base_move_speed/move_speed_max); //give some time before returning to neutral state
 	
 	if (oWrench.turret_obj == noone) {
 		with instance_create_layer(x,y,"instances",oPlayerHitbox)
@@ -135,8 +139,8 @@ if move_speed != 0
 	
 	if (floor(image_index) == 3 or floor(image_index) = 7) { //play footstep sounds on frames where foot hits ground
 		if (!footstep_played) {
-			play_sound(sndPlayerFootstep, 00, false, 1.3, .15);	
-			audio_sound_gain(sndPlayerFootstep, 0.04, 0);
+			var snd = play_sound(sndPlayerFootstep, 80, false, 1.3 + (move_speed_max/base_move_speed -1), .15);	
+			audio_sound_gain(snd, 0.06 * global.sfx_volume, 0);
 			sleep(10);
 			footstep_played = true;	
 			 var dust = instance_create_layer(x,y+8,"instances",oParticleGround)

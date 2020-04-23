@@ -10,7 +10,7 @@ if (hp <= 0) {
 	if global.points >= global.hscore and room == rGameRoom
 	{
 		global.hscore = global.points;
-		var file = file_text_open_write("highscore.txt");
+		var file = file_text_open_write(SAVE_DIRECTORY);
 		file_text_write_real(file, global.hscore)
 		file_text_close(file)
 	}
@@ -49,7 +49,7 @@ if (place_meeting(x,y,oPlayerHitbox) and alarm[2] <= 0) {
 	scale = 0.8;
 	oCamera.screenshake += 0.08;
 	with (oPlayerHitbox) {
-		audio_sound_gain(hit_sound, 1, 0);
+		audio_sound_gain(hit_sound, 1 * global.sfx_volume, 0);
 		audio_sound_gain(miss_sound, 0, 0);	
 	}
 }

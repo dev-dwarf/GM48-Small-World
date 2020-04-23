@@ -871,6 +871,14 @@
             }
         },
         {
+            "Key": "a33a92af-7ade-444a-87ee-a3f709e761aa",
+            "Value": {
+                "id": "ee7f0b04-045e-4839-be99-e22cb90fd394",
+                "resourcePath": "objects\\oStartScreen\\oStartScreen.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "a5f17143-b1ab-462f-9f29-d8ad6cf3b06c",
             "Value": {
                 "id": "cea857c8-0237-4fdc-a863-84d4a3c09313",
@@ -1143,6 +1151,14 @@
             }
         },
         {
+            "Key": "cf77f818-1d00-46eb-9aa7-3ad8b301229d",
+            "Value": {
+                "id": "75bbf890-1c00-40d6-a611-03cfb65f703d",
+                "resourcePath": "scripts\\draw_text_partial_color\\draw_text_partial_color.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "d057e794-cb80-42fe-9584-3eb1c366820a",
             "Value": {
                 "id": "0e6a4613-8328-4d4b-b5fd-afecaf689815",
@@ -1236,6 +1252,14 @@
                 "id": "253c0c0c-eabe-4534-90c1-0c2908bf25d7",
                 "resourcePath": "objects\\oTutorial\\oTutorial.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "dc1da17c-e8ec-4745-98d8-e01687cf50e2",
+            "Value": {
+                "id": "7f28ac3c-17d1-418f-bfab-92fe2236e978",
+                "resourcePath": "rooms\\rTitle\\rTitle.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -1443,7 +1467,8 @@
         "f467d119-9065-4d66-9fcb-5dfd3e68c4ba",
         "d35f80b0-f135-4880-bf42-ae9a70069f5d",
         "de98a5f4-a314-49e8-b09b-22abb9a41788",
-        "5b8c7890-d4d3-4403-820d-36273e06fd77"
+        "5b8c7890-d4d3-4403-820d-36273e06fd77",
+        "cf77f818-1d00-46eb-9aa7-3ad8b301229d"
     ],
     "tutorial": ""
 }

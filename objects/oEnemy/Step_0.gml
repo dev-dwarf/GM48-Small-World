@@ -33,7 +33,7 @@ switch state {
 			if (target_inst.object_index == oPowerGenerator) {
 				flash = 4;
 				state = enemyStates.stun;
-				stun_timer = 8;
+				stun_timer = 12;
 				zap_self = true;
 				move_direction = point_direction(oPowerGenerator.x, oPowerGenerator.y-51,x,y);
 				move_speed = 4;
@@ -62,6 +62,7 @@ switch state {
 		if (!zap_self) {
 			state = enemyStates.target;
 		} else {
+			image_alpha = 1;
 			state = enemyStates.dead;
 			zap_self = false;	
 		}

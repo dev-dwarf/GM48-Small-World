@@ -2,11 +2,14 @@
 
 // Inherit the parent event
 var inst = instance_place(x,y,oPlayerHitbox)
-if (inst and inst.parent == oPlayer) {
+if (inst and inst.parent == oPlayer and newly_created <= 0) {
 	oPowerGenerator.target = pTurret;	
 	oPowerGenerator.scale = 0.8;	
 	//scale = 0.8;
 }
+
+if (newly_created > 0) newly_created--;
+
 if (oPowerGenerator.target == pTurret) {
 	active = true;
 } else {
@@ -29,8 +32,8 @@ if active {
 			shoot_timer = shoot_speed// * oPowerGenerator.max_voltage/max(oPowerGenerator.voltage, 3000);
 			scale = 1.2;
 			
-			play_sound(sndBasicTurret, 1, false, 1.5, 0.1);
-			audio_sound_gain(sndBasicTurret,0.1,0)
+			var snd = play_sound(sndBasicTurret, 1, false, 1.5, 0.1);
+			audio_sound_gain(snd,0.5 * global.sfx_volume,0)
 			oCamera.screenshake += 0.02
 			// create bullet
 			with instance_create_layer(x + lengthdir_x(sprite_width/3, image_angle), y + lengthdir_y(sprite_width/3, image_angle), layer, oTurretBullet2) {

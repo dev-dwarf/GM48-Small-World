@@ -9,7 +9,7 @@ if (hp <= 0) {
 	if (state != enemyStates.dead and dead_timer == 0) {			
 		state = enemyStates.dead;
 		var snd = play_sound(sndGetVolts, 2, false, 2.0, 0.3);
-		audio_sound_gain(snd, 0.2* audio_sound_get_gain(snd), 0);
+		audio_sound_gain(snd, 0.2* audio_sound_get_gain(snd) * global.sfx_volume, 0);
 		repeat(5) {
 			instance_create_layer(x +irandom(16)-8,y +irandom(16)-8,global.fx_layer, oPowerParticle);
 		}

@@ -53,5 +53,5 @@ if (avg_difficulty <= 20 and robot_loop_count <= 24) {
 //UPDATE AUDIO GAIN
 if (oPowerGenerator.hp <= 0) overall_volume = approach(overall_volume, 0, 0.005);
 for (var i = musPrimalDrums; i <= musBellsRight; i++) {
-	audio_sound_gain(track_id[i], gain[i]*overall_volume*master_gain[i], 0);	
+	audio_sound_gain(track_id[i], gain[i]*global.music_volume * (1 - MUTE_MUSIC)*master_gain[i]*overall_volume, 0);	
 }

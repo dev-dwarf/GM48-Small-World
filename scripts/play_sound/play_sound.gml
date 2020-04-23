@@ -21,6 +21,13 @@ if (argument_count > 3) {
 	audio_sound_pitch(sound_id, pitch + variance);
 }
 
+// set volume
+if loop {
+	audio_sound_gain(sound_id, global.music_volume, 0);
+} else {
+	audio_sound_gain(sound_id, global.sfx_volume, 0);	
+}
+
 
 if (audio_is_playing(sndGameOver) and argument[0] != sndGameOver) {
 	audio_sound_gain(sound_id, 0, 0);

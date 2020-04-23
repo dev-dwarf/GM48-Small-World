@@ -1,5 +1,5 @@
 /// @description
-if (tutorial_event <= 8) {
+if (tutorial_event <= 7) {
 	draw_set_font(fTextS);
 	draw_set_halign(fa_center);
 	

@@ -4,6 +4,8 @@
 #region
 var pos = audio_sound_get_track_position(track_id[musRoboLow]);
 
+log(string(pos));
+
 //log(string(pos) + " : " + string(previous_robot_position)); 
 if (pos < previous_robot_position) {
 	robot_loop_count++;
@@ -64,7 +66,7 @@ if (avg_difficulty <= 20 and robot_loop_count <= 24) {
 		gain[musBellsLeft] = approach(gain[musBellsLeft], 0, fade_speed);	
 	}
 
-	if (robot_loop_count mod 4 > 2 and robot_loop_count > 8) {
+	if ((robot_loop_count + 2) mod 4 <= 2 and robot_loop_count > 2) {
 		gain[musBellsRight] = 1;
 	//	log("musBellsRight");
 	} else {
@@ -119,7 +121,7 @@ if (avg_difficulty <= 20 and robot_loop_count <= 24) {
 		gain[musBellsLeft] = approach(gain[musBellsLeft], 0, fade_speed);	
 	}
 
-	if (robot_loop_count mod 4 > 2 and robot_loop_count > 8) {
+	if ((robot_loop_count + 2) mod 4 <= 2 and robot_loop_count > 2) {
 		gain[musBellsRight] = 1;
 		//log("musBellsRight");
 	} else {
@@ -201,5 +203,5 @@ if (instance_exists(oBigEnemy)) {
 //UPDATE AUDIO GAIN
 if (oPowerGenerator.hp <= 0) overall_volume = approach(overall_volume, 0, 0.005);
 for (var i = musPrimalDrums; i <= musBellsRight; i++) {
-	audio_sound_gain(track_id[i], gain[i]*overall_volume*master_gain[i], 0);	
+	audio_sound_gain(track_id[i], gain[i]*global.music_volume * (1 - MUTE_MUSIC) * master_gain[i] * overall_volume, 0);	
 }

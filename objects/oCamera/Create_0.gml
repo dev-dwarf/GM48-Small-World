@@ -9,7 +9,7 @@ view_camera[0] = cam;
 
 #region screenshake
 screenshake = 0.0;
-screenshake_intensity = 6.50;
+screenshake_intensity = 10.50;
 screenshake_decrease_per_step = 0.08;
 #endregion
 

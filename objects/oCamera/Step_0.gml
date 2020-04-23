@@ -1,17 +1,20 @@
-
 if (check_p(ord("U")) or (gamepad_is_connected(0) and (gamepad_button_check_pressed(0, gp_padu) or gamepad_button_check_pressed(0, gp_padd)))) {
 	fullscr = !fullscr
 	global.fullscreen = !global.fullscreen;
 	window_set_fullscreen(fullscr)
 }
 
-/// @description
+if (fullscr != global.fullscreen) {
+	fullscr = global.fullscreen;
+	window_set_fullscreen(fullscr);
+}
+
 var screenshake_amount, screenshake_curve;
 screenshake = clamp(screenshake, 0, 1);
 
 if (screenshake > 0) {
 	var screenshake_curve = power(screenshake, 1.6)*(screenshake_intensity+screenshake*2);
-	var screenshake_amount = random_range(ceil(screenshake_curve/2), ceil(screenshake_curve))*choose(-1,1);
+	var screenshake_amount = random_range(ceil(screenshake_curve/2), ceil(screenshake_curve))*choose(-1,1)*global.screenshake_volume;
 	
 	camera_set_view_pos(view_camera[0], x + screenshake_amount, y + screenshake_amount);
 	

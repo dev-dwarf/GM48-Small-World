@@ -63,7 +63,7 @@ switch (tutorial_event) {
 				add_prompt_alarm -= 30;
 			}
 		break;
-	case 3:
+	case 4:
 		global.spawn_enemies = false;
 		//if ((gamepad_button_check_pressed(0, gp_face3) or gamepad_button_check_pressed(0, gp_shoulderrb) or mouse_check_button_pressed(mb_left))) {		
 			var special_condition = (oPowerGenerator.target == oDoor);
@@ -78,7 +78,7 @@ switch (tutorial_event) {
 			}
 		//}
 	break;
-	case 4:
+	case 3:
 		oPowerGenerator.hp = 1000;
 		oPowerGenerator.target = noone;
 		global.spawn_enemies = true;
@@ -123,6 +123,18 @@ switch (tutorial_event) {
 				add_prompt_alarm -= 30;
 			}	
 	break;	
+	//case 7:		
+	//	global.spawn_enemies = false;
+	//	if ((gamepad_button_check_pressed(0, gp_face3) or gamepad_button_check_pressed(0, gp_shoulderrb) or mouse_check_button_pressed(mb_left))) {
+	//		if (add_prompt_alarm < 0) {
+	//			tutorial_event++;
+	//			scale = 0.0;
+	//			add_prompt_alarm = 50;
+	//		} else {
+	//			add_prompt_alarm -= 30;
+	//		}
+	//	}		
+	//break;	
 	case 7:		
 		global.spawn_enemies = false;
 		if ((gamepad_button_check_pressed(0, gp_face3) or gamepad_button_check_pressed(0, gp_shoulderrb) or mouse_check_button_pressed(mb_left))) {
@@ -135,21 +147,10 @@ switch (tutorial_event) {
 			}
 		}		
 	break;	
-	case 8:		
-		global.spawn_enemies = false;
-		if ((gamepad_button_check_pressed(0, gp_face3) or gamepad_button_check_pressed(0, gp_shoulderrb) or mouse_check_button_pressed(mb_left))) {
-			if (add_prompt_alarm < 0) {
-				tutorial_event++;
-				scale = 0.0;
-				add_prompt_alarm = 50;
-			} else {
-				add_prompt_alarm -= 30;
-			}
-		}		
-	break;	
-	case 9:
+	case 8:
 	
 	room_goto_next();
+	part_system_clear(global.part_system_permanent);
 	break;
 		
 }

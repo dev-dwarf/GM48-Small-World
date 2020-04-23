@@ -130,8 +130,8 @@ if move_speed != 0
 	
 	if (floor(image_index) == 3 or floor(image_index) = 7){ //play footstep sounds on frames where foot hits ground
 		if (!footstep_played and (xprevious != x and yprevious != y)) {
-			play_sound(sndPlayerFootstep, 00, false, 1.8, .15);	
-			audio_sound_gain(sndPlayerFootstep, 0.04, 0);
+			play_sound(sndPlayerFootstep, 80, false, 1.8, .15);	
+			audio_sound_gain(sndPlayerFootstep, 0.04 * global.sfx_volume, 0);
 			sleep(10);
 			footstep_played = true;	
 			 var dust = instance_create_layer(x,y+3,"instances",oParticleGround)

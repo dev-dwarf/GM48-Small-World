@@ -47,6 +47,6 @@ if (!moved_camera) {
 }
 
 if (!audio_is_playing(sndGameOver)) {
-	audio_sound_gain(hit_sound, 1, 0);
+	audio_sound_gain(hit_sound, 1 * global.sfx_volume, 0);
 	audio_sound_gain(miss_sound, 0, 0);
 }

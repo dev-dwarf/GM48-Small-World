@@ -4,14 +4,14 @@ global.skip_tutorial = false;
 
 window_set_fullscreen(true)
 
-//file_delete("highscore.txt")
-if (file_exists("highscore.txt")) {
-	var file = file_text_open_read("highscore.txt");
+//file_delete(SAVE_DIRECTORY)
+if (file_exists(SAVE_DIRECTORY)) {
+	var file = file_text_open_read(SAVE_DIRECTORY);
 	global.hscore = file_text_read_real(file);	
 	file_text_close(file)
 	global.skip_tutorial = true;
 } else {
-	var file = file_text_open_write("highscore.txt");
+	var file = file_text_open_write(SAVE_DIRECTORY);
 	file_text_write_real(file, 0)
 	file_text_close(file)
 }

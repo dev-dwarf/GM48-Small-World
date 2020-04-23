@@ -5,7 +5,7 @@ event_inherited();
 
 image_blend = c_blue;
 
-shoot_speed = 4 * 1.9/oPlayer.move_speed_max;
+shoot_speed = 4 * oPlayer.base_move_speed/oPlayer.move_speed_max;
 shoot_timer = 0;
 shoot_target = noone;
 swivel_speed = 30;
@@ -17,3 +17,4 @@ hp = 8 + 3 * oPlayer.heal_amount/0.05;
 max_hp = hp;
 
 gun_scale = 1.0;
+newly_created = 10;

@@ -2,11 +2,13 @@
 
 // Inherit the parent event
 var inst = instance_place(x,y,oPlayerHitbox)
-if (inst and inst.parent == oPlayer) {
+if (inst and inst.parent == oPlayer and newly_created <= 0) {
 	oPowerGenerator.target = pTurret;	
 	oPowerGenerator.scale = 0.8;	
 	//scale = 0.8;
 }
+
+if (newly_created > 0) newly_created--;
 
 if (oPowerGenerator.target == pTurret) {
 	active = true;

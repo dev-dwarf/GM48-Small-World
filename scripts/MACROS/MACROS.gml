@@ -5,6 +5,7 @@
 #macro SHADOW_ANGLE 2
 
 #macro MUTE_MUSIC false
+#macro SAVE_DIRECTORY program_directory + "highscore.txt"
 
 #macro vk_a ord("A")
 #macro vk_s ord("S")
