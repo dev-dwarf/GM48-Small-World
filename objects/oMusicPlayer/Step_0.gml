@@ -114,14 +114,14 @@ if (avg_difficulty <= 20 and robot_loop_count <= 24) {
 		}
 	}	
 	#region basics
-	if (robot_loop_count mod 4 <= 2 and robot_loop_count > 2) {
+	if (robot_loop_count mod 6 <= 2 and robot_loop_count > 2) {
 		gain[musBellsLeft] = 1;
 		//log("musBellsLeft");
 	} else {
 		gain[musBellsLeft] = approach(gain[musBellsLeft], 0, fade_speed);	
 	}
 
-	if ((robot_loop_count + 2) mod 4 <= 2 and robot_loop_count > 2) {
+	if ((robot_loop_count + 2) mod 6 <= 2 and robot_loop_count > 2) {
 		gain[musBellsRight] = 1;
 		//log("musBellsRight");
 	} else {

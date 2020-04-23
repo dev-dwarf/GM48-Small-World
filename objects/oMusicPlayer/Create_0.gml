@@ -1,5 +1,5 @@
 /// @description
-
+if (instance_number(object_index) > 1) instance_destroy();
 audio_stop_all();
 
 priority[musPrimalDrums				 ] = 4;

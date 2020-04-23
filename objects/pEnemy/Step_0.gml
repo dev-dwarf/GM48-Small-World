@@ -4,7 +4,7 @@ scale = lerp(scale, 1.0, 0.2);
 if (hp <= 0) {
 	image_xscale = choose(1,-1)
 	oPowerGenerator.voltage = clamp(oPowerGenerator.voltage + abs(max_hp * move_speed_max * damage *  200) + 50 * ignores_turrets, 0, oPowerGenerator.max_voltage);
-	if (audio_is_playing(sndGameOver)) {
+	if (oPowerGenerator.hp > 0) {
 		global.points += abs(max_hp * move_speed_max * damage *  5) + 5 * ignores_turrets;
 	}
 	hp--;

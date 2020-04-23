@@ -20,14 +20,14 @@ if (place_meeting(x,y, pSolid) or place_meeting(x,y, oDoor) or place_meeting(x,y
 mask_index = sTurretHitmask;
 
 // TODO: electricity trap "turret" that does DoT to enemies that walk over it
-// TODO: force field powerup that protects the generator from damage, and kills enemies that hit it
-// TODO: make global draw object, to optimize flash shader so as to break draw batch less
+
 // TODO?: unlockable player characters?
 // TODO: redo sprites for crafting and powerup stations
 // TODO: add sounds for crafting and powerup stations
 // TODO: transitions between screens, instead of a direct cut
 
-// TODO: sfx, music and screenshake sliders. also maybe a shader option ---> done, but need to be on pause screen
+//  sfx, music and screenshake sliders. also maybe a shader option ---> done
 //  better enemy spawns ---> done
 //  title screen ---> done
 //  shells that come out of turrets when they fire ---> done
+//  make global draw object, to optimize flash shader so as to break draw batch less ---> done
