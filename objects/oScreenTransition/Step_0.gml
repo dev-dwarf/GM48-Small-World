@@ -25,6 +25,5 @@ if (!complete) {
 	if (left_x == 0 and right_x == DEFAULT_WIDTH * 1.5) {
 		instance_destroy();
 	}
-	
-	
+
 }
