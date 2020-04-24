@@ -61,6 +61,16 @@ if (global.skip_tutorial) {
 	ds_map_secure_save(options, program_directory+"configuration.json"); //and save for next time
 }
 
+if (global.skip_tutorial) {
+	options[? "0.0.text"] = "PLAY"
+	options[? "0.1.text"] = "TUTORIAL"
+			   
+} else {	  
+	options[? "0.0.text"] = "TUTORIAL"	
+	options[? "0.1.text"] = "PLAY"
+			   
+}
+
 global.music_volume = options[? "1.1.value"];
 global.sfx_volume = options[? "1.2.value"];
 global.screenshake_volume = options[? "1.3.value"];
