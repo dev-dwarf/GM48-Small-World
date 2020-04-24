@@ -5,10 +5,13 @@ var input_vector, input_action;
 var gamepad = gamepad_is_connected(0);
 if (gamepad) {
 	gamepad_set_axis_deadzone(0, 0.3);
+	input_vector[0] = sign(gamepad_axis_value(0, gp_axislh));
+	input_vector[1] = sign(gamepad_axis_value(0, gp_axislv));
+	
 	if (gamepad_cooldown <= 0) {
-		input_vector[0] = sign(gamepad_axis_value(0, gp_axislh));
-		input_vector[1] = sign(gamepad_axis_value(0, gp_axislv));
+		
 	} else {
+		if (input_vector[0] != 0 and input_vector[1] != 0) gamepad_cooldown = 0;
 		input_vector[0] = false;
 		input_vector[1] = false;
 		gamepad_cooldown--;	
@@ -17,10 +20,12 @@ if (gamepad) {
 	input_action[0] = gamepad_button_check_pressed(0, gp_face3) or gamepad_button_check_pressed(0, gp_shoulderrb);
 	input_action[1] = gamepad_button_check_pressed(0, gp_face2) or gamepad_button_check_pressed(0, gp_shoulderlb);
 } else {
+	input_vector[0] = check(vk_d) - check(vk_a);
+	input_vector[1] = check(vk_s) - check(vk_w);
 	if (gamepad_cooldown <= 0) {
-		input_vector[0] = check(vk_d) - check(vk_a);
-		input_vector[1] = check(vk_s) - check(vk_w);
+		
 	} else {
+		if (input_vector[0] != 0 and input_vector[1] != 0) gamepad_cooldown = 0;
 		input_vector[0] = false;
 		input_vector[1] = false;
 		gamepad_cooldown--;	

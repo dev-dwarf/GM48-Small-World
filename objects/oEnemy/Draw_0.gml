@@ -1,4 +1,4 @@
-	var temp_y = y;
+var temp_y = y;
 if (knockup > 0) {
 	y -= (sprite_height/2) * sin(pi * knockup/max_knockup);
 	knockup--;
