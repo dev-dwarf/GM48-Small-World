@@ -183,6 +183,14 @@
             }
         },
         {
+            "Key": "1c2a1319-264d-4716-83b4-3b9ddbf8f651",
+            "Value": {
+                "id": "145e23f2-5737-4a35-9d26-357c8f83d4d7",
+                "resourcePath": "sprites\\sVoltzTop\\sVoltzTop.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1c7afd09-24d4-4acc-9989-abbff82e258d",
             "Value": {
                 "id": "011829a1-46d1-4d26-9d8e-5c12a07b36cb",

@@ -7,3 +7,5 @@ max_hp = hp;
 last_hp = hp;
 shockwave = noone;
 cooldown = 0;
+
+spinoppo= 0

@@ -42,12 +42,13 @@ if hp < max_hp {
 }
 
 if (active) {
+	spinoppo += -8
 	image_blend = c_white;	
-	image_angle += 4;
+	image_angle += 15;
 } else {
 	image_blend = c_gray;
-	
-	image_angle += 1;
+	spinoppo += -1
+	image_angle += 2;
 }
 
 if (flash > 0 and !on_list) {
