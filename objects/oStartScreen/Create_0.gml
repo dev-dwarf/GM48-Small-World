@@ -5,7 +5,7 @@ gamepad_cooldown = 0;
 max_selected[startScreenMenus.main] = 3;
 max_selected[startScreenMenus.options] = 5;
 
-//file_delete(program_directory + "configuration.json");
+file_delete(program_directory + "configuration.json");
 if (file_exists(program_directory + "configuration.json")) { //if config exists load it
 	options = ds_map_secure_load(program_directory + "configuration.json")
 	
@@ -40,6 +40,8 @@ if (global.skip_tutorial) {
 	options[? "1.3.text"] = "SHAKE"
 	options[? "1.4.text"] = "AUTO-CLICK"
 	options[? "1.5.text"] = "FULLSCREEN"
+	options[? "1.6.text"] = "EXIT"
+
 	//options[? "1.5.text"] = "SHADERS"
 	
 	options[? "1.0.type"] = guiTypes.button;
@@ -48,6 +50,8 @@ if (global.skip_tutorial) {
 	options[? "1.3.type"] = guiTypes.slider;
 	options[? "1.4.type"] = guiTypes.checkbox;
 	options[? "1.5.type"] = guiTypes.checkbox;
+	options[? "1.6.type"] = guiTypes.button;
+
 	
 	options[? "1.0.value"] = 1.0;
 	options[? "1.1.value"] = 0.7;
@@ -55,6 +59,7 @@ if (global.skip_tutorial) {
 	options[? "1.3.value"] = 0.6;
 	options[? "1.4.value"] = false;
 	options[? "1.5.value"] = true;
+	options[? "1.6.value"] = 1.0;
 	//options[? "1.5.type"] = guiTypes.checkbox;
 #endregion 
 
@@ -79,7 +84,7 @@ global.fullscreen = options[? "1.5.value"];
 
 // create font
 fTextB = font_add_sprite_ext(sTextB,"ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890",false,0)
-scale = 1;
+scale = 0;
 robot_orange = make_color_rgb(240,181,65);
 slider_step = 0.05;
 

@@ -53,13 +53,23 @@ switch state {
 			play_sound(sndWrenchHit, 0, false, 1.0, 0.2)
 			
 			switch options[? "0." + string(selected) + ".text"] {
-				case "PLAY"		: room_goto(rGameRoom); break;
-				case "TUTORIAL"	: room_goto(rTutorialRoom); break;
-				case "OPTIONS"	: state = startScreenMenus.options; selected = 0;
+				case "PLAY"		: 
+				with instance_create_layer(0, 0, layer, oScreenTransition) {
+					target_room = rGameRoom;	
+				}
+				
+				break;
+				case "TUTORIAL"	: 
+				with instance_create_layer(0, 0, layer, oScreenTransition) {
+					target_room = rTutorialRoom;	
+				} break;
+				case "OPTIONS"	: state = startScreenMenus.options; selected = 0; scale = 0
 								  play_sound(sndWrenchMiss, 0, false, 1.4, 0.3);	
 								  break;
 								  
-				case "EXIT"		: game_end(); break;
+				case "EXIT"		: with instance_create_layer(0, 0, layer, oScreenTransition) {
+									target_room = "game over";	
+								}  break;
 			}
 			
 			oCamera.screenshake = 0.5;
@@ -70,7 +80,7 @@ switch state {
 			play_sound(sndWrenchHit, 0, false, 1.0, 0.2)
 			
 			switch options[? "1." + string(selected) + ".text"] {
-				case "BACK"			: state = startScreenMenus.main; selected = 0; 
+				case "BACK"			: state = startScreenMenus.main; selected = 0; scale = 0;
 									  play_sound(sndWrenchMiss, 0, false, 1.4, 0.3);	
 									  break;
 				case "MUSIC"		: options[? "1.1.value"] = 1 - sign(options[? "1.1.value"]); break;
@@ -119,10 +129,11 @@ oPlayer.image_angle = -3;
 if (input_vector[0] != 0)
 	oPlayer.image_xscale = input_vector[0];
 
-var scale = DEFAULT_WIDTH/display_get_gui_width()
-var height = 72 * scale;
+var _scale = DEFAULT_WIDTH/display_get_gui_width()
+var height = 72 * _scale;
 
-oPlayer.x = (DEFAULT_WIDTH - string_width(options[? string(state) + "." + string(selected) + ".text"]) * scale - (abs(oPlayer.sprite_width)*2 + 10) )/2;
+oPlayer.x = (DEFAULT_WIDTH - string_width(options[? string(state) + "." + string(selected) + ".text"]) * _scale - (abs(oPlayer.sprite_width)*2 + 10) )/2;
 oPlayer.y = (DEFAULT_HEIGHT - height * max_selected[state])/2 + height * selected + 10 * (1 - state);
 
+scale = lerp(scale, 1.0, 0.2);
 #endregion

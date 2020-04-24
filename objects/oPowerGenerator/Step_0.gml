@@ -37,8 +37,11 @@ if (voltage > (hp-1.8) * 1000) {
 
 scale = lerp(scale, 1.0 + 0.025 * sin(current_time * 2 * pi * 0.01 * max(1.0, voltage)/max_voltage), 0.5);
 
-if (!instance_exists(target) or voltage == 0) {
+if (!instance_exists(target) or voltage == 0) and target != noone {
 	target = noone;	
+	if (!instance_exists(target))
+		if (!audio_is_playing(sndPowerDown))
+			play_sound(sndPowerDown, 0, false, 1.0, 0.02);
 }
 
 if (place_meeting(x,y,oPlayerHitbox) and alarm[2] <= 0) {
@@ -82,7 +85,9 @@ if (!audio_is_playing(sndGameOver)) {
 }
 
 if (hp < 0 and !played_game_over) {
-	room_restart();
+	with instance_create_layer(0, 0, layer, oScreenTransition) {
+		target_room = room;	
+	} 
 	part_system_clear(global.part_system_permanent);
 	
 }

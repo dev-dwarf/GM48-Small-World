@@ -25,7 +25,7 @@ var yy = center_y - height * (max_selected[state]/2) // make sure everthings cen
 
 for (var i = 0; i <= max_selected[state]; i++) {
 	var _selected = (i == selected);
-	var _scale = scale + 0.1*_selected;
+	var _scale = scale + 0.15*_selected;
 	
 	if (state == startScreenMenus.main) {
 		var _color = c_white;

@@ -65,6 +65,10 @@ if (paused) {
 					case "SHAKE"		: options[? "1.3.value"] = 1 - sign(options[? "1.3.value"]); break;
 					case "AUTO-CLICK"	: options[? "1.4.value"] = !options[? "1.4.value"]; break;
 					case "FULLSCREEN"	: options[? "1.5.value"] = !options[? "1.5.value"]; break;
+					case "EXIT"			: 
+					with instance_create_layer(0, 0, layer, oScreenTransition) {
+						target_room = rTitle;	
+					} break;
 				}
 			
 				oCamera.screenshake = 0.5;

@@ -30,7 +30,9 @@ input_direction = point_direction( 0, 0, input_vector[0], input_vector[1]);
 input_magnitude = min(1.0, point_distance( 0, 0, input_vector[0], input_vector[1])); //cap this at 1 so that diagonals are not faster
 
 if (input_restart) {
-	room_restart();
+	with instance_create_layer(0, 0, layer, oScreenTransition) {
+		target_room = room;	
+	} 
 	part_system_clear(global.part_system_permanent);
 }
 
@@ -57,9 +59,11 @@ if (!gamepad) {
 
 #region attack
 
-if (input_action[1]) {
+if (input_action[1] and oPowerGenerator.target != noone) {
 	oPowerGenerator.target = noone;	
-	//TODO: play power disconnect sound
+	if (!audio_is_playing(sndPowerDown))
+		play_sound(sndPowerDown, 0, false, 1.0, 0.02);
+	//play power disconnect sound ---> donzo
 }
 
 if (input_action[0] and oWrench.alarm[2] <= 0) {	

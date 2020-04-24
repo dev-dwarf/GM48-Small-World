@@ -1,48 +1,28 @@
 {
-    "id": "8a43ba2d-b1b6-405c-bb08-d76ee62b0a96",
+    "id": "466893a7-5172-4679-906c-7b9c0eef2325",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "oPause",
+    "name": "oMusicPlayerTitle",
     "eventList": [
         {
-            "id": "094f6c51-af02-41c3-94f1-3b38c5e44ef0",
+            "id": "cad4f360-6997-4dfc-81d7-3d864624d059",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "8a43ba2d-b1b6-405c-bb08-d76ee62b0a96"
+            "m_owner": "466893a7-5172-4679-906c-7b9c0eef2325"
         },
         {
-            "id": "eab3f07c-b1ce-4118-bcb7-d37a1c058367",
+            "id": "259ca887-02c8-4ac3-bbc7-4175da703966",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 3,
-            "m_owner": "8a43ba2d-b1b6-405c-bb08-d76ee62b0a96"
-        },
-        {
-            "id": "d0baad12-fc70-4b64-abea-a4db72e4c59f",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 64,
-            "eventtype": 8,
-            "m_owner": "8a43ba2d-b1b6-405c-bb08-d76ee62b0a96"
-        },
-        {
-            "id": "955f8fa4-97d9-40fb-8109-f2f7960e5892",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 12,
-            "m_owner": "8a43ba2d-b1b6-405c-bb08-d76ee62b0a96"
+            "m_owner": "466893a7-5172-4679-906c-7b9c0eef2325"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",

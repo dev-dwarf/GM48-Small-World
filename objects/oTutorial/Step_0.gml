@@ -149,7 +149,9 @@ switch (tutorial_event) {
 	break;	
 	case 8:
 	
-	room_goto_next();
+	with instance_create_layer(0, 0, layer, oScreenTransition) {
+		target_room = rGameRoom;	
+	}
 	part_system_clear(global.part_system_permanent);
 	break;
 		

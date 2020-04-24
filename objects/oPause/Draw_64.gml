@@ -34,7 +34,7 @@ if paused = true
 
 	for (var i = 0; i <= max_selected[state]; i++) {
 		var _selected = (i == selected);
-		var _scale = scale + 0.1*_selected;
+		var _scale = scale + 0.15*_selected;
 	
 		if (state == startScreenMenus.main) {
 			var _color = c_white;
