@@ -15,7 +15,9 @@
         "b5d5eddb-ff18-437e-b7f0-e7661744d28d",
         "48a6d3b3-82d9-4614-b4d7-5e0bed9d2cb4",
         "f95b2257-c907-4ec7-808f-58409e35cc9a",
-        "3e3b2e25-9fc4-419c-b0df-0938acb451fb"
+        "3e3b2e25-9fc4-419c-b0df-0938acb451fb",
+        "5667ad96-7a43-4daf-bed1-22fce16881f5",
+        "0be117db-1bb8-4e85-a24c-b09dcb89d72e"
     ],
     "filterType": "GMObject",
     "folderName": "needs power",
