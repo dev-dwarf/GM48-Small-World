@@ -39,7 +39,7 @@ switch (tutorial_event) {
 		
 		
 		//if ((gamepad_button_check_pressed(0, gp_face3) or gamepad_button_check_pressed(0, gp_shoulderrb) or mouse_check_button_pressed(mb_left))) {	
-			var special_condition = (freebie.active == true);
+			var special_condition = (pTurret.active == true);
 			
 			if (special_condition) {
 				tutorial_event++;

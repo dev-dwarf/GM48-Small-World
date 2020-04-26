@@ -10,7 +10,7 @@ event_inherited();
 //}
 
 if (alarm[0] > 0) {
-	image_speed = 1;
+	//image_speed = 1;
 	scale = lerp(scale, 0.85, 0.02);	
 } else {
 	scale = lerp(scale, 1.0, 0.2);		
@@ -47,6 +47,8 @@ if (alarm[0] > 0) {
 		
 		var effect = irandom(4);
 		
+		play_sound(sndPowerup, 0, false, 1.1, 0);
+		
 		switch effect {
 			case 0:
 				oPlayer.move_speed_max = approach( oPlayer.move_speed_max, oPlayer.true_max_speed, 0.1);
@@ -76,9 +78,14 @@ if (alarm[0] > 0) {
 //}
 var price = 2000 + times_rolled * 250;
 	if (oPowerGenerator.voltage > price and alarm[0] <= 0) {
-		image_blend = c_white;
+		if (image_blend != c_white) {
+			image_blend = c_white;
+			image_index = 1;
+			play_sound(sndPowerup, 0, false, 0.65, 0);
+		}
 		drop_index+=0.2
-		drop_index = wrap(drop_index, 0, 2.9);
+		drop_index = wrap(drop_index, 0, 3);
 	} else {
 		image_blend = c_gray;	
+		image_index = 0;
 	}

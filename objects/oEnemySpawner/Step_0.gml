@@ -4,7 +4,7 @@ if (top and oPowerGenerator.too_easy < 0.7) {
 	exit;
 }
 
-difficulty += 0.026 * min(1.0, difficulty/15);
+difficulty += 0.021 * min(1.0, difficulty/15);
 
 //log(string(id) + "difficulty: " + string(difficulty));
 
@@ -156,9 +156,9 @@ if (global.spawn_enemies) {
 
 				}
 				
-				if (chance(2)) {
-					instance_create_layer(x,y+irandom_range(-8, 8),layer,oBigEnemy);
-				}
+				//if (chance(2)) {
+				//	instance_create_layer(x,y+irandom_range(-8, 8),layer,oBigEnemy);
+				//}
 				
 				if (chance(10)) timer[oWisp] += irandom(100) + 60;
 			} else {

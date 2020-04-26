@@ -7,8 +7,8 @@ move_acceleration = 0.5;
 move_deceleration = 0.9;
 
 base_move_speed = move_speed_max;
-true_max_speed = 2.3;
-max_heal_amount = 0.25;
+true_max_speed = 2.7;
+max_heal_amount = 0.5;
 
 global.max_turrets = 5;
 

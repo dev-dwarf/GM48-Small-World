@@ -8,3 +8,5 @@ scale = 1.0;
 
 lever_index = 0;
 drop_index =0.0;
+
+image_speed = 0;

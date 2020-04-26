@@ -20,11 +20,10 @@ if (place_meeting(x,y, pSolid) or place_meeting(x,y, oDoor) or place_meeting(x,y
 mask_index = sTurretHitmask;
 
 // TODO: electricity trap "turret" that does DoT to enemies that walk over it
-
 // TODO?: unlockable player characters?
 // TODO: redo sprites for crafting and powerup stations
 // TODO: add sounds for crafting and powerup stations
-// TODO: transitions between screens, instead of a direct cut
+//  transitions between screens, instead of a direct cut ---> done
 
 //  sfx, music and screenshake sliders. also maybe a shader option ---> done
 //  better enemy spawns ---> done
