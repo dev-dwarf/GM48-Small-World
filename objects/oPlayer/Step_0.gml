@@ -129,7 +129,7 @@ if (input_action[0] and oWrench.alarm[2] <= 0) {
 }
 
 if (movement_vector[0] != 0) {
-	oWrench.image_yscale = sign(movement_vector[0]) * oWrench.lever_state;
+	//oWrench.image_yscale = sign(movement_vector[0]) * oWrench.lever_state;
 }
 
 body_angle = movement_vector[0] * -3;
