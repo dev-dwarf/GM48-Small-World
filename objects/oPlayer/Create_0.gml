@@ -10,7 +10,7 @@ base_move_speed = move_speed_max;
 true_max_speed = 2.7;
 max_heal_amount = 0.5;
 
-global.max_turrets = 5;
+global.max_turrets = 6;
 
 heal_amount = 0.05;
 
