@@ -8,5 +8,6 @@ image_angle = irandom(360);
 
 image_alpha = 3;
 move_speed = 9;
+move_direction = irandom(360);
 
 gib = 0
