@@ -148,11 +148,12 @@ switch (tutorial_event) {
 		}		
 	break;	
 	case 8:
-	
-	with instance_create_layer(0, 0, layer, oScreenTransition) {
-		target_room = rGameRoom;	
+	if (!instance_exists(oScreenTransition)) {
+		with instance_create_layer(0, 0, layer, oScreenTransition) {
+			target_room = rGameRoom;	
+		}
+		part_system_clear(global.part_system_permanent);
 	}
-	part_system_clear(global.part_system_permanent);
 	break;
 		
 }

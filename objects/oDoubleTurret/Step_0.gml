@@ -41,7 +41,7 @@ if active {
 			shell.image_blend = make_color_rgb(104, 111, 153);
 			shell.image_xscale = 0.7;
 			shell.image_yscale = 0.7;
-			shell.move_direction = image_angle +90
+			shell.move_direction = 180 + image_angle
 			
 			with instance_create_layer(x + lengthdir_x(sprite_width/3, image_angle), y + lengthdir_y(sprite_width/3, image_angle), layer, oTurretBullet2) {
 

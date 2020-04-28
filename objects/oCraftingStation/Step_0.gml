@@ -22,7 +22,7 @@ if (oPowerGenerator.voltage > price and alarm[0] <= 0) {
 	if (image_blend != c_white) {
 			image_blend = c_white;
 			image_index = 1;
-			play_sound(sndTurretAcquired, 0, false, 0.7, 0);
+		//	play_sound(sndTurretAcquired, 0, false, 0.7, 0);
 		}
 	drop_index+=0.2;
 	drop_index = wrap(drop_index, 0, 4);

@@ -81,7 +81,7 @@ var price = 2000 + times_rolled * 250;
 		if (image_blend != c_white) {
 			image_blend = c_white;
 			image_index = 1;
-			play_sound(sndPowerup, 0, false, 0.65, 0);
+		//	play_sound(sndPowerup, 0, false, 0.65, 0);
 		}
 		drop_index+=0.2
 		drop_index = wrap(drop_index, 0, 3);
