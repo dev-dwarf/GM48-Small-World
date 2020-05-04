@@ -25,16 +25,13 @@ move(move_speed, move_direction);
 
 image_angle += zspeed;
 
-if sprite_index = sEnemyGibs
-{
-	if move_speed > 0
-	{
-		gib += 1
-	if gib >= 3
-	{
+
+if move_speed > 0 {
+	gib += 1
+	
+	if gib >= 3 {
 	//	part_type_alpha1(global.blood_particle, random_range(0.5, 1));
 		part_particles_create(global.part_system_permanent, xprevious + irandom(16)-8, yprevious + irandom(6)-3, global.blood_particle, 1);
 		gib = 0
 	}	
-	}
 }
